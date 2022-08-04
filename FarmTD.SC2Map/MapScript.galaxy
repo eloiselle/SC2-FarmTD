@@ -144,6 +144,7 @@ void gf_TriggerAddEventUnitRangePoint (trigger lp_trigger, point lp_point, fixed
 trigger gt_onGameStart;
 trigger gt_onPlayerLeave;
 trigger gt_onStartupBankInit;
+trigger gt_onLevelUp;
 trigger gt_onPlayerLevelUp;
 trigger gt_onPlayerLevelUpDisplay;
 trigger gt_updateLeaderboards;
@@ -214,8 +215,6 @@ void gf_TriggerAddEventUnitRangePoint (trigger lp_trigger, point lp_point, fixed
 //--------------------------------------------------------------------------------------------------
 bool gt_onGameStart_Func (bool testConds, bool runActions) {
     // Variable Declarations
-    int lv_defaultStartingMinerals;
-    int lv_defaultStartingVespene;
     int lv_checkplayersonline;
     int lv_playerIndex;
     int lv_untitledVariable005;
@@ -251,6 +250,7 @@ bool gt_onGameStart_Func (bool testConds, bool runActions) {
         return true;
     }
 
+    TriggerExecute(gt_onStartupBankInit, true, true);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/6BEB7A76"));
     lv_pointstuff = 1;
     for ( ; ( (autoADE54A41_ai >= 0 && lv_pointstuff <= autoADE54A41_ae) || (autoADE54A41_ai < 0 && lv_pointstuff >= autoADE54A41_ae) ) ; lv_pointstuff += autoADE54A41_ai ) {
@@ -391,8 +391,8 @@ bool gt_onGameStart_Func (bool testConds, bool runActions) {
             gv_intPlantMastery[auto67585FF6_var][1] = 15;
             CameraPan(auto67585FF6_var, PointFromName(("Start Location " + IntToString(auto67585FF6_var))), 0.0, -1, 10.0, false);
             gv_intPlayersOnline += 1;
-            PlayerModifyPropertyInt(auto67585FF6_var, c_playerPropMinerals, c_playerPropOperAdd, (lv_defaultStartingMinerals + FixedToInt(gv_realLevelingStats[auto67585FF6_var][1])));
-            PlayerModifyPropertyInt(auto67585FF6_var, c_playerPropVespene, c_playerPropOperAdd, (lv_defaultStartingVespene + FixedToInt(gv_realLevelingStats[auto67585FF6_var][3])));
+            PlayerModifyPropertyInt(auto67585FF6_var, c_playerPropMinerals, c_playerPropOperAdd, (gv_realStartingMinerals + FixedToInt(gv_realLevelingStats[auto67585FF6_var][1])));
+            PlayerModifyPropertyInt(auto67585FF6_var, c_playerPropVespene, c_playerPropOperAdd, (gv_realStartingGas + FixedToInt(gv_realLevelingStats[auto67585FF6_var][3])));
             gv_intLives[auto67585FF6_var] += FixedToInt(gv_realLevelingStats[auto67585FF6_var][4]);
             DialogCreate(600, 600, c_anchorCenter, 0, 0, true);
             gv_dlgDifficultySelection[auto67585FF6_var] = DialogLastCreated();
@@ -611,10 +611,10 @@ bool gt_onStartupBankInit_Func (bool testConds, bool runActions) {
         }
         else {
             gv_realEXP[lv_playerIndex] = 0.0;
-            gv_realLevelingStats[lv_playerIndex][1] = gv_realStartingMinerals;
-            gv_realLevelingStats[lv_playerIndex][3] = gv_realStartingGas;
-            gv_realLevelingStats[lv_playerIndex][12] = gv_realStartingPriceBonus;
-            gv_realLevelingStats[lv_playerIndex][4] = gv_realStartingLives;
+            gv_realLevelingStats[lv_playerIndex][1] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][3] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][12] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][4] = 0.0;
         }
     }
     return true;
@@ -623,7 +623,19 @@ bool gt_onStartupBankInit_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void gt_onStartupBankInit_Init () {
     gt_onStartupBankInit = TriggerCreate("gt_onStartupBankInit_Func");
-    TriggerAddEventMapInit(gt_onStartupBankInit);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: onLevelUp
+//--------------------------------------------------------------------------------------------------
+bool gt_onLevelUp_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_onLevelUp_Init () {
+    gt_onLevelUp = TriggerCreate("gt_onLevelUp_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -4727,6 +4739,7 @@ void InitTriggers () {
     gt_onGameStart_Init();
     gt_onPlayerLeave_Init();
     gt_onStartupBankInit_Init();
+    gt_onLevelUp_Init();
     gt_onPlayerLevelUp_Init();
     gt_onPlayerLevelUpDisplay_Init();
     gt_updateLeaderboards_Init();

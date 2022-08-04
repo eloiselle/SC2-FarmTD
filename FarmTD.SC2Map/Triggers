@@ -4,6 +4,7 @@
         <Item Type="Trigger" Id="3F0FFFFF"/>
         <Item Type="Trigger" Id="41A60838"/>
         <Item Type="Trigger" Id="49C8A443"/>
+        <Item Type="Trigger" Id="8837664F"/>
         <Item Type="Trigger" Id="5CB6C2A1"/>
         <Item Type="Trigger" Id="6C350016"/>
         <Item Type="Trigger" Id="ED65CCB2"/>
@@ -28,14 +29,13 @@
         <Item Type="Category" Id="315D0428"/>
     </Root>
     <Element Type="Trigger" Id="3F0FFFFF">
-        <Variable Type="Variable" Id="D3461F61"/>
-        <Variable Type="Variable" Id="D01AB52E"/>
         <Variable Type="Variable" Id="28AA33F7"/>
         <Variable Type="Variable" Id="BF64E60A"/>
         <Variable Type="Variable" Id="89BA0593"/>
         <Variable Type="Variable" Id="7EDBC6FD"/>
         <Variable Type="Variable" Id="BA4F4ACA"/>
         <Event Type="FunctionCall" Id="8738CE98"/>
+        <Action Type="FunctionCall" Id="679A7061"/>
         <Action Type="FunctionCall" Id="89A051B9"/>
         <Action Type="FunctionCall" Id="ADE54A41"/>
         <Action Type="FunctionCall" Id="E91F3AA6"/>
@@ -76,26 +76,6 @@
         <Action Type="FunctionCall" Id="B0C138BD"/>
         <Action Type="FunctionCall" Id="2EB644AB"/>
         <Action Type="FunctionCall" Id="342E5581"/>
-    </Element>
-    <Element Type="Variable" Id="D3461F61">
-        <VariableType>
-            <Type Value="int"/>
-        </VariableType>
-        <Value Type="Param" Id="C21D6AE9"/>
-    </Element>
-    <Element Type="Param" Id="C21D6AE9">
-        <Value>0</Value>
-        <ValueType Type="int"/>
-    </Element>
-    <Element Type="Variable" Id="D01AB52E">
-        <VariableType>
-            <Type Value="int"/>
-        </VariableType>
-        <Value Type="Param" Id="99DD3F08"/>
-    </Element>
-    <Element Type="Param" Id="99DD3F08">
-        <Value>0</Value>
-        <ValueType Type="int"/>
     </Element>
     <Element Type="Variable" Id="28AA33F7">
         <VariableType>
@@ -149,6 +129,25 @@
     </Element>
     <Element Type="FunctionCall" Id="8738CE98">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000120"/>
+    </Element>
+    <Element Type="FunctionCall" Id="679A7061">
+        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
+        <Parameter Type="Param" Id="01B515A4"/>
+        <Parameter Type="Param" Id="895C478F"/>
+        <Parameter Type="Param" Id="5DA9C67B"/>
+    </Element>
+    <Element Type="Param" Id="01B515A4">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000183"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="00000065"/>
+    </Element>
+    <Element Type="Param" Id="895C478F">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000184"/>
+        <Preset Type="PresetValue" Library="Ntve" Id="00000067"/>
+    </Element>
+    <Element Type="Param" Id="5DA9C67B">
+        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
+        <ValueType Type="trigger"/>
+        <ValueElement Type="Trigger" Id="49C8A443"/>
     </Element>
     <Element Type="FunctionCall" Id="89A051B9">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="0366EE04"/>
@@ -3510,7 +3509,7 @@
     </Element>
     <Element Type="Param" Id="863230E9">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000205"/>
-        <Variable Type="Variable" Id="D3461F61"/>
+        <Variable Type="Variable" Id="4901ADEE"/>
     </Element>
     <Element Type="FunctionCall" Id="D82480E9">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="943DF2F7"/>
@@ -3575,7 +3574,7 @@
     </Element>
     <Element Type="Param" Id="0A776BA5">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000205"/>
-        <Variable Type="Variable" Id="D01AB52E"/>
+        <Variable Type="Variable" Id="52988BCF"/>
     </Element>
     <Element Type="FunctionCall" Id="A6E06012">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="A0F31305"/>
@@ -7877,7 +7876,6 @@
     </Element>
     <Element Type="Trigger" Id="49C8A443">
         <Variable Type="Variable" Id="99343353"/>
-        <Event Type="FunctionCall" Id="9AFE618B"/>
         <Action Type="FunctionCall" Id="69B509B1"/>
         <Action Type="FunctionCall" Id="7463EAC6"/>
         <Action Type="FunctionCall" Id="950D966A"/>
@@ -7901,9 +7899,6 @@
     <Element Type="Param" Id="AA90074A">
         <Value>0</Value>
         <ValueType Type="int"/>
-    </Element>
-    <Element Type="FunctionCall" Id="9AFE618B">
-        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000120"/>
     </Element>
     <Element Type="FunctionCall" Id="69B509B1">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="7D278C76"/>
@@ -8153,7 +8148,7 @@
     </Element>
     <Element Type="Comment" Id="8FD47647">
         <Comment>
-            If the player is new or has manually changed their bank, we manually initialize the values to their default values.
+            If the player is new or has manually changed their bank, we manually initialize the bonus values to their default values.
         </Comment>
         <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000005"/>
     </Element>
@@ -8197,7 +8192,8 @@
     </Element>
     <Element Type="Param" Id="D9AE994E">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
-        <Variable Type="Variable" Id="4901ADEE"/>
+        <Value>0.0</Value>
+        <ValueType Type="fixed"/>
     </Element>
     <Element Type="FunctionCall" Id="37A2FAC9">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
@@ -8220,7 +8216,8 @@
     </Element>
     <Element Type="Param" Id="35A9E681">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
-        <Variable Type="Variable" Id="52988BCF"/>
+        <Value>0.0</Value>
+        <ValueType Type="fixed"/>
     </Element>
     <Element Type="FunctionCall" Id="C12112D5">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
@@ -8243,7 +8240,8 @@
     </Element>
     <Element Type="Param" Id="FC4E64E2">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
-        <Variable Type="Variable" Id="2A4857E2"/>
+        <Value>0.0</Value>
+        <ValueType Type="fixed"/>
     </Element>
     <Element Type="FunctionCall" Id="44C3495F">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
@@ -8266,7 +8264,8 @@
     </Element>
     <Element Type="Param" Id="99CDE6A4">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
-        <Variable Type="Variable" Id="79E7939D"/>
+        <Value>0.0</Value>
+        <ValueType Type="fixed"/>
     </Element>
     <Element Type="FunctionCall" Id="32CEB4C5">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
@@ -8523,6 +8522,8 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
         <Value>true</Value>
         <ValueType Type="bool"/>
+    </Element>
+    <Element Type="Trigger" Id="8837664F">
     </Element>
     <Element Type="Trigger" Id="5CB6C2A1">
         <Event Type="FunctionCall" Id="E462CD63"/>
