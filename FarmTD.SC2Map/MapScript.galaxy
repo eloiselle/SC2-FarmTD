@@ -1104,7 +1104,6 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
                                         gv_difficultylife[lv_differ][gv_intWave][2] = 500000.0;
                                         lv_int2 -= 500000;
                                         if ((lv_int2 >= 500000)) {
-                                            Wait(10.0, c_timeGame);
                                             lv_plapper = 1;
                                             for ( ; ( (auto2D626352_ai >= 0 && lv_plapper <= auto2D626352_ae) || (auto2D626352_ai < 0 && lv_plapper >= auto2D626352_ae) ) ; lv_plapper += auto2D626352_ai ) {
                                                 if ((gv_intDifficulty[lv_plapper] == lv_differ)) {
@@ -2847,12 +2846,6 @@ bool gt_Discordbutton_Func (bool testConds, bool runActions) {
                 }
             }
 
-            if ((lv_untitledVariable001 == 9)) {
-                UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/3C6D2B64"));
-                PlayerAddChargeUsed(EventPlayer(), "redo", -3.0);
-                libNtve_gf_UnitCreateFacingPoint(1, "Drone", 0, EventPlayer(), PointFromName(("Start Location " + IntToString(EventPlayer()))), UnitGetPosition(EventUnit()));
-            }
-
             DialogSetVisible(gv_dlgRewardSelection[EventPlayer()], PlayerGroupSingle(EventPlayer()), false);
             TriggerExecute(gt_updateLeaderboards, true, false);
         }
@@ -3483,7 +3476,7 @@ bool gt_Ursadon_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    lv_damage = 800.0;
+    lv_damage = 400.0;
     lv_ability = EventUnitDamageAmount();
     lv_ability /= 100.0;
     lv_ability *= gv_realLevelingStats[UnitGetOwner(EventUnitDamageSourceUnit())][11];
@@ -4109,7 +4102,7 @@ bool gt_Zagara_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((RandomInt(0, 100) <= 35))) {
+        if (!((RandomInt(0, 100) <= 25))) {
             return false;
         }
     }

@@ -1443,7 +1443,7 @@
     <CBehaviorBuff id="StatisWard">
         <InfoIcon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="3"/>
+        <Duration value="1.5"/>
         <Modification MoveSpeedMultiplier="0.01"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="VoidEnsnare2">

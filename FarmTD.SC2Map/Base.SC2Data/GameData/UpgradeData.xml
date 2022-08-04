@@ -48,7 +48,7 @@
     <CUpgrade id="MechaWea">
         <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
         <Alert value="UpgradeComplete_Zerg"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research5].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research5].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Weapon,ZerglingClawsStetmann,Level" Value="1"/>
         <EffectArray Reference="Effect,ZerglingClawsDamageStetmann,Amount" Value="3.45"/>
         <EffectArray Reference="Effect,PrimalBaseWeaponDamage,Amount" Value="9"/>
@@ -77,7 +77,7 @@
     <CUpgrade id="DominionWea">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
         <Alert value="UpgradeComplete_Terr"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research4].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research4].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Effect,TrooperMengskDamage,Amount" Value="2.85"/>
         <EffectArray Reference="Effect,LongboltMissileU,Amount" Value="8.25"/>
         <EffectArray Reference="Effect,PunisherGrenadesMengskU,Amount" Value="33"/>
@@ -281,7 +281,7 @@
     <CUpgrade id="TaldarimWea">
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
         <Alert value="UpgradeComplete_Prot"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research3].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research3].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Effect,SupplicantDamage,Amount" Value="2.85"/>
         <EffectArray Reference="Effect,ZeratulDisruptionBeamDamage,Amount" Value="2.625"/>
         <EffectArray Reference="Effect,PhotonCannonU,Amount" Value="9.75"/>
@@ -305,7 +305,7 @@
     <CUpgrade id="TerranWea">
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
         <Alert value="UpgradeComplete_Terr"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research2].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research2].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Effect,GuassRifle,Amount" Value="3.3"/>
         <EffectArray Reference="Effect,AutoTurret,Amount" Value="7.8"/>
         <EffectArray Reference="Effect,GoliathG,Amount" Value="26.25"/>
@@ -333,7 +333,7 @@
     </CUpgrade>
     <CUpgrade id="CritterWea">
         <Icon value="Assets\Textures\btn-ability-zerg-stabburst.dds"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research7].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research7].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Weapon,Spines,Level" Value="1"/>
         <EffectArray Reference="Weapon,Swarmling,Level" Value="1"/>
         <EffectArray Reference="Weapon,NeedleClaws,Level" Value="1"/>
@@ -350,7 +350,7 @@
         <EffectArray Reference="Effect,MutatorTurkeyPeckDamage,Amount" Value="279.2"/>
         <EffectArray Reference="Effect,YetiMatriarchClaws,Amount" Value="278.3"/>
         <EffectArray Reference="Effect,HunterKillerU,Amount" Value="160.1"/>
-        <EffectArray Reference="Effect,ursadon,Amount" Value="120"/>
+        <EffectArray Reference="Effect,ursadon,Amount" Value="60"/>
         <EffectArray Reference="Effect,LightningBombDamage,Amount" Value="8"/>
         <LeaderAlias value="DominionWea"/>
         <MaxLevel value="20"/>
@@ -385,7 +385,7 @@
         <EffectArray Reference="Weapon,PrimalZergling,Level" Value="1"/>
         <EffectArray Reference="Weapon,ZagaraVoidCoopRanged,Level" Value="1"/>
         <EffectArray Reference="Weapon,RazorTalons,Level" Value="1"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research1].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research1].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Effect,ZerglingMengskAttackDamage,Amount" Value="12"/>
         <EffectArray Reference="Weapon,ZerglingMengskClaws,Level" Value="1"/>
         <EffectArray Reference="Effect,Carbot,Amount" Value="113"/>
@@ -395,7 +395,7 @@
     <CUpgrade id="ProtossWea">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
         <Alert value="UpgradeComplete_Prot"/>
-        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research6].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research6].Resource[Minerals]" Value="50"/>
         <EffectArray Reference="Effect,PsiBlades,Amount" Value="5.25"/>
         <EffectArray Reference="Effect,AdeptDamage,Amount" Value="5.25"/>
         <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="34.5"/>

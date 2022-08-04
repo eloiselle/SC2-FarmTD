@@ -6624,7 +6624,7 @@
     </Element>
     <Element Type="Comment" Id="28ADA688">
         <Comment>
-            39
+            Pre game wait timer
         </Comment>
     </Element>
     <Element Type="FunctionCall" Id="A0BD8184">
@@ -17365,25 +17365,9 @@
     <Element Type="FunctionCall" Id="E285A417">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000137"/>
         <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
-        <FunctionCall Type="FunctionCall" Id="86EFF9DF"/>
         <FunctionCall Type="FunctionCall" Id="2D626352"/>
         <FunctionCall Type="FunctionCall" Id="D51A0985"/>
         <FunctionCall Type="Comment" Id="0430801C"/>
-    </Element>
-    <Element Type="FunctionCall" Id="86EFF9DF">
-        <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000242"/>
-        <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
-        <Parameter Type="Param" Id="730C236D"/>
-        <Parameter Type="Param" Id="8ABEFD22"/>
-    </Element>
-    <Element Type="Param" Id="730C236D">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000419"/>
-        <Value>10.0</Value>
-        <ValueType Type="fixed"/>
-    </Element>
-    <Element Type="Param" Id="8ABEFD22">
-        <ParameterDef Type="ParamDef" Library="Ntve" Id="00000420"/>
-        <Preset Type="PresetValue" Library="Ntve" Id="00000013"/>
     </Element>
     <Element Type="FunctionCall" Id="2D626352">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="66474248"/>
@@ -63844,6 +63828,7 @@
         <ValueType Type="int"/>
     </Element>
     <Element Type="FunctionCall" Id="E62F2416">
+        <Disabled/>
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000137"/>
         <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
         <FunctionCall Type="FunctionCall" Id="9A49698C"/>
@@ -71226,7 +71211,7 @@
     </Element>
     <Element Type="Param" Id="DD302A1C">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
-        <Value>800.0</Value>
+        <Value>400.0</Value>
         <ValueType Type="fixed"/>
     </Element>
     <Element Type="FunctionCall" Id="37C5BEBD">
@@ -77152,7 +77137,7 @@
     </Element>
     <Element Type="Param" Id="3540F544">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
-        <Value>35</Value>
+        <Value>25</Value>
         <ValueType Type="int"/>
     </Element>
     <Element Type="FunctionCall" Id="16762DC8">
@@ -81996,12 +81981,12 @@
     <Element Type="Comment" Id="238C79AF">
         <Comment>
             Tower qualities definitions
-            &lt;c val=&quot;FFFFFF&quot;&gt;Common&lt;/c&gt; 131
-            &lt;c val=&quot;86F40B&quot;&gt;Uncommon&lt;/c&gt; 262
-            &lt;c val=&quot;09A9F7&quot;&gt;Rare&lt;/c&gt; 525
-            &lt;c val=&quot;CF05FA&quot;&gt;Epic&lt;/c&gt;1125
-            &lt;c val=&quot;F4A30B&quot;&gt;Legendary&lt;/c&gt; 2250
-            &lt;c val=&quot;FAD58F&quot;&gt;Artifact&lt;/c&gt;4500
+            &lt;c val=&quot;FFFFFF&quot;&gt;Common&lt;/c&gt; sell price: 131
+            &lt;c val=&quot;86F40B&quot;&gt;Uncommon&lt;/c&gt; sell price: 262
+            &lt;c val=&quot;09A9F7&quot;&gt;Rare&lt;/c&gt; sell price: 525
+            &lt;c val=&quot;CF05FA&quot;&gt;Epic&lt;/c&gt; sell price: 1125
+            &lt;c val=&quot;F4A30B&quot;&gt;Legendary&lt;/c&gt; sell price: 2250
+            &lt;c val=&quot;FAD58F&quot;&gt;Artifact&lt;/c&gt; sell price: 4500
         </Comment>
     </Element>
     <Element Type="Comment" Id="027A9642">
@@ -82014,10 +81999,12 @@
             &lt;c val=&quot;86F40B&quot;&gt;Mecha Weapon&lt;/c&gt;
             &lt;c val=&quot;B9BCC8&quot;&gt;Critter Weapon&lt;/c&gt;
             &lt;c val=&quot;F86207&quot;&gt;Dominion Weapon&lt;/c&gt;
-            Unsure
-            boss1: 180    300
-            boss2: 540  300
-            boss3: 1200  300
+            
+            Boss cooldown time
+                       Cooldown Recharge
+            boss1: 180               300
+            boss2: 540               300
+            boss3: 1200             300
         </Comment>
     </Element>
 </TriggerData>
