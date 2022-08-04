@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="HaveHHAirFleetYamato">
+        <NodeArray index="Show" Link="And"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement">
+        <NodeArray index="Show" Link="EqCountUpgradeadminCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="maxprotoss">
+        <NodeArray index="Show" Link="LTCountUpgradeProtossWeaCompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="maxmech">
+        <NodeArray index="Show" Link="LTCountUpgradeMechaWeaCompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="maxtal">
+        <NodeArray index="Show" Link="LTCountUpgradeTaldarimWeaCompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="maxcrit">
+        <NodeArray index="Show" Link="LTCountUpgradeCritterWeaCompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="maxterran">
+        <NodeArray index="Show" Link="LTCountUpgradeTerranWeaCompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="maxzerg">
+        <NodeArray index="Show" Link="LTCountUpgradeZergWeaCompleteOnly20"/>
+    </CRequirement>
+    <CRequirement id="maxdom">
+        <NodeArray index="Show" Link="LTCountUpgradeDominionWeaCompleteOnly20"/>
+    </CRequirement>
+</Catalog>

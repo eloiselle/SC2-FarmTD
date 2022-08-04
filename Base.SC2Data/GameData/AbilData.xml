@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilTrain id="BarracksTrain">
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="Train5" Time="0">
+            <Resource index="Vespene" value="500"/>
+            <Button Requirements=""/>
+            <Unit index="0" value="Replicant"/>
+        </InfoArray>
+        <InfoArray index="Train8">
+            <Charge Link="B1" Location="Unit"/>
+            <Cooldown>
+                <Link value="B1"/>
+                <Location value="Unit"/>
+                <TimeStart value="180"/>
+                <TimeUse value="300"/>
+            </Cooldown>
+            <Button DefaultButtonFace="Summonfirstboss"/>
+            <Unit value="lCreep41"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Train9">
+            <Charge Link="B2" Location="Unit"/>
+            <Cooldown>
+                <Link value="B2"/>
+                <Location value="Unit"/>
+                <TimeStart value="540"/>
+                <TimeUse value="300"/>
+            </Cooldown>
+            <Button DefaultButtonFace="Summonsecoundboss"/>
+            <Unit value="Clreep42"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Train10">
+            <Charge Link="B3" Location="Unit"/>
+            <Cooldown>
+                <Link value="B3"/>
+                <Location value="Unit"/>
+                <TimeStart value="1200"/>
+                <TimeUse value="300"/>
+            </Cooldown>
+            <Button DefaultButtonFace="SummonThirdboss"/>
+            <Unit value="pCreep43"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Train11">
+            <Resource index="Vespene" value="100"/>
+            <Charge Link="redo" Location="Player"/>
+            <Cooldown Link="redo" Location="Player"/>
+            <Button DefaultButtonFace="RollanotherArtifact"/>
+            <Unit value="redoartifact"/>
+        </InfoArray>
+        <InfoArray index="Train12">
+            <Resource index="Minerals" value="350"/>
+            <Button DefaultButtonFace="RollanotherArtifact2"/>
+            <Unit value="redoartifact2"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilResearch id="EngineeringBayResearch">
+        <InfoArray index="Research10" Upgrade="ZergWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeZergWeapons"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="Feedback">
+        <Alignment value="Positive"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+        </Cost>
+        <TargetFilters index="0" value="Visible,Invulnerable;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden"/>
+        <Range index="0" value="1000"/>
+        <Arc value="360"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="GuardianShield">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="NovaWeaponHellfireShotgunBlast">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
+    <CAbilBuild id="ProtossBuild">
+        <InfoArray index="Build2" Time="3">
+            <Resource index="Minerals" value="1400"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilEffectTarget id="PsiStormArchon">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <Range index="0" value="90"/>
+        <CastOutroTime index="0" removed="1"/>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SOAMothershipLineAttack">
+        <Flags index="AutoCast" value="0"/>
+        <Flags index="AutoCastOn" value="0"/>
+        <Cost index="0">
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
+    <CAbilBuild id="TerranBuild">
+        <InfoArray index="Build2" Time="1.2">
+            <Resource index="Minerals" value="75"/>
+            <Button Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build17" Unit="SupplyDepot2" Time="1">
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="PlantCarrot"/>
+        </InfoArray>
+        <InfoArray index="Build18" Unit="SupplyDepot22" Time="1">
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="PlantPumpkin"/>
+        </InfoArray>
+        <InfoArray index="Build25" Unit="Pear" Time="1">
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="PlantPear"/>
+        </InfoArray>
+        <InfoArray index="Build29" Unit="T1U1" Time="7">
+            <Button DefaultButtonFace="Zergling"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="TerranBuild2" parent="TerranBuild">
+        <Name value="Abil/Name/TerranBuild2"/>
+        <InfoArray index="Build1" Unit="T1U3" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Multishot3" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="T2U3" Time="1">
+            <Resource index="Minerals" value="0"/>
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Multishot4"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="T3U3" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Multishot5" Requirements=""/>
+            <ValidatorArray index="0" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="T4U3" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Multishot6"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="T5U3" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="AcidicGlads" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="T6U9" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="SlowSpines" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="T6U8" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="AngiStomp" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="T6U7" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="PowerBeak" Requirements=""/>
+            <ValidatorArray index="0" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="T1U2" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="TrooperMengsk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="T2U2" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="MissileTurretMengsk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="T3U2" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="MarauderMengsk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="T4U2" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="RavenMengsk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="T5U2" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="GhostMengsk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="T6U4" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="ArtilleryMengsk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="T6U6" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="FIRETHEDAMNWARHEADNOW" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build16" Unit="T6U5" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Odin" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build17" Unit="T1U5">
+            <Resource index="Vespene" value="0"/>
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="ZerglingStetmann"/>
+        </InfoArray>
+        <InfoArray index="Build18" Unit="T2U5">
+            <Resource index="Vespene" value="0"/>
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="SpawningPoolStetmann"/>
+        </InfoArray>
+        <InfoArray index="Build19" Unit="T3U5" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="RoachWarrenStetmann" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build20" Unit="T4U5" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="HydraliskStetmann" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build21" Unit="T5U5" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="BroodLordStetmann" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build22" Unit="T6U15" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="CommanderTraitStetmannGary" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build23" Unit="T6U13" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="EvolutionChamberStetmann" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build24" Unit="T6U14" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="UltraliskStetmann" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build25" Unit="T1U4">
+            <Resource index="Vespene" value="0"/>
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Zealot"/>
+        </InfoArray>
+        <InfoArray index="Build26" Unit="T2U4" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="WarpInAdept" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build27" Unit="T3U4" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="Immortal" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build28" Unit="T4U4" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="HighTemplarAiur"/>
+        </InfoArray>
+        <InfoArray index="Build29" Unit="T5U4" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="HighArchon"/>
+        </InfoArray>
+        <InfoArray index="Build30" Unit="T6U10" Time="1">
+            <Charge Link="Abil/TerranBuild2"/>
+            <Cooldown Link="Abil/TerranBuild2"/>
+            <Button DefaultButtonFace="DarkTemplarRecall" Requirements=""/>
+        </InfoArray>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+    </CAbilBuild>
+    <CAbilBuild id="TerranBuild22" parent="TerranBuild">
+        <Name value="Abil/Name/TerranBuild22"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="Build1" Unit="T6U12" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="ZeratulSummonVoidSeeker" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="T6U11" Time="1">
+            <Resource index="Minerals" value="0"/>
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="SuperiorWarpGates"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="T1U7" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="WarpInSupplicant" Requirements=""/>
+            <ValidatorArray index="0" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="T2U7" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Monitor"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="T3U7" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="WarpInPhotonTower" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="T4U7" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="HighTemplarTaldarim" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="T5U7" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="ColossusTaldarim" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="T6U20" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="BloodHunterPassive" Requirements=""/>
+            <ValidatorArray index="0" removed="1"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="T6U19" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="CommanderPrestigeAlarakEmpowerMe" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="T6U21" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="MothershipTaldarim" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="T1U6" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Marine" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="T2U6" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="BuildAutoTurret" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="T3U6" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Goliath" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="T4U6" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Ghost" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="T5U6" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="SiegeTank" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build16" Unit="T6U17" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="HireDuskWing" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build17" Unit="T6U16">
+            <Resource index="Vespene" value="0"/>
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="BlinkNova"/>
+        </InfoArray>
+        <InfoArray index="Build18" Unit="T6U18">
+            <Resource index="Vespene" value="0"/>
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="CommanderTychusLevel01"/>
+        </InfoArray>
+        <InfoArray index="Build19" Unit="T1U1" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Zergling" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build20" Unit="T2U1" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Roach" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build21" Unit="T3U1" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="HydraliskDenImpalerPassive" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build22" Unit="T4U1" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="QueenFly" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build23" Unit="T5U1" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Ultralisk" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build24" Unit="T6U3" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="ZagaraVoidCoopBanelingBarrage" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build25" Unit="T6U1">
+            <Resource index="Vespene" value="0"/>
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="BigLick"/>
+        </InfoArray>
+        <InfoArray index="Build26" Unit="T6U2" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="KerriganLabSnipe" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build27" Unit="T3U4" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="Immortal" Requirements=""/>
+        </InfoArray>
+        <InfoArray index="Build28" Unit="T4U4" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="HighTemplarAiur"/>
+        </InfoArray>
+        <InfoArray index="Build29" Unit="T5U4" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="HighArchon"/>
+        </InfoArray>
+        <InfoArray index="Build30" Unit="T6U10" Time="1">
+            <Charge Link="Abil/TerranBuild22"/>
+            <Cooldown Link="Abil/TerranBuild22"/>
+            <Button DefaultButtonFace="DarkTemplarRecall" Requirements=""/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilEffectInstant id="VoidZealotWhirlwind">
+        <Cost index="0">
+            <Cooldown TimeUse="0"/>
+        </Cost>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectInstant>
+    <CAbilResearch id="Weaponupgrades">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Upgrade="ZergWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeZergWeapons" Requirements="maxzerg"/>
+        </InfoArray>
+        <InfoArray index="Research2" Upgrade="TerranWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeTerranWeapons" Requirements="maxterran"/>
+        </InfoArray>
+        <InfoArray index="Research3" Upgrade="TaldarimWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeTaldarimWeapons" Requirements="maxtal"/>
+        </InfoArray>
+        <InfoArray index="Research4" Upgrade="DominionWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeDominionWeapons" Requirements="maxdom"/>
+        </InfoArray>
+        <InfoArray index="Research5" Upgrade="MechaWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeMechaWeapons" Requirements="maxmech"/>
+        </InfoArray>
+        <InfoArray index="Research6" Upgrade="ProtossWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeProtossWeapons" Requirements="maxprotoss"/>
+        </InfoArray>
+        <InfoArray index="Research7" Upgrade="CritterWea">
+            <Resource index="Minerals" value="200"/>
+            <Button DefaultButtonFace="UpgradeCritterWeapons" Requirements="maxcrit"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilBuild id="ZergBuild">
+        <InfoArray index="Build13" Unit="Pylon" Time="3">
+            <Resource index="Minerals" value="-50"/>
+            <Button DefaultButtonFace="Pylon"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilInventory id="inventory">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="999"/>
+        <MaxDropRange value="30"/>
+        <InfoArray Container="Bags" EmptyFace="Equiptment">
+            <Classes value="UnknownItemClass"/>
+        </InfoArray>
+        <TargetFilters value="-;Enemy"/>
+    </CAbilInventory>
+</Catalog>

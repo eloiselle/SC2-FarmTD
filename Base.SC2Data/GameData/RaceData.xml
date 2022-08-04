@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="InfT">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+    <CRace id="PZrg">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+    <CRace id="ProZ">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+    <CRace id="TerH">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+    <CRace id="TerM">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+    <CRace id="TerT">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+    <CRace id="ZerM">
+        <Flags index="Selectable" value="0"/>
+    </CRace>
+</Catalog>

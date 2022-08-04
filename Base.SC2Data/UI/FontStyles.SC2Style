@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+    <Style  name=""                 - string identifier
+            font=""                 - file name (preferably a constant)
+            height=""               - integer [1, 200]
+            vjustify=""             - "Top","Middle","Bottom"
+            hjustify=""             - "Left","Center","Right"
+            styleflags=""           - Shadow|Glow|InlineJustification|Uppercase|TightGradient
+                                    |Outline|Bold|Italic
+                                    |HintingOff|HintingNative|HintingAuto
+                                    |HintStyleNormal|HintStyleLight|HintStyleLCD|HintStyleLCDVertical
+                                    (note that you cancel/negate a flag set by a previous
+                                    template by prepending ! to it)
+            textcolor=""            - Gradient Color
+            disabledcolor=""        - Gradient Color
+            highlightcolor=""       - Gradient Color
+            hotkeycolor=""          - Gradient Color
+            hyperlinkcolor=""       - Gradient Color
+            glowcolor=""            - Color
+            glowMode=""             - "Add","Normal"
+            highlightglowcolor=""   - Color
+            disabledglowcolor=""    - Color
+            shadowoffset=""         - integer value [-128, 127]
+            outlinewidth=""         - integer value [0,height]
+            outlinecolor=""         - Color
+            lineSpacing=""          - decimal multiplier [1.0, 4.0]
+            characterSpacing=""     - integer addition [0, 255]
+            />
+-->
+<StyleFile>
+    <!--
+        NOTE
+        Remember, you are free to add, delete, modify, and do whatever you want
+        in this file. But you can not use the Font Style editor in sc2edit after
+        you create this file.
+        After you are done modifying this file, simply:
+        1. Tab back to sc2edit
+        2. Hit c-F9 to run the map, or
+        2. Use the reload UI hotkey in an already open editor test run
+        (XXX: I am not sure if reload-UI works for font styles)
+        (XXX: I am not sure if running Compile in sc2edit catches any errors you made while writing manually in the SC2Style)
+        (XXX: The above might not be true - it might be that you can still edit styles from the Text Module.
+            I've not actually tried, and it seems unable to display custom fonts. Someone investigate.
+            I'm not sure what or how it would overwrite comments or arrange the XML if one would edit from sc2edit.)
+
+        From now on, you _must_ edit font styles by hand, directly in this file.
+        You can use the Text Module (F8) in sc2edit (though it is entirely 100% useless,
+        and actually serves _no_ purpose), but you can not use the Font Styles tab.
+    -->
+
+    <!--
+        Change these to whatever fonts you want to use
+        Put the fonts in a root Fonts folder in your map, or in Assets/Fonts, whatever you want.
+        For now, they need to point to existing fonts so that the map doesn't break,
+        Fonts can be used as both OTF and TTF formats.
+    -->
+    <Constant name="MyHeaderFont" val="UI\Fonts\Eurostile-Bol.otf"/>
+    <Constant name="MyStandardFont" val="UI\Fonts\Eurostile-Reg.otf"/>
+    <Constant name="Weird" val="UI\Fonts\Eurostile-Reg.otf"/>
+
+    <FontGroup name="MyWeirdFontGroup">
+        <CodepointRange font="#BlizzardGlobal"/>
+        <CodepointRange font="#Weird"/>
+    </FontGroup>
+    <FontGroup name="MyHeader">
+        <CodepointRange font="#BlizzardGlobal"/>
+        <CodepointRange font="UI\Fonts\Eurostile-Bol.otf"/>
+        <CodepointRange font="#MyHeaderFont"/>
+    </FontGroup>
+    <FontGroup name="MyStandard">
+        <CodepointRange font="#BlizzardGlobal"/>
+        <CodepointRange font="UI\Fonts\Eurostile-Reg.otf"/>
+        <CodepointRange font="#MyStandardFont"/>
+    </FontGroup>
+
+    <!-- This constant is new, it does not overwrite any base SC2 fonts. -->
+    <Constant name="FontWeird" val="MyWeirdFontGroup"/>
+
+    <!--
+        These constants are defined in SC2, and we _override_ them here.
+        This means that the ENTIRE interface in SC2 will use our fonts.
+        And it works with koKR/zhTW and all weird kinds of languages, because
+        we fall back gracefully through the `FontGroup` magic above.
+    -->
+    <Constant name="FontHeader" val="MyHeader"/>
+    <Constant name="FontHeaderExtended" val="MyHeader"/>
+    <Constant name="FontStandard" val="MyStandard"/>
+    <Constant name="FontStandardExtended" val="MyStandard"/>
+    <Constant name="FontInternational" val="MyStandard"/>
+
+    <!-- Font colors -->
+    <!-- Remember that all color values can be ARGB as well. -->
+    <Constant name="MyColorAqua" val="80ffff"/>
+    <Constant name="MyColorMatteSky" val="00baff"/>
+    <Constant name="MyColorLightYellow" val="ffff80"/>
+
+    <!-- When you define gradients, you sadly can not use constants. -->
+    <Constant name="GradientChat" val="80ffff-afafaf"/>
+    <Constant name="GradientHighlight" val="ffffff-00ffff"/>
+
+    <!--
+        These styles are new to our map, they serve no purpose here except
+        to show the multiple levels of inheritance that is possible in Style
+        elements further below.
+        Note how we use #ColorWhite here, which is
+    -->
+    <Style name="OptionLabel" font="#FontStandard" height="16" styleflags="Shadow" textcolor="#MyColorAqua" hotkeycolor="#ColorWhite" shadowoffset="1"/>
+    <Style name="OptionCheckboxTitle" font="#FontHeader" height="16" vjustify="Middle" hjustify="Left" styleflags="Shadow" textcolor="#MyColorMatteSky" highlightcolor="#GradientHighlight" disabledcolor="#ColorGray6" shadowoffset="2"/>
+
+    <Constant name="MyDialogText" val="#MyColorAqua"/>
+    <Constant name="MyDialogHighlight" val="#MyColorLightYellow"/>
+
+    <!-- Override such that all races use the same color for tooltips -->
+    <Constant name="ColorProtossTooltip" val="#MyDialogText"/>
+    <Constant name="ColorTerranTooltip" val="#MyDialogText"/>
+    <Constant name="ColorZergTooltip" val="#MyDialogText"/>
+
+    <!-- These styles are new, we can use them in our layout XML directly -->
+    <Style name="MyTooltipTitle" template="OptionCheckboxTitle" height="20" hotkeycolor="#ColorWhite"/>
+    <Style name="MyTooltipInfo" template="OptionLabel" textcolor="#MyDialogHighlight" hotkeycolor="#ColorWhite"/>
+    <Style name="MyTooltipText" template="OptionLabel" styleflags="InlineJustification" hotkeycolor="#ColorWhite"/>
+
+    <!--
+        TOOLTIP OVERRIDES
+        Here, we are overriding the base game Font Styles used for
+        all tooltips by applying our own templates on top of them.
+        This means that, although we already overwrite all _fonts_
+        above by simply changing the Font* constants, we can also
+        apply entirely new templates to all existing styles used by
+        the base game.
+    -->
+    <Style name="StandardTooltip" template="MyTooltipText"/>
+    <Style name="StandardTooltip_Prot" template="MyTooltipText"/>
+    <Style name="StandardTooltip_Terr" template="MyTooltipText"/>
+    <Style name="StandardTooltip_Zerg" template="MyTooltipText"/>
+    <Style name="StandardTooltip_SwarmKerriganAbility" template="MyTooltipText"/>
+    <Style name="StoryModeTooltip" template="MyTooltipText"/>
+
+    <Style name="CommandTooltipRequirements" template="MyTooltipText"/>
+    <Style name="CommandTooltipRequirements_Terr" template="MyTooltipText"/>
+    <Style name="CommandTooltipRequirements_Prot" template="MyTooltipText"/>
+    <Style name="CommandTooltipRequirements_Zerg" template="MyTooltipText"/>
+
+    <Style name="StandardTooltipHeader" template="MyTooltipTitle"/>
+    <Style name="StandardTooltipHeader_Prot" template="MyTooltipTitle"/>
+    <Style name="StandardTooltipHeader_Terr" template="MyTooltipTitle"/>
+    <Style name="StandardTooltipHeader_Zerg" template="MyTooltipTitle"/>
+    <Style name="StandardTooltipHeader_White" template="MyTooltipTitle"/>
+    <Style name="StandardTooltipHeader_SwarmKerriganAbility" template="MyTooltipTitle"/>
+
+    <Style name="CommandTooltipAutocast" template="MyTooltipInfo"/>
+    <Style name="CommandTooltipInventory" template="MyTooltipInfo"/>
+
+    <Style name="GlueButton" template="MyTooltipTitle" height="22" hjustify="Center"/>
+</StyleFile>

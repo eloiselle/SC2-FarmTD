@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="Execute">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-dashrange&amp;cdr.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="BestFriends">
+        <Icon value="Assets\Textures\btn-ability-stetmann-garyattackandregen.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="ArmorPenetratingRounds">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-tychus-ripperrounds.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="FarmingMissions">
+        <Icon value="Assets\Textures\btn-tips-sellzergbiosamples.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="FarmingMissions2">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-dualqueue.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="FarmingMissions22">
+        <Icon value="Assets\Textures\btn-upgrade-swann-improvedturretattackspeed.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="FarmingMissions222">
+        <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission01">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission02">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission03">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission04">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission05">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission06">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission07">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission08">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission09">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission10">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission11">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission12">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission13">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission14">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission15">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission16">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission17">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission18">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission19">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission20">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission21">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission22">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission23">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission24">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission25">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mission26">
+        <Icon value="Assets\Textures\btn-tips-missioncase.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="MissionList1">
+        <Icon value="Assets\Textures\btn-tips-battlereport.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="MissionList12">
+        <Icon value="Assets\Textures\btn-ability-nova-domination.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="MissionList122">
+        <Icon value="Assets\Textures\btn-ability-nova-domination.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="PlantMastery">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-levelup.dds"/>
+        <SimpleDisplayText value="Button/Tooltip/PlantMastery"/>
+    </CButton>
+    <CButton id="RollanotherArtifact2">
+        <Tooltip value="re"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+        <AlertTooltip value="re"/>
+        <HotkeyAlias value="RollanotherArtifact"/>
+        <SimpleDisplayText value="re2"/>
+    </CButton>
+    <CButton id="Sell2">
+        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+        <HotkeyAlias value="Sell"/>
+    </CButton>
+    <CButton id="Sell22">
+        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+        <HotkeyAlias value="Sell"/>
+    </CButton>
+    <CButton id="Sell222">
+        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+        <HotkeyAlias value="Sell"/>
+    </CButton>
+    <CButton id="Sell2222">
+        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+        <HotkeyAlias value="Sell"/>
+    </CButton>
+    <CButton id="Sell22222">
+        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+        <HotkeyAlias value="Sell"/>
+    </CButton>
+    <CButton id="StatisWard">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="PsionicDomination">
+        <Icon value="Assets\Textures\btn-upgrade-nova-shotgun.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="MoreRockets">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-bansheemissilestrik.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="MindTermination">
+        <Icon value="Assets\Textures\btn-ability-protoss-thermallance.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="TerazineTestSubjects">
+        <Icon value="Assets\Textures\btn-progression-stetmann-09-dualqueue.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="ElectromagticSurge">
+        <Icon value="Assets\Textures\btn-ability-stetmann-ultraliskrespawn.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="UnknownButton">
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-infestedcolonist.dds"/>
+    </CButton>
+    <CButton id="UnknownButton2">
+        <Icon value="Assets\Textures\btn-tips-research.dds"/>
+    </CButton>
+    <CButton id="RollanotherArtifact">
+        <Tooltip value="re"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-repairbeamcloak.dds"/>
+        <AlertTooltip value="re"/>
+        <SimpleDisplayText value="re"/>
+    </CButton>
+    <CButton id="WarpHarmonization">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="SlowSpines">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level2.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="FIRETHEDAMNWARHEADNOW">
+        <Icon value="Assets\Textures\btn-progression-hornerhan-14-nukefortelefrag.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="PowerBeak">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-mutalisk-shiftingcarapace.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="AngiStomp">
+        <Icon value="Assets\Textures\btn-ability-neutral-ursadonleap.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="ShadowFury">
+        <Icon value="Assets\Textures\btn-ability-nova-furyofone.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="ToxicTyrant">
+        <Icon value="Assets\Textures\btn-ability-mengsk-topbar-contaminatedstrike.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="PsionicSlash">
+        <Icon value="Assets\Textures\btn-ability-kerrigan-abilityefficiency.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="EssenceExtraction">
+        <Icon value="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Siegetank">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-siegetankrange.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="PsionicWill">
+        <Tooltip value="Button/Tooltip/AcidicGlads2"/>
+        <Icon value="Assets\Textures\btn-ability-zeratul-chargedcrystal-psionicwinds.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Feedback2">
+        <Icon value="Assets\Textures\btn-ability-protoss-feedbackaoe-color.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Equiptment">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-zerglinghardenedshield.dds"/>
+    </CButton>
+    <CButton id="DistractingPropaganda">
+        <Icon value="Assets\Textures\btn-ability-mengsk-blimp-propagandamode.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="AcidicGlads">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-hydriaticacid.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Mechamissile">
+        <Icon value="Assets\Textures\btn-ability-stetmann-hydraliskmissilepoweron.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item11">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-corrosiveacid.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item12">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-khaydarinamulet.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item13">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechahydraliskmissilerange.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item14">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item15">
+        <Icon value="Assets\Textures\btn-ability-terran-ignorearmor.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item16">
+        <Icon value="Assets\Textures\btn-ability-mengsk-marauder-royalstimpack.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item17">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-bileducts.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="OvermindTactics">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Multishot3">
+        <Icon value="Assets\Textures\btn-ability-zerg-stabburst.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item2">
+        <Icon value="Assets\Textures\btn-ability-mengsk-blimp-propagandamode.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item3">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-enduringcorruption.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item4">
+        <Icon value="Assets\Textures\abilityicon_psionicshadow_square.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item5">
+        <Icon value="Assets\Textures\btn-upgrade-terran-jumpjets.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item6">
+        <Icon value="Assets\Textures\btn-upgrade-tychus-warhound-fearrounds.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item7">
+        <Icon value="Assets\Textures\btn-upgrade-terran-highground.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item8">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-combatmastery.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item9">
+        <Icon value="Assets\Textures\btn-building-zerg-hive.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Item10">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-shieldovercharge.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Merge">
+        <Icon value="Assets\Textures\btn-ability-protoss-doubleshieldrecharge.dds"/>
+    </CButton>
+    <CButton id="Multishot4">
+        <Icon value="Assets\Textures\btn-ability-zerg-stabburst.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Multishot5">
+        <Icon value="Assets\Textures\btn-ability-zerg-stabburst.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Multishot6">
+        <Icon value="Assets\Textures\btn-ability-zerg-stabburst.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Headshot">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="MechaBroodlings">
+        <Icon value="Assets\Textures\talent-zagara-level08-incubatebroodlings.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Smartservos">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Unstableblast">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendant&apos;spsiorbtravelsfurther.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="TowerAbilty1">
+        <Icon value="Assets\Textures\btn-ability-mengsk-marauder-superconcussiveshells.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="PlantCarrot">
+        <Icon value="Carrot.tga"/>
+        <AlertTooltip value="Button/Tooltip/PlantCarrot2"/>
+        <AlertIcon value="Carrot.tga"/>
+    </CButton>
+    <CButton id="PlantPumpkin">
+        <Icon value="Pumpkin.tga"/>
+        <HotkeyAlias value="PlantCarrot"/>
+        <AlertTooltip value="Button/Tooltip/PlantPumpkind"/>
+        <AlertIcon value="Pumpkin.tga"/>
+    </CButton>
+    <CButton id="PlantPear">
+        <Icon value="Pear.tga"/>
+        <HotkeyAlias value="PlantCarrot"/>
+        <AlertTooltip value="Button/Tooltip/PlantPear2"/>
+        <AlertIcon value="Pear.tga"/>
+    </CButton>
+    <CButton id="Item1">
+        <Icon value="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="Sell">
+        <Icon value="Assets\Textures\btn-ability-protoss-entomb.dds"/>
+    </CButton>
+    <CButton id="Summonsecoundboss">
+        <Icon value="Assets\Textures\btn-unit-terran-taurenspacemarine.dds"/>
+        <HotkeyAlias value="Summonfirstboss"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-taurenspacemarine.dds"/>
+    </CButton>
+    <CButton id="SummonThirdboss">
+        <Icon value="Assets\Textures\btn-unit-protoss-carrier-selendis.dds"/>
+        <HotkeyAlias value="Summonfirstboss"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-carrier-selendis.dds"/>
+    </CButton>
+    <CButton id="TerranBuild"/>
+    <CButton id="TerranBuildAdvanced">
+        <AlertTooltip value="Button/Name/TerranBuildAdvanced"/>
+    </CButton>
+    <CButton id="Summonfirstboss">
+        <Icon value="Assets\Textures\btn-unit-zerg-brutaliskunlocked.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-brutaliskunlocked.dds"/>
+    </CButton>
+    <CButton id="BuyArtifactItem">
+        <Icon value="Assets\Textures\btn-ability-zeratul-photoncannon-shadebarrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zeratul-photoncannon-shadebarrier.dds"/>
+    </CButton>
+    <CButton id="OptimizedOrdnance">
+        <Icon value="Assets\Textures\btn-upgrade-karax-turretattackspeed.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="FreshCreep">
+        <Icon value="Assets\Textures\btn-ability-kerrigan-malignantcreep.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="BigLick">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-metabolicboost.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="VoidPrisonCannons">
+        <Icon value="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds"/>
+        <HotkeyAlias value="PlantCarrot"/>
+    </CButton>
+    <CButton id="sellC">
+        <TooltipImage value="Carrot.tga"/>
+        <Icon value="Carrot.tga"/>
+    </CButton>
+    <CButton id="UpgradeCritterWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <HotkeyAlias value="UpgradeZergWeapons"/>
+    </CButton>
+    <CButton id="UpgradeDominionWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <HotkeyAlias value="UpgradeZergWeapons"/>
+    </CButton>
+    <CButton id="UpgradeTerranWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <HotkeyAlias value="UpgradeZergWeapons"/>
+    </CButton>
+    <CButton id="UpgradeProtossWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <HotkeyAlias value="UpgradeZergWeapons"/>
+    </CButton>
+    <CButton id="UpgradeMechaWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <HotkeyAlias value="UpgradeZergWeapons"/>
+    </CButton>
+    <CButton id="UpgradeZergWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+    </CButton>
+    <CButton id="UpgradeTaldarimWeapons">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <HotkeyAlias value="UpgradeZergWeapons"/>
+    </CButton>
+    <CButton id="sellpear">
+        <TooltipImage value="Pear.tga"/>
+        <Icon value="Pear.tga"/>
+        <HotkeyAlias value="sellC"/>
+    </CButton>
+    <CButton id="sellpumpkin">
+        <TooltipImage value="Pumpkin.tga"/>
+        <Icon value="Pumpkin.tga"/>
+        <HotkeyAlias value="sellC"/>
+    </CButton>
+</Catalog>

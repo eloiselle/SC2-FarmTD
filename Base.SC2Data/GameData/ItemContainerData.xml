@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CItemContainer id="Bags">
+        <Slots>
+            <EmptyFace value="Equiptment"/>
+            <Equip value="1"/>
+            <Row value="0"/>
+            <Column value="0"/>
+            <Classes value="UnknownItemClass"/>
+        </Slots>
+    </CItemContainer>
+</Catalog>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementConst id="21">
+        <Value value="21"/>
+    </CRequirementConst>
+    <CRequirementAnd id="And"/>
+    <CRequirementCountUpgrade id="CountUpgradeCreepTumorHiddenCompleteOnly"/>
+    <CRequirementCountUpgrade id="CountUpgradeCritterWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="CritterWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeDominionWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DominionWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeMechaWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MechaWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeProtossWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ProtossWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTaldarimWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TaldarimWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TerranWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeZergWeaCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ZergWea" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeadminCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="admin" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="EqCountUpgradeadminCompleteOnly1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeadminCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementLT id="LTCountUpgradeCritterWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeCritterWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeDominionWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeDominionWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeMechaWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeMechaWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeProtossWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeProtossWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeTaldarimWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeTaldarimWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeTerranWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeTerranWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeZergWeaCompleteOnly20">
+        <OperandArray index="0" value="CountUpgradeZergWeaCompleteOnly"/>
+        <OperandArray index="1" value="20"/>
+    </CRequirementLT>
+</Catalog>

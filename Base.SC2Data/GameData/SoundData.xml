@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="Adept_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Archon_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Ascendant_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Ascendant_What">
+        <Volume value="-4.930000,-4.930000"/>
+    </CSound>
+    <CSound id="BroodLord_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="ColossusTaldarim_Missile_AttackLaunch">
+        <AssetArray index="0" Volume="-13.670000,-13.670000"/>
+        <AssetArray index="1" Volume="-10.760000,-10.760000"/>
+        <AssetArray index="2" Volume="-9.300000,-9.300000"/>
+        <AssetArray index="3" Volume="-10.760000,-10.760000"/>
+        <AssetArray index="4" Volume="-10.030000,-10.030000"/>
+        <Volume value="-4.470000,-3.470000"/>
+    </CSound>
+    <CSound id="Evolutions_KarakCall_Vox">
+        <AssetArray index="0" removed="1"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+    </CSound>
+    <CSound id="GhostAlternate_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Ghost_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Goliath_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Havoc_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="HighTemplarVoid_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Hybrid_What">
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+    </CSound>
+    <CSound id="Hydralisk_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Immortal_What">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Karak_What">
+        <AssetArray index="0" removed="1"/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <Volume value="-4.000000,6.000000"/>
+    </CSound>
+    <CSound id="Karak_What2" parent="Karak_What">
+        <AssetArray>
+            <TemplateParam value=""/>
+            <File value="Assets\Sounds\Uni\Units\Karak\Karak_What0.ogg"/>
+            <LoopCount value="0"/>
+            <LoopTime value="0,0"/>
+            <Offset value="0,0"/>
+            <Pitch value="0.000000,0.000000"/>
+            <Volume value="0.000000,0.000000"/>
+            <Weight value="100"/>
+            <FacialAnim value=""/>
+            <FacialGroup value="Default"/>
+            <PortraitAnim value=""/>
+            <FacialFile value=""/>
+            <PortraitModel value=""/>
+            <PortraitActor value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+        </AssetArray>
+        <AssetArray>
+            <TemplateParam value=""/>
+            <File value="Assets\Sounds\Uni\Units\Karak\Karak_What1.ogg"/>
+            <LoopCount value="0"/>
+            <LoopTime value="0,0"/>
+            <Offset value="0,0"/>
+            <Pitch value="0.000000,0.000000"/>
+            <Volume value="0.000000,0.000000"/>
+            <Weight value="100"/>
+            <FacialAnim value=""/>
+            <FacialGroup value="Default"/>
+            <PortraitAnim value=""/>
+            <FacialFile value=""/>
+            <PortraitModel value=""/>
+            <PortraitActor value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+        </AssetArray>
+        <AssetArray>
+            <TemplateParam value=""/>
+            <File value="Assets\Sounds\Uni\Units\Karak\Karak_What2.ogg"/>
+            <LoopCount value="0"/>
+            <LoopTime value="0,0"/>
+            <Offset value="0,0"/>
+            <Pitch value="0.000000,0.000000"/>
+            <Volume value="0.000000,0.000000"/>
+            <Weight value="100"/>
+            <FacialAnim value=""/>
+            <FacialGroup value="Default"/>
+            <PortraitAnim value=""/>
+            <FacialFile value=""/>
+            <PortraitModel value=""/>
+            <PortraitActor value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+        </AssetArray>
+    </CSound>
+    <CSound id="Lyote_What">
+        <Volume value="-13.299999,-9.300000"/>
+    </CSound>
+    <CSound id="Marauder_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Marauder_What">
+        <Volume value="-4.200000,-4.200000"/>
+    </CSound>
+    <CSound id="Mengsk_Raven_What">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="PhotonCannon_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="QueenReady">
+        <Volume value="-66.129997,-66.129997"/>
+    </CSound>
+    <CSound id="Ravager_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Raven_AutoTurretReady">
+        <Volume value="4.540000,4.540000"/>
+    </CSound>
+    <CSound id="Reaper_AttackLaunch">
+        <AssetArray index="0" File="pew.mp3" Volume="6.000000,6.000000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <Pitch value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="Roach_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Scantipede_attack">
+        <Volume value="-1.100000,0.900000"/>
+    </CSound>
+    <CSound id="Sheep2_What">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="SiegeTank_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="SpawningPool_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="T2U1dd" parent="Ready">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Roach\Roach_Ready0.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Roach\Roach_Ready1.ogg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Roach\Roach_Ready2.ogg"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Sentry_GuardianShieldLaunch">
+        <AssetArray index="0" File="Assets\Sounds\Oracle_PulsarBeamModeOff1b.wav"/>
+    </CSound>
+    <CSound id="Tastelope_Fidget">
+        <Volume value="2.000000,6.000000"/>
+    </CSound>
+    <CSound id="Ultralisk_Ready">
+        <Volume value="3.000000,6.000000"/>
+    </CSound>
+    <CSound id="UnknownSound2">
+        <AssetArray File="pew.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="Ursadon_What">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="Wrathwalker_Ready">
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="ZealotAlarak_What">
+        <Volume value="-0.560000,-0.560000"/>
+    </CSound>
+</Catalog>

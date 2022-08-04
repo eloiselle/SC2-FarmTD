@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="AcidSalivaU">
+        <Amount value="42"/>
+    </CEffectDamage>
+    <CEffectDamage id="AcidSpines">
+        <Amount value="145"/>
+    </CEffectDamage>
+    <CEffectDamage id="AdeptDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="AlarakBaneBladesDamage">
+        <!--AreaArray>
+            <Arc value="180"/>
+            <Radius value="2"/>
+            <Fraction value="1"/>
+            <Validator value="HaveAlarakEmpoweredCasterAndHaveAlarakAreaDamageUpgrade"/>
+        </AreaArray>
+        <ExcludeArray Effect="AlarakBaneBladesDamage" Value="Target"/-->
+        <Amount value="1734"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="AlarakBaneBladesLM">
+        <PlaceholderUnit value=""/>
+        <PlacementRange value="0"/>
+        <Movers index="0" removed="1"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="AlarakBaneBladesSet">
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="ArchAngelCoopShootDamage">
+        <Amount value="210"/>
+    </CEffectDamage>
+    <CEffectDamage id="AscendantWeaponDamage">
+        <Amount value="288"/>
+    </CEffectDamage>
+    <CEffectDamage id="AutoTurret">
+        <Amount value="52"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="BacklashRockets">
+        <PeriodicPeriodArray index="0" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="BacklashRocketsU">
+        <Amount value="801"/>
+    </CEffectDamage>
+    <CEffectDamage id="BroodlingEscortDamage">
+        <Amount value="650"/>
+    </CEffectDamage>
+    <CEffectDamage id="BroodlingEscortDamageStetmann">
+        <Amount value="325"/>
+    </CEffectDamage>
+    <CEffectDamage id="BroodlingNeedleClawsStetmann">
+        <Amount value="200"/>
+    </CEffectDamage>
+    <CEffectDamage id="C10CanisterRifle">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="370"/>
+    </CEffectDamage>
+    <CEffectDamage id="C10CanisterRifleMengsk">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="790"/>
+    </CEffectDamage>
+    <CEffectDamage id="Claws">
+        <Amount value="9"/>
+    </CEffectDamage>
+    <CEffectDamage id="ColossusTaldarimDamage">
+        <AttributeBonus index="Structure" value="0"/>
+        <Amount value="1240"/>
+    </CEffectDamage>
+    <CEffectDamage id="CrucioShockCannonBlast">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="700"/>
+        <AreaArray index="0" removed="1"/>
+        <AreaArray index="1" removed="1"/>
+        <AreaArray index="2" removed="1"/>
+        <ExcludeArray index="0" removed="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="CrucioShockCannonDirected">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="700"/>
+    </CEffectDamage>
+    <CEffectDamage id="CrucioShockCannonDummy">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="700"/>
+    </CEffectDamage>
+    <CEffectDamage id="DarkTemplarChampionDamage">
+        <Amount value="2005"/>
+    </CEffectDamage>
+    <CEffectSet id="DarkTemplarChampionSet">
+        <EffectArray index="1" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="DragoonDamage">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="1905"/>
+    </CEffectDamage>
+    <CEffectDamage id="DuskWingBansheeDamage">
+        <Amount value="673"/>
+    </CEffectDamage>
+    <CEffectSet id="DuskWingScreecherMissilesSet">
+        <EffectArray index="1" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="NovaWeaponHellfireShotgunBlastDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="450"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="PoisonGasCloudAB"/>
+    <CEffectEnumArea id="PoisonGasCloudSearch">
+        <SearchFilters value="Visible,Summoned;Self,Structure,Missile,Invulnerable"/>
+        <AreaArray index="0" Radius="5"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="PsiStormDamage">
+        <Amount value="125"/>
+    </CEffectDamage>
+    <CEffectDamage id="PsiStormDamageInitial">
+        <Amount value="125"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PsiStormPersistent">
+        <PeriodicPeriodArray index="0" value="0.25"/>
+        <PeriodCount value="12"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SOAMothershipLineAttackDamage">
+        <Amount value="300"/>
+    </CEffectDamage>
+    <CEffectDamage id="Wrath" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="FeedbackEnergyLoss">
+        <VitalArray index="Energy">
+            <ChangeFraction value="0"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectDamage id="GaryStetmannDamage">
+        <Amount value="2520"/>
+    </CEffectDamage>
+    <CEffectDamage id="GoliathG">
+        <Amount value="175"/>
+    </CEffectDamage>
+    <CEffectDamage id="GuassRifle">
+        <Amount value="21"/>
+    </CEffectDamage>
+    <CEffectDamage id="HHLaserBatteryU">
+        <Amount value="2751"/>
+    </CEffectDamage>
+    <CEffectDamage id="HighTemplarWeaponDamage">
+        <Amount value="315"/>
+    </CEffectDamage>
+    <CEffectSet id="HotSRaptorClaws">
+        <EffectArray index="0" value="HotSRaptorClawsDamage"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="HotSRaptorClawsDamage">
+        <Amount value="650"/>
+    </CEffectDamage>
+    <CEffectSet id="HotSUltraliskKaiserBlades">
+        <EffectArray index="0" value="HotSUltraliskKaiserBladesDamage"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="HotSUltraliskKaiserBladesDamage">
+        <Amount value="910"/>
+    </CEffectDamage>
+    <CEffectDamage id="HunterKillerU">
+        <Amount value="1655"/>
+    </CEffectDamage>
+    <CEffectDamage id="HydraliskNeedleSpinesStetmannDamage">
+        <Amount value="115"/>
+    </CEffectDamage>
+    <CEffectDamage id="HydraliskNeedleSpinesStetmannDamage2" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectDamage id="EshadowCopy" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectSet id="ImmortalSplashSet">
+        <EffectArray index="1" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="KerriganInfestBroodling">
+        <Amount value="46"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="Lavacrabmultishot" parent="EA_WEAP">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Invulnerable"/>
+        <AreaArray MaxCount="2" Radius="6" Effect="Spines"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="LightningBombDamage">
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectDamage id="LongboltMissileU">
+        <Amount value="27.5"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="Lyotemultishot" parent="EA_WEAP">
+        <EditorCategories value=""/>
+        <AreaArray MaxCount="4" Radius="6" Effect="Swarmling"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="MutatorTurkeyPeckDamage">
+        <AttributeBonus index="Structure" value="0"/>
+        <Amount value="1861"/>
+    </CEffectDamage>
+    <CEffectDamage id="NeedleClaws">
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="NeedleSpinesDamage">
+        <Amount value="76"/>
+    </CEffectDamage>
+    <CEffectDamage id="NovaWeaponImprovedCanisterRifleCloaked">
+        <Amount value="1971"/>
+    </CEffectDamage>
+    <CEffectDamage id="NovaWeaponImprovedCanisterRifleUncloaked">
+        <Amount value="1971"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamage">
+        <AttributeBonus index="Structure" value="0"/>
+        <Amount value="900"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamageLeft">
+        <AttributeBonus index="Structure" value="0"/>
+        <Amount value="900"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamageRight">
+        <AttributeBonus index="Structure" value="0"/>
+        <Amount value="900"/>
+    </CEffectDamage>
+    <CEffectDamage id="PhaseDisruptors">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="230"/>
+    </CEffectDamage>
+    <CEffectDamage id="PhotonCannonU">
+        <Amount value="65"/>
+    </CEffectDamage>
+    <CEffectDamage id="PrimalBaseWeaponDamage">
+        <Amount value="60"/>
+    </CEffectDamage>
+    <CEffectDamage id="PrimalZergling">
+        <Amount value="1406"/>
+    </CEffectDamage>
+    <CEffectDamage id="PsiBlades">
+        <ValidatorArray index="1" removed="1"/>
+        <Amount value="38"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="PsiBladesBurst">
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray index="0" value="PsiBlades"/>
+        <PeriodicPeriodArray index="1" removed="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="PsionicShockwaveDamage">
+        <AttributeBonus index="Biological" value="0"/>
+        <Amount value="370"/>
+        <AreaArray index="0" removed="1"/>
+        <AreaArray index="1" removed="1"/>
+        <AreaArray index="2" removed="1"/>
+        <ExcludeArray index="0" removed="1"/>
+        <ExcludeArray index="1" removed="1"/>
+    </CEffectDamage>
+    <CEffectSet id="PunisherGrenadesMengskSet">
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="PunisherGrenadesMengskU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="220"/>
+    </CEffectDamage>
+    <CEffectDamage id="RavagerStetmannDamage">
+        <Amount value="170"/>
+    </CEffectDamage>
+    <CEffectDamage id="RazorTalonsDamage">
+        <Amount value="630"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="RazorTalonsPersistent">
+        <PeriodCount value="1"/>
+        <PeriodicPeriodArray index="1" removed="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="RoachlingNeedleClawsDamage">
+        <ArmorReduction value="0"/>
+        <Amount value="200"/>
+    </CEffectDamage>
+    <CEffectDamage id="SOAMothershipv4BeamDamage">
+        <Amount value="345"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="ScantipedeParasiticCU">
+        <SpawnEffect value=""/>
+        <SpawnUnit index="0" removed="1"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="ScantipedeParasiticSmallDamage">
+        <Amount value="650"/>
+    </CEffectDamage>
+    <CEffectSet id="ScantipedeParasiticSmallSet">
+        <EffectArray index="0" value="ScantipedeParasiticSmallDamage"/>
+        <EffectArray index="1" removed="1"/>
+    </CEffectSet>
+    <CEffectDamage id="Spines">
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectDamage id="SupplicantDamage">
+        <Amount value="20.5"/>
+    </CEffectDamage>
+    <CEffectDamage id="Swarmling">
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="TrooperMengskDamage">
+        <Amount value="19"/>
+    </CEffectDamage>
+    <CEffectDamage id="TychusCoopChaingunDamage">
+        <Amount value="275"/>
+    </CEffectDamage>
+    <CEffectDamage id="UltraliskKaiserBladesDamageStetmann">
+        <Amount value="1456"/>
+    </CEffectDamage>
+    <CEffectDamage id="VoidSeekerU">
+        <Amount value="2206"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarpBlades">
+        <Amount value="1034"/>
+    </CEffectDamage>
+    <CEffectDamage id="mechaultra" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectDamage id="YetiMatriarchClaws">
+        <Amount value="1067"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZagaraVoidCoopRangedDamage">
+        <Amount value="1886"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZeratulDisruptionBeamDamage">
+        <Amount value="17.5"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZerglingClawsDamageStetmann">
+        <Amount value="23"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZerglingMengskAttackDamage">
+        <Amount value="80"/>
+    </CEffectDamage>
+    <CEffectDamage id="voidseeker" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectDamage id="ursadon" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="sheepmultishot" parent="EA_WEAP">
+        <EditorCategories value=""/>
+        <AreaArray MaxCount="5" Radius="6" Effect="NeedleClaws"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="Karakmultishot" parent="EA_WEAP">
+        <EditorCategories value=""/>
+        <AreaArray MaxCount="6" Radius="6" Effect="KerriganInfestBroodling"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="TrooperMengskDamage2" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectDamage id="ZerglingClawsDamageStetmann2" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="23"/>
+    </CEffectDamage>
+    <CEffectDamage id="nuke" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectDamage id="Carbot" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+</Catalog>

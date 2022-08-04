@@ -1,0 +1,1371 @@
+﻿Abil/Name/TerranBuild2=Build (SCV) Copy
+Abil/Name/TerranBuild22=Build (SCV) Copy Copy
+Abil/Name/Weaponupgrades=Weapon upgrades
+Abil/Name/inventory=inventory
+Behavior/Name/1=<c val="00FF40">Easy</c>
+Behavior/Name/2=<c val="A5FA05">Normal</c>
+Behavior/Name/3=<c val="F8DA07">Hard</c>
+Behavior/Name/4=<c val="F5920A">Hell</c>
+Behavior/Name/5=<c val="F83707">Brutal</c>
+Behavior/Name/6=<c val="BA2905">Nightmare</c>
+Behavior/Name/7=<c val="631603">Death</c>
+Behavior/Name/72=rwar
+Behavior/Name/8=<c val="160501">Bye</c>
+Behavior/Name/AcidicRediance=Acidic Rediance
+Behavior/Name/ArmorPenetratingRounds=Armor Penetrating Rounds
+Behavior/Name/ArtilleryStabilizer=Artillery Stabilizer
+Behavior/Name/ConcussiveShells=Concussive Shells
+Behavior/Name/DistractingPropaganda=Distracting Propaganda
+Behavior/Name/DistractingPropaganda2=Feedback
+Behavior/Name/ElectromagticSurge=Electromagtic Surge
+Behavior/Name/FreshCreep=Fresh Creep
+Behavior/Name/HivemindTraining=Hivemind Training
+Behavior/Name/Levels=Levels
+Behavior/Name/LightningBomb=Poisoned
+Behavior/Name/MindTermination=Mind Termination
+Behavior/Name/MoraleBooster=Morale Booster
+Behavior/Name/MoraleBooster2=Moar Damage
+Behavior/Name/MoreRockets=More Rockets
+Behavior/Name/OptimizedOrdnance=Optimized Ordnance
+Behavior/Name/OvermindTactics=Overmind Tactics
+Behavior/Name/PANIC=PANIC
+Behavior/Name/PoisonGas=Toxic Gas
+Behavior/Name/PsionicEmitter=Psionic Emitter
+Behavior/Name/PsionicWill=Psionic Will
+Behavior/Name/Respawns=Respawns
+Behavior/Name/ScantipedeAcid=Scantipede Acid
+Behavior/Name/ShadowFury=Shadow Fury
+Behavior/Name/SlowSpines=Slow Spines
+Behavior/Name/StatisWard=Statis Ward
+Behavior/Name/TheBestOil=The Best Oil
+Behavior/Name/UnstableStimpack=Unstable Stimpack Posetive
+Behavior/Name/UnstableStimpack2=Unstable Stimpack Negative
+Behavior/Name/VoidEnsnare=Void Ensnare
+Behavior/Name/VoidEnsnare2=Void Ensnare
+Behavior/Name/WeakspotCallouted=Weakspot Callouted
+Behavior/Name/item1=Headshot Indicator
+Behavior/Name/item10=Psionic Strength
+Behavior/Name/item11=Acid Rain
+Behavior/Name/item12=Khaydian Amulet
+Behavior/Name/item13=Aimbot
+Behavior/Name/item14=Warp Technology abuser
+Behavior/Name/item15=Weakspot callout
+Behavior/Name/item16=Unstable Stimpack
+Behavior/Name/item17=Acidic rediance
+Behavior/Name/item2=Morale Booster
+Behavior/Name/item3=Andrelin Infuser
+Behavior/Name/item4=Psionic Emitter
+Behavior/Name/item5=Rocket boosters
+Behavior/Name/item6=Panic rounds
+Behavior/Name/item7=Lemon Juice
+Behavior/Name/item8=Experimental Amplifikation muzzle
+Behavior/Name/item9=Hivemind Training
+Behavior/Name/lvl0=Beginner
+Behavior/Name/lvl10=Apprentice
+Behavior/Name/lvl100=How did we get here?
+Behavior/Name/lvl15=Novice
+Behavior/Name/lvl20=Gardener
+Behavior/Name/lvl25=Farmer
+Behavior/Name/lvl30=Plant Master
+Behavior/Name/lvl35=Beyond Master
+Behavior/Name/lvl40=Commander of the Gardeners
+Behavior/Name/lvl45=Highlord of the Farmers
+Behavior/Name/lvl5=Noobie
+Behavior/Name/lvl50=Overmind of the Plants
+Behavior/Name/lvl55=Literally one with the Plants
+Behavior/Name/lvl60=A higher Power
+Behavior/Name/lvl65=God
+Behavior/Name/lvl70=Ascending
+Behavior/Name/lvl75=The Litteral God
+Behavior/Name/lvl80=Serral
+Behavior/Name/lvl85=Young Xel'naga
+Behavior/Name/lvl90=Old Xel'naga
+Behavior/Name/lvl95=Beyond Xel'naga
+Behavior/Name/xel1=<c val="00FF40">Easy</c>
+Behavior/Name/xel2=<c val="A5FA05">Normal</c>
+Behavior/Name/xel3=<c val="F8DA07">Hard</c>
+Behavior/Name/xel4=<c val="F5920A">Hell</c>
+Behavior/Name/xel5=<c val="F83707">Brutal</c>
+Behavior/Name/xel6=<c val="BA2905">Nightmare</c>
+Behavior/Name/xel7=<c val="631603">Death</c>
+Behavior/Name/xel8=<c val="160501">Bye</c>
+Behavior/Tooltip/1=<c val="00FF40">Easy Difficulty</c><n/><n/>Enemies have 0% Extra Health
+Behavior/Tooltip/2=<c val="A5FA05">Normal Difficulty</c><n/><n/>Enemies have 30% Extra Health
+Behavior/Tooltip/3=<c val="F8DA07">Hard Difficulty</c><n/><n/>Enemies have 55% Extra Health
+Behavior/Tooltip/4=<c val="F5920A">Hell Difficulty</c><n/><n/>Enemies have 90% Extra Health
+Behavior/Tooltip/5=<c val="F83707">Brutal Difficulty</c><n/><n/>Enemies have 140% Extra Health
+Behavior/Tooltip/6=<c val="BA2905">Nightmare Difficulty</c><n/><n/>Enemies have 180% Extra Health
+Behavior/Tooltip/7=<c val="631603">Death Difficulty</c><n/><n/>Enemies have 200% Extra Health
+Behavior/Tooltip/72=<c val="631603">Death Difficulty</c><n/><n/>Enemies have 200% Extra Health
+Behavior/Tooltip/72c=<c val="160501">Bye Difficulty</c><n/><n/>Enemies have 200% Extra Health and +0.7 movement speed
+Behavior/Tooltip/8=<c val="A5FA05">Normal Difficulty</c><n/><n/>Enemies have 30% Extra Health
+Behavior/Tooltip/AcidicRediance=Takeing 200 damage per sec
+Behavior/Tooltip/AcidicRediance2=Posetive Stimpack Results<n/>+40% attack speed
+Behavior/Tooltip/AcidicRediance2n=Negative Stimpack Results<n/>-20% attack speed
+Behavior/Tooltip/ArmorPenetratingRounds=<d ref="Behavior,ArmorPenetratingRounds,Modification.LifeArmorBonus"/> armor
+Behavior/Tooltip/ArtilleryStabilizer=+5 Range
+Behavior/Tooltip/ConcussiveShells=-30% movement speed
+Behavior/Tooltip/DistractingPropaganda=-10% movement speed
+Behavior/Tooltip/DistractingPropaganda2=-30% movement speed
+Behavior/Tooltip/ElectromagticSurge=Electric Surged by a Mecha Ultralisk<n/>Takeing <d ref="Effect,mechaultra,Amount+50"/> damage per sec
+Behavior/Tooltip/FreshCreep=5% increased damage gained by a Friendly Queen
+Behavior/Tooltip/HivemindTraining=8% increased attack speed
+Behavior/Tooltip/LightningBomb=This Unit has been Poisoned by a Scantipede and its takeing 50 damage per sec
+Behavior/Tooltip/MindTermination=Rooted
+Behavior/Tooltip/MoraleBooster=10% damage increase
+Behavior/Tooltip/MoraleBooster2=<c val="FF8040"><d ref="$BehaviorStackCount:MoraleBooster2$*10"/></c>% Damage increase
+Behavior/Tooltip/MoreRockets=+100% Increased Damage
+Behavior/Tooltip/OptimizedOrdnance=Attacks 4 additonal times
+Behavior/Tooltip/OvermindTactics=20% increased attack speed gained by a Friendly Ultralisk
+Behavior/Tooltip/PANIC=Stunned by <c val="800040">PANIC</c>
+Behavior/Tooltip/PoisonGas=-40% movement speed
+Behavior/Tooltip/PsionicEmitter=-5% movement speed
+Behavior/Tooltip/PsionicWill=8% increased attack speed gained by a Friendly Archon
+Behavior/Tooltip/Respawns=Respawns <c val="FF8040"><d ref="$BehaviorStackCount:Respawns$"/><c> Extra Time
+Behavior/Tooltip/ScantipedeAcid=Poisoned by a Scantipede<n/>Takeing <d ref="Effect,LightningBombDamage,Amount"/> damage per sec
+Behavior/Tooltip/ShadowFury=Tribble attack rate
+Behavior/Tooltip/SlowSpines=-60% movement speed
+Behavior/Tooltip/StatisWard=Rooted
+Behavior/Tooltip/TheBestOil=30% increased damage gained by a Friendly Gary
+Behavior/Tooltip/UnstableStimpack=Takeing 200 damage per sec
+Behavior/Tooltip/VoidEnsnare=Rooted
+Behavior/Tooltip/VoidEnsnare2=Rooted
+Behavior/Tooltip/WeakspotCallouted=20% increased damage increase
+Behavior/Tooltip/lvl0=No Buffs<n/>Rank: 0
+Behavior/Tooltip/lvl10=Rank: 2<n/><c val="80FF00">+5 Crop Costs</c><n/><c val="00FFFF">+150 Starting Minerals</c>
+Behavior/Tooltip/lvl100=Rank: 20<n/><c val="80FF00">+50 Crop Costs</c><n/><c val="00FFFF">+1000 Starting Minerals</c><n/><c val="DE0AF5">+15% Higher Tier builds chance</c><n/><c val="FA2405">+30 Lives</c><n/><c val="7407F8">-1.1 Creep Movement Speed</c><n/><c val="00FF00">+700 Starting Vespene</c><n/><c val="FF8040">-25 Creep Armor</c><n/><c val="0379FC">+15 Minerals per Kill</c><n/><c val="AAB14E">+1.5 Tower Range</c><n/><c val="EED211">+25% Damage Buff</c><n/><c val="E916B5">+0.8% chance Creeps drop an random item</c><n/><c val="F8F103">+16% Ability Damage Buff</c>
+Behavior/Tooltip/lvl15=Rank: 3<n/><c val="80FF00">+5 Crop Costs</c><n/><c val="00FFFF">+175 Starting Minerals</c><n/><c val="DE0AF5">+2% Higher Tier builds chance</c>
+Behavior/Tooltip/lvl20=Rank: 4<n/><c val="80FF00">+10 Crop Costs</c><n/><c val="00FFFF">+225 Starting Minerals</c><n/><c val="DE0AF5">+3% Higher Tier builds chance</c>
+Behavior/Tooltip/lvl25=Rank: 5<n/><c val="80FF00">+10 Crop Costs</c><n/><c val="00FFFF">+275 Starting Minerals</c><n/><c val="DE0AF5">+4% Higher Tier builds chance</c><n/><c val="FA2405">+5 Lives</c>
+Behavior/Tooltip/lvl30=Rank: 6<n/><c val="80FF00">+15 Crop Costs</c><n/><c val="00FFFF">+275 Starting Minerals</c><n/><c val="DE0AF5">+4% Higher Tier builds chance</c><n/><c val="FA2405">+5 Lives</c><n/><c val="7407F8">-0.2 Creep Movement Speed</c>
+Behavior/Tooltip/lvl35=Rank: 7<n/><c val="80FF00">+15 Crop Costs</c><n/><c val="00FFFF">+350 Starting Minerals</c><n/><c val="DE0AF5">+5% Higher Tier builds chance</c><n/><c val="FA2405">+7 Lives</c><n/><c val="7407F8">-0.3 Creep Movement Speed</c>
+Behavior/Tooltip/lvl40=Rank: 8<n/><c val="80FF00">+15 Crop Costs</c><n/><c val="00FFFF">+400 Starting Minerals</c><n/><c val="DE0AF5">+5% Higher Tier builds chance</c><n/><c val="FA2405">+10 Lives</c><n/><c val="7407F8">-0.3 Creep Movement Speed</c><n/><c val="00FF00">+200 Starting Vespene</c>
+Behavior/Tooltip/lvl45=Rank: 9<n/><c val="80FF00">+20 Crop Costs</c><n/><c val="00FFFF">+400 Starting Minerals</c><n/><c val="DE0AF5">+5% Higher Tier builds chance</c><n/><c val="FA2405">+10 Lives</c><n/><c val="7407F8">-0.3 Creep Movement Speed</c><n/><c val="00FF00">+200 Starting Vespene</c><n/><c val="FF8040">-2 Creep Armor</c>
+Behavior/Tooltip/lvl5=Rank: 1<n/><c val="80FF00">+5 Crop Costs</c>
+Behavior/Tooltip/lvl50=Rank: 10<n/><c val="80FF00">+20 Crop Costs</c><n/><c val="00FFFF">+400 Starting Minerals</c><n/><c val="DE0AF5">+5% Higher Tier builds chance</c><n/><c val="FA2405">+10 Lives</c><n/><c val="7407F8">-0.3 Creep Movement Speed</c><n/><c val="00FF00">+300 Starting Vespene</c><n/><c val="FF8040">-3 Creep Armor</c><n/><c val="0379FC">+1 Minerals per Kill</c>
+Behavior/Tooltip/lvl55=Rank: 11<n/><c val="80FF00">+25 Crop Costs</c><n/><c val="00FFFF">+400 Starting Minerals</c><n/><c val="DE0AF5">+6% Higher Tier builds chance</c><n/><c val="FA2405">+12 Lives</c><n/><c val="7407F8">-0.45 Creep Movement Speed</c><n/><c val="00FF00">+300 Starting Vespene</c><n/><c val="FF8040">-3 Creep Armor</c><n/><c val="0379FC">+1 Minerals per Kill</c><n/><c val="AAB14E">+0.3 Tower Range</c>
+Behavior/Tooltip/lvl60=Rank: 12<n/><c val="80FF00">+25 Crop Costs</c><n/><c val="00FFFF">+470 Starting Minerals</c><n/><c val="DE0AF5">+6% Higher Tier builds chance</c><n/><c val="FA2405">+13 Lives</c><n/><c val="7407F8">-0.5 Creep Movement Speed</c><n/><c val="00FF00">+300 Starting Vespene</c><n/><c val="FF8040">-3 Creep Armor</c><n/><c val="0379FC">+2 Minerals per Kill</c><n/><c val="AAB14E">+0.3 Tower Range</c>
+Behavior/Tooltip/lvl65=Rank: 13<n/><c val="80FF00">+25 Crop Costs</c><n/><c val="00FFFF">+470 Starting Minerals</c><n/><c val="DE0AF5">+6% Higher Tier builds chance</c><n/><c val="FA2405">+13 Lives</c><n/><c val="7407F8">-0.5 Creep Movement Speed</c><n/><c val="00FF00">+300 Starting Vespene</c><n/><c val="FF8040">-3 Creep Armor</c><n/><c val="0379FC">+2 Minerals per Kill</c><n/><c val="AAB14E">+0.4 Tower Range</c><n/><c val="EED211">+2% Damage Buff</c>
+Behavior/Tooltip/lvl70=Rank: 14<n/><c val="80FF00">+30 Crop Costs</c><n/><c val="00FFFF">+500 Starting Minerals</c><n/><c val="DE0AF5">+7% Higher Tier builds chance</c><n/><c val="FA2405">+15 Lives</c><n/><c val="7407F8">-0.5 Creep Movement Speed</c><n/><c val="00FF00">+400 Starting Vespene</c><n/><c val="FF8040">-5 Creep Armor</c><n/><c val="0379FC">+3 Minerals per Kill</c><n/><c val="AAB14E">+0.4 Tower Range</c><n/><c val="EED211">+4% Damage Buff</c>
+Behavior/Tooltip/lvl75=Rank: 15<n/><c val="80FF00">+30 Crop Costs</c><n/><c val="00FFFF">+500 Starting Minerals</c><n/><c val="DE0AF5">+8% Higher Tier builds chance</c><n/><c val="FA2405">+17 Lives</c><n/><c val="7407F8">-0.5 Creep Movement Speed</c><n/><c val="00FF00">+400 Starting Vespene</c><n/><c val="FF8040">-6 Creep Armor</c><n/><c val="0379FC">+5 Minerals per Kill</c><n/><c val="AAB14E">+0.5 Tower Range</c><n/><c val="EED211">+6% Damage Buff</c><n/><c val="E916B5">+0.1% chance Creeps drop an random item</c>
+Behavior/Tooltip/lvl80=Rank: 16<n/><c val="80FF00">+35 Crop Costs</c><n/><c val="00FFFF">+650 Starting Minerals</c><n/><c val="DE0AF5">+8% Higher Tier builds chance</c><n/><c val="FA2405">+18 Lives</c><n/><c val="7407F8">-0.55 Creep Movement Speed</c><n/><c val="00FF00">+400 Starting Vespene</c><n/><c val="FF8040">-6 Creep Armor</c><n/><c val="0379FC">+6 Minerals per Kill</c><n/><c val="AAB14E">+0.6 Tower Range</c><n/><c val="EED211">+9% Damage Buff</c><n/><c val="E916B5">+0.2% chance Creeps drop an random item</c>
+Behavior/Tooltip/lvl85=Rank: 17<n/><c val="80FF00">+35 Crop Costs</c><n/><c val="00FFFF">+650 Starting Minerals</c><n/><c val="DE0AF5">+8% Higher Tier builds chance</c><n/><c val="FA2405">+20 Lives</c><n/><c val="7407F8">-0.6 Creep Movement Speed</c><n/><c val="00FF00">+500 Starting Vespene</c><n/><c val="FF8040">-8 Creep Armor</c><n/><c val="0379FC">+7 Minerals per Kill</c><n/><c val="AAB14E">+0.7 Tower Range</c><n/><c val="EED211">+11% Damage Buff</c><n/><c val="E916B5">+0.3% chance Creeps drop an random item</c>
+Behavior/Tooltip/lvl90=Rank: 18<n/><c val="80FF00">+35 Crop Costs</c><n/><c val="00FFFF">+650 Starting Minerals</c><n/><c val="DE0AF5">+8% Higher Tier builds chance</c><n/><c val="FA2405">+20 Lives</c><n/><c val="7407F8">-0.7 Creep Movement Speed</c><n/><c val="00FF00">+500 Starting Vespene</c><n/><c val="FF8040">-10 Creep Armor</c><n/><c val="0379FC">+8 Minerals per Kill</c><n/><c val="AAB14E">+0.9 Tower Range</c><n/><c val="EED211">+13% Damage Buff</c><n/><c val="E916B5">+0.3% chance Creeps drop an random item</c><n/><c val="F8F103">+5% Ability Damage Buff</c>
+Behavior/Tooltip/lvl95=Rank: 19<n/><c val="80FF00">+40 Crop Costs</c><n/><c val="00FFFF">+800 Starting Minerals</c><n/><c val="DE0AF5">+10% Higher Tier builds chance</c><n/><c val="FA2405">+25 Lives</c><n/><c val="7407F8">-0.8 Creep Movement Speed</c><n/><c val="00FF00">+600 Starting Vespene</c><n/><c val="FF8040">-15 Creep Armor</c><n/><c val="0379FC">+11 Minerals per Kill</c><n/><c val="AAB14E">+1.1 Tower Range</c><n/><c val="EED211">+20% Damage Buff</c><n/><c val="E916B5">+0.5% chance Creeps drop an random item</c><n/><c val="F8F103">+10% Ability Damage Buff</c>
+Behavior/Tooltip/xel1=<c val="00FF40">Easy Difficulty</c><n/><n/>Enemies have 0% Extra Health
+Behavior/Tooltip/xel2=<c val="A5FA05">Normal Difficulty</c><n/><n/>Enemies have 30% Extra Health
+Behavior/Tooltip/xel3=<c val="F8DA07">Hard Difficulty</c><n/><n/>Enemies have 55% Extra Health
+Behavior/Tooltip/xel4=<c val="F5920A">Hell Difficulty</c><n/><n/>Enemies have 90% Extra Health
+Behavior/Tooltip/xel5=<c val="F83707">Brutal Difficulty</c><n/><n/>Enemies have 140% Extra Health
+Behavior/Tooltip/xel6=<c val="BA2905">Nightmare Difficulty</c><n/><n/>Enemies have 180% Extra Health
+Behavior/Tooltip/xel7=<c val="631603">Death Difficulty</c><n/><n/>Enemies have 200% Extra Health
+Button/Name/AcidicGlads=Poison Glads
+Button/Name/AngiStomp=Angi Stomp
+Button/Name/ArmorPenetratingRounds=Armor Penetrating Rounds
+Button/Name/BestFriends=The Best Oil
+Button/Name/BigLick=Big Lick
+Button/Name/BuyArtifactItem=Buy Artifact Item
+Button/Name/DistractingPropaganda=Distracting Propaganda
+Button/Name/ElectromagticSurge=Electromagtic Surge
+Button/Name/Equiptment=Equiptment
+Button/Name/EssenceExtraction=Essence Extraction
+Button/Name/Execute=Execute
+Button/Name/FIRETHEDAMNWARHEADNOW=FIRE THE DAMN WARHEAD NOW!
+Button/Name/FarmingMissions=Farming Missions
+Button/Name/FarmingMissions2=Miscellaneous Missions
+Button/Name/FarmingMissions22=Towers Missions
+Button/Name/FarmingMissions222=Race Unity Missions
+Button/Name/Feedback2=Feedback
+Button/Name/FreshCreep=Fresh Creep
+Button/Name/Headshot=Headshot
+Button/Name/Item1=Headshot Indicator
+Button/Name/Item10=Psionic Strength
+Button/Name/Item11=Acid Rain
+Button/Name/Item12=Khaydarin Amulet
+Button/Name/Item13=Aimbot
+Button/Name/Item14=Warp Technology abuser
+Button/Name/Item15=Weakspot callout
+Button/Name/Item16=Unstable Stimpack
+Button/Name/Item17=Acidic rediance
+Button/Name/Item2=Morale Booster
+Button/Name/Item3=Andrelin Infuser
+Button/Name/Item4=Psionic Disturbance
+Button/Name/Item5=Rocket boosters
+Button/Name/Item6=Panic rounds
+Button/Name/Item7=Lemon Juice
+Button/Name/Item8=Experimental Amplification Muzzle
+Button/Name/Item9=Hivemind Training
+Button/Name/MechaBroodlings=Mecha Broodlings
+Button/Name/Mechamissile=Mecha missile
+Button/Name/Merge=Merge
+Button/Name/MindTermination=Thermal Lance
+Button/Name/Mission01=Not a Picky Farmer
+Button/Name/Mission02=Large Farm
+Button/Name/Mission03=Living on the Edge
+Button/Name/Mission04=Green hands mastery
+Button/Name/Mission05=Faithful to Basics
+Button/Name/Mission06=My favorite common
+Button/Name/Mission07=Uncommon Taste
+Button/Name/Mission08=Rareity collector
+Button/Name/Mission09=Rare event
+Button/Name/Mission10=Full Epic gear
+Button/Name/Mission11=Mass Recall
+Button/Name/Mission12=Annual Animal meeting
+Button/Name/Mission13=The Swarm
+Button/Name/Mission14=Mecha Mayhem
+Button/Name/Mission15=The Death Fleet
+Button/Name/Mission16=Terran up the Night
+Button/Name/Mission17=My fellow Terrans, we shall win though, no matter the cost
+Button/Name/Mission18=I will turn this Map into a radiated ruin if I have to ANOTHER NUKE SILO
+Button/Name/Mission19=Ursadonny Vermillion
+Button/Name/Mission20=Mergefest
+Button/Name/Mission21=The Perfect Match
+Button/Name/Mission22=Artificial Power
+Button/Name/Mission23=This is amazing..but I like this
+Button/Name/Mission24=Your powered up, get in there
+Button/Name/Mission25=Selling spree
+Button/Name/Mission26=Big Stonks
+Button/Name/MissionList1=Missions List
+Button/Name/MissionList12=Mission List 2
+Button/Name/MissionList122=Mission List 3
+Button/Name/MoreRockets=More Rockets
+Button/Name/Multishot3=Multishot
+Button/Name/Multishot4=Multishot
+Button/Name/Multishot5=Multishot
+Button/Name/Multishot6=Multishot
+Button/Name/OptimizedOrdnance=Optimized Ordnance
+Button/Name/OvermindTactics=Overmind Tactics
+Button/Name/PlantCarrot=Plant Carrot
+Button/Name/PlantMastery=Plant Mastery
+Button/Name/PlantPear=Plant Pear
+Button/Name/PlantPumpkin=Plant Pumpkin
+Button/Name/PowerBeak=Power Beak
+Button/Name/PsionicDomination=Shotgun Swap
+Button/Name/PsionicSlash=Psionic Slash
+Button/Name/PsionicWill=Psionic Will
+Button/Name/RollanotherArtifact=Roll another Artifact
+Button/Name/RollanotherArtifact2=Roll another Item
+Button/Name/Sell=Sell
+Button/Name/Sell2=Sell
+Button/Name/Sell22=Sell
+Button/Name/Sell222=Sell
+Button/Name/Sell2222=Sell
+Button/Name/Sell22222=Sell
+Button/Name/ShadowFury=Shadow Fury
+Button/Name/Siegetank=Artillery Stabilizers
+Button/Name/SlowSpines=Slow Spines
+Button/Name/Smartservos=Smart servos
+Button/Name/StatisWard=Statis Ward
+Button/Name/SummonThirdboss=Summon Third boss
+Button/Name/Summonfirstboss=Summon first boss
+Button/Name/Summonsecoundboss=Summon secound boss
+Button/Name/TerazineTestSubjects=Terazine Test Subjects
+Button/Name/TerranBuild=Build Basic Tower
+Button/Name/TerranBuildAdvanced=Build Advanced Tower
+Button/Name/TowerAbilty1=Concussive Shells
+Button/Name/ToxicTyrant=Toxic Tyrant
+Button/Name/UnknownButton=test
+Button/Name/UnknownButton2=admin build menu
+Button/Name/Unstableblast=Unstable blast
+Button/Name/UpgradeCritterWeapons=Upgrade Critter Weapons
+Button/Name/UpgradeDominionWeapons=Upgrade Dominion Weapons
+Button/Name/UpgradeMechaWeapons=Upgrade Mecha Weapons
+Button/Name/UpgradeProtossWeapons=Upgrade Protoss Weapons
+Button/Name/UpgradeTaldarimWeapons=Upgrade Tal'darim Weapons
+Button/Name/UpgradeTerranWeapons=Upgrade Terran Weapons
+Button/Name/UpgradeZergWeapons=Upgrade Zerg Weapons
+Button/Name/VoidPrisonCannons=Void Ensnare
+Button/Name/WarpHarmonization=Warp Harmonization
+Button/Name/sellC=sell Carrot
+Button/Name/sellpear=sell pear
+Button/Name/sellpumpkin=sell pumpkin
+Button/Tooltip/AcidicGlads=10% chance to poison all enemies for <d ref="Effect,LightningBombDamage,Amount*7"/> damage over 7 sec<n/>Poison used: <d ref="$BehaviorStackCount:C5$"/>
+Button/Tooltip/AcidicGlads2=Increases attackspeed by 8% for all towers
+Button/Tooltip/AngiStomp=10% chance to deal <d ref="Effect,ursadon,Amount+800"/> damage to all enemies<n/>Total Stomps: <d ref="$BehaviorStackCount:C7$"/>
+Button/Tooltip/ArmorPenetratingRounds=4% chance to give target <d ref="Behavior,ArmorPenetratingRounds,Modification.LifeArmorBonus"/> armor for 5 sec<n/>Armor Penetrating Rounds used: <d ref="$BehaviorStackCount:T8$"/>
+Button/Tooltip/BestFriends=10% chance to Increase all towers damage by 30% for 5 sec<n/>Oil shared: <d ref="$BehaviorStackCount:M6$"/>
+Button/Tooltip/BigLick=15% chance to Deal <d ref="Effect,Carbot,Amount+750"/> medium splash damage<n/>Total Licks: <d ref="$BehaviorStackCount:Z7$"/>
+Button/Tooltip/BuyArtifactItem=Buys a Random item for an Artifact tower<n/><n/><c val="FF8040">Only 1 Item per Artifact Tower</c>
+Button/Tooltip/Clreep42=pretend there is stuff here
+Button/Tooltip/CommandCenter=Upgrade Tower weapons and can summon Bosses
+Button/Tooltip/Creep1=pretend there is stuff here
+Button/Tooltip/Creep10=pretend there is stuff here
+Button/Tooltip/Creep11=pretend there is stuff here
+Button/Tooltip/Creep12=pretend there is stuff here<n/><n/><s val="AchievementFanfareDesc_Prot">jkkj</s>
+Button/Tooltip/Creep122=pretend there is stuff here
+Button/Tooltip/Creep13=pretend there is stuff here
+Button/Tooltip/Creep132=pretend there is stuff here
+Button/Tooltip/Creep14=pretend there is stuff here
+Button/Tooltip/Creep15=pretend there is stuff here
+Button/Tooltip/Creep16=pretend there is stuff here
+Button/Tooltip/Creep17=pretend there is stuff here
+Button/Tooltip/Creep18=pretend there is stuff here
+Button/Tooltip/Creep19=pretend there is stuff here
+Button/Tooltip/Creep2=pretend there is stuff here
+Button/Tooltip/Creep20=pretend there is stuff here
+Button/Tooltip/Creep21=pretend there is stuff here
+Button/Tooltip/Creep22=pretend there is stuff here
+Button/Tooltip/Creep23=pretend there is stuff here
+Button/Tooltip/Creep24=pretend there is stuff here
+Button/Tooltip/Creep25=pretend there is stuff here
+Button/Tooltip/Creep26=pretend there is stuff here
+Button/Tooltip/Creep27=pretend there is stuff here
+Button/Tooltip/Creep28=pretend there is stuff here
+Button/Tooltip/Creep29=pretend there is stuff here
+Button/Tooltip/Creep3=pretend there is stuff here
+Button/Tooltip/Creep30=pretend there is stuff here
+Button/Tooltip/Creep31=pretend there is stuff here
+Button/Tooltip/Creep32=pretend there is stuff here
+Button/Tooltip/Creep33=pretend there is stuff here
+Button/Tooltip/Creep34=pretend there is stuff here
+Button/Tooltip/Creep35=pretend there is stuff here
+Button/Tooltip/Creep36=pretend there is stuff here
+Button/Tooltip/Creep37=pretend there is stuff here
+Button/Tooltip/Creep38=pretend there is stuff here
+Button/Tooltip/Creep39=pretend there is stuff here
+Button/Tooltip/Creep4=pretend there is stuff here
+Button/Tooltip/Creep40=pretend there is stuff here
+Button/Tooltip/Creep41=pretend there is stuff here
+Button/Tooltip/Creep42=pretend there is stuff here
+Button/Tooltip/Creep43=pretend there is stuff here
+Button/Tooltip/Creep44=pretend there is stuff here
+Button/Tooltip/Creep45=pretend there is stuff here
+Button/Tooltip/Creep46=pretend there is stuff here
+Button/Tooltip/Creep47=pretend there is stuff here
+Button/Tooltip/Creep48=pretend there is stuff here
+Button/Tooltip/Creep49=pretend there is stuff here
+Button/Tooltip/Creep5=pretend there is stuff here
+Button/Tooltip/Creep50=pretend there is stuff here
+Button/Tooltip/Creep51=pretend there is stuff here
+Button/Tooltip/Creep52=pretend there is stuff here
+Button/Tooltip/Creep53=pretend there is stuff here
+Button/Tooltip/Creep54=pretend there is stuff here
+Button/Tooltip/Creep55=pretend there is stuff here
+Button/Tooltip/Creep56=pretend there is stuff here
+Button/Tooltip/Creep57=pretend there is stuff here
+Button/Tooltip/Creep58=pretend there is stuff here
+Button/Tooltip/Creep59=pretend there is stuff here
+Button/Tooltip/Creep6=pretend there is stuff here
+Button/Tooltip/Creep60=pretend there is stuff here
+Button/Tooltip/Creep61=pretend there is stuff here
+Button/Tooltip/Creep62=pretend there is stuff here
+Button/Tooltip/Creep63=pretend there is stuff here
+Button/Tooltip/Creep64=pretend there is stuff here
+Button/Tooltip/Creep65=pretend there is stuff here
+Button/Tooltip/Creep66=pretend there is stuff here
+Button/Tooltip/Creep67=pretend there is stuff here
+Button/Tooltip/Creep68=pretend there is stuff here
+Button/Tooltip/Creep69=pretend there is stuff here
+Button/Tooltip/Creep7=pretend there is stuff here
+Button/Tooltip/Creep8=pretend there is stuff here
+Button/Tooltip/Creep9=pretend there is stuff here
+Button/Tooltip/DistractingPropaganda=Slows all creeps in your maze by 10%
+Button/Tooltip/ElectromagticSurge=13% chance to apply <d ref="Effect,mechaultra,Amount+1000"/> damage over 20 sec<n/>Total Surges: <d ref="$BehaviorStackCount:M8$"/>
+Button/Tooltip/Equiptment=Stores items
+Button/Tooltip/EssenceExtraction=25% chance to Gain 8 minerals<n/>Minerals Extracted: <d ref="$BehaviorStackCount:Z6$*8"/>
+Button/Tooltip/Execute=8% chance to instantly kill an enemy if they are under 30% hp (bosses are immune)<n/>Executions: <d ref="$BehaviorStackCount:Ta7$"/>
+Button/Tooltip/FIRETHEDAMNWARHEADNOW=5% chance to deal <d ref="Effect,nuke,Amount+3500"/> Large Splash damage<n/>Warheads Fired: <d ref="$BehaviorStackCount:D7$"/>
+Button/Tooltip/FarmingMissions=Shows Farming Related Missions
+Button/Tooltip/FarmingMissions2=Shows the Miscellaneous Missions
+Button/Tooltip/FarmingMissions22=Shows the Tower Related Missions
+Button/Tooltip/FarmingMissions222=Shows the Race Unity Missions
+Button/Tooltip/Feedback2=Attacks apply 30% slow for 2 sec
+Button/Tooltip/FreshCreep=Increases Damage by 5% for all towers
+Button/Tooltip/Headshot=20% chance to Deal 100% extra Damage<n/>Headshots: <d ref="$BehaviorStackCount:D5$"/>
+Button/Tooltip/Item1=10% chance to deal 175% extra damage<n/><n/><s val="BattleChatAchievement">"Adds a big Red Icon on targets head, enableing the user to better hit headshots"</s>
+Button/Tooltip/Item10=+30% damage<n/><n/><s val="BattleChatAchievement">"Everyone knows some encouraging psionic words makes bullets sharper"</s>
+Button/Tooltip/Item11=5% to deal 700 damage to all enemies every 1 sec<n/><n/><s val="BattleChatAchievement">"Its Raining Acid hallelu..ow ow ow ow ow OWWW ow ow"</s>
+Button/Tooltip/Item12=15% chance when attacking to cast psi storm that deals 125 dps for 5 sec<n/><n/><s val="BattleChatAchievement">"Haha psi storm go zap"</s>
+Button/Tooltip/Item13=+5 Range<n/><n/><s val="BattleChatAchievement">"I've got you in my sights"</s>
+Button/Tooltip/Item14=5% chance when attacking to Steal 5 minerals from all enemy players<n/><n/><s val="BattleChatAchievement">"Idk why Protoss in the lore don't abuse their warp technology like this, smh"</s>
+Button/Tooltip/Item15=5% chance when attacking to give all allied towers 20% damage for 3 sec<n/><n/><s val="BattleChatAchievement">"Hey guys shoot them in the head its more effective..*3 sec later* wait.. what where we supposed to shoot agian?"</s>
+Button/Tooltip/Item16=20% chance when attacking to gain either -20% attack sped damage or +40% attackspeed lasts untill triggered agian<n/><n/><s val="BattleChatAchievement">"Oh its just some Arsenic trioxide. Chlorine. Hydrogen cyanide. Nitrous oxide. Phosgene. Baneling Acid. and Sulfuric Acid mixed together that you inject into your blood veins..don't worry abbout it"</s>
+Button/Tooltip/Item17=Attacks apply a 100 dps dot for 5 sec<n/><n/><s val="BattleChatAchievement">"Acidic bullets?...yes"</s>
+Button/Tooltip/Item2=All allied towers deal 10% more damage<n/><n/><s val="BattleChatAchievement">"Yo guys ya all doing great... but can you do 10% better?... pretty please? :D"</s>
+Button/Tooltip/Item3=+15% attack speed<n/><n/><s val="BattleChatAchievement">"After a few shots of them you can't even feel your fingers...or hands..or toes..or anything really"</s>
+Button/Tooltip/Item4=All Creeps in your maze move 5% slower<n/><n/><s val="BattleChatAchievement">"I really don't know what to put here lol"</s>
+Button/Tooltip/Item5=7% chance when attacking to deal 1500 damage<n/><n/><s val="BattleChatAchievement">"When in doubt just add more rockets"</s>
+Button/Tooltip/Item6=7% chance when attacking to stun the target for 2 sec<n/><n/><s val="BattleChatAchievement">"Yo I just got shot for the 4872 time PANIC"</s>
+Button/Tooltip/Item7=7% chance when attacking to summon a Enthralled Zergling for 60 sec dealing 80 damge with 0,4 attack speed<n/><n/><s val="BattleChatAchievement">"Forces a Zergling to fight for you by just scareing them with lemon juice, plus you can take a sip while they do all the work *Siiip*"</s>
+Button/Tooltip/Item8=5% chance when attacking to deal 300% extra damage<n/><n/><s val="BattleChatAchievement">"Light em up"</s>
+Button/Tooltip/Item9=All allied towers attacks 8% faster<n/><n/><s val="BattleChatAchievement">"definitely a greate idea. I can't see anyway this could go wrong"</s>
+Button/Tooltip/MechaBroodlings=Attacks Summon Mecha Broodlings
+Button/Tooltip/Mechamissile=10% chance to deal 200% extra damage<n/>Missiles Fired: <d ref="$BehaviorStackCount:M4$"/>
+Button/Tooltip/Merge=Merge 2 Towers of the same type together to get a higher tier tower
+Button/Tooltip/MindTermination=20% chance to fire a Thermal lance, dealing <d ref="Effect,SOAMothershipLineAttackDamage,Amount"/> damage to all enemies in a line<n/>Thermal Lances: <d ref="$BehaviorStackCount:Ta8$"/>
+Button/Tooltip/Mission01=Own 3 of each plant simultaneously<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission01C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 3 of each plant simultaneously<n/>Reward: <c val="86F40B">200</c></s> <IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission02=Own a total of 20 plants at once<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission02C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own a total of 20 plants at once<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission03=Have 3 or less lives left<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission03C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Have 3 or less lives left<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission04=Reach max mastery level<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission04C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Reach max mastery level<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission05=Own 1 of each <c val="FFFFFF">Common</c> tower<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission05C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="FFFFFF">Common</c> tower<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission06=Own 6 of the same <c val="FFFFFF">Common</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission06C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 5 of the same <c val="FFFFFF">Common</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission07=Own 5 of the same <c val="86F40B">Uncommon</c> tower<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission07C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 5 of the same <c val="86F40B">Uncommon</c> tower<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission08=Own 1 of each <c val="09A9F7">Rare</c> tower<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission08C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="09A9F7">Rare</c> tower<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission09=Own 4 of the same <c val="09A9F7">Rare</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission09C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 4 of the same <c val="09A9F7">Rare</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission10=Own 1 of each <c val="CF05FA">Epic</c> tower<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission10C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="CF05FA">Epic</c> tower<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission11=Own 1 of each <c val="FCD703">Protoss</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission11C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="FCD703">Protoss</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission12=Own 1 of each <c val="B9BCC8">Critter</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission12C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="B9BCC8">Critter</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission13=Own 1 of each <c val="9D09F7">Zerg</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission13C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="9D09F7">Zerg</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission14=Own 1 of each <c val="86F40B">Mecha Swarm</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission14C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="86F40B">Mecha Swarm</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission15=Own 1 of each <c val="F20000">Tal'darim</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission15C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="F20000">Tal'darim</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission16=Own 1 of each <c val="05C2FA">Terran</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission16C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="05C2FA">Terran</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission17=Own 1 of each <c val="F86207">Dominion</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission17C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 1 of each <c val="F86207">Dominion</c> tower<n/>Reward: <c val="86F40B">400</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission18=Own 3 nuke silos<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission18C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 3 nuke silos<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission19=Be the First to Merge an Ursadon<n/>Reward: <c val="86F40B">100</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission19C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Be the First to Merge into an Ursadon<n/>Reward: <c val="86F40B">100</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission20=Merge 35 towers<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission20C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Merge 35 towers<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission21=Own both the Odin and Tychus<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission21C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own both the Odin and Tychus<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission22=Be the First to Merge an Artifact<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission22C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Be the First to Merge into an Artifact<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission23=Own 15 of the same plant simultaneously<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission23C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Own 15 of the same plant simultaneously<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission24=Buy 7 items<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission24C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Buy 7 items<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission25=Sell 10 towers<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission25C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Sell 10 towers<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission26=Sell a total of 40 plants on the same wave<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Mission26C=<s val="AchievementFanfarePoints_Terr"><c val="FDDF0B">Completed</c></s><n/>Sell a total of 40 plants on the same wave<n/>Reward: <c val="86F40B">300</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/MissionList1=Shows available Missions<n/><n/>Missions are side quests you can do to earn some more gas
+Button/Tooltip/MissionList12=<s val="CommandTargetName_Alliance">Full Epic gear	    <c val="86F40B">300 Gas</c></s><n/>Own 1 of each <c val="CF05FA"> (Epic)</c> tower<n/><n/><s val="CommandTargetName_Alliance">Mass Recall	    <c val="86F40B">400 Gas</c></s><n/>Own 1 of each <c val="FCD703">Protoss </c> tower<n/><n/><s val="CommandTargetName_Alliance">Annual Animal meeting	    <c val="86F40B">400 Gas</c></s><n/>Own 1 of each <c val="B9BCC8">Critter </c> tower<n/><n/><s val="CommandTargetName_Alliance">The Swarm	    <c val="86F40B">400 Gas</c></s><n/>Own 1 of each <c val="9D09F7">Zerg </c> tower<n/><n/><s val="CommandTargetName_Alliance">Mecha Mayhem	    <c val="86F40B">400 Gas</c></s><n/>Own 1 of each <c val="86F40B">Mecha Swarm</c> tower<n/><n/><s val="CommandTargetName_Alliance">The Death Fleet	    <c val="86F40B">400 Gas</c></s><n/>Own 1 of each <c val="FCD703">Tal'darim</c> tower<n/><n/><s val="CommandTargetName_Alliance">Turtle up	    <c val="86F40B">400 Gas</c><n/>Own 1 of each <c val="05C2FA">Terran</c> tower<n/><n/><s val="CommandTargetName_Alliance">My fellow Terrans, we shall win though, no matter the cost	    <c val="86F40B">400 Gas</c></s><n/>Own 1 of each <c val="F20000">Tal'darim</c> tower<n/><n/><s val="CommandTargetName_Alliance">I will turn this game into a radiated ruin if I have to ANOTHER NUKE SILO	    <c val="86F40B">400 Gas</c><n/>Own 3 nuke silos<n/><n/>
+Button/Tooltip/MissionList122=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/><s val="InfoPaneHeroName_Alliance">Not a Picky Farmer </s><n/>Own 3 of each plant simultaneously<n/>Reward: <c val="86F40B">200</c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/MoreRockets=10% chance to deal dobble damage for 3 sec<n/>Extra Rockets Used: <d ref="$BehaviorStackCount:T6$"/>
+Button/Tooltip/Multishot3=Attacks 3 additional enemies
+Button/Tooltip/Multishot4=Attacks 4 additional enemies
+Button/Tooltip/Multishot5=Attacks 5 additional enemies
+Button/Tooltip/Multishot6=Attacks 6 additional enemies
+Button/Tooltip/OptimizedOrdnance=15% chance when attacking to attack 5 times additional times<n/>Times Optimized: <d ref="$BehaviorStackCount:Ta3$"/>
+Button/Tooltip/OvermindTactics=20% chance to increase allied tower 20% attack rate for 20 sec<n/>Tactics Shared: <d ref="$BehaviorStackCount:Z5$"/>
+Button/Tooltip/Pear=Growing Pear...
+Button/Tooltip/PlantCarrot=Plant a Carrot
+Button/Tooltip/PlantCarrot2=A Mightly Fine Carrot has been planted
+Button/Tooltip/PlantMastery=Every Plant you plant gains +1 in <c val="EEFE81">Plant Mastery</c><n/><n/>Every 15 <c val="EEFE81">Plant Mastery</c> gains you 1 <c val="80FF00">Plant Mastery Skill</c><n/><n/>Every <c val="80FF00">Plant Mastery Skill</c> increases crop Prices by 5<n/><n/>Current Mastery: <c val="EEFE81"><d ref="$BehaviorStackCount:PlantmasteryC$"/>/<d ref="$BehaviorStackCount:PlantmasteryN$"/><n/></c>Current Skill: <c val="80FF00"><d ref="$BehaviorStackCount:PlantmasteryS$"/>
+Button/Tooltip/PlantPear=Plant a Pear
+Button/Tooltip/PlantPear2=Don't Surrender to the Pear
+Button/Tooltip/PlantPumpkin=Plant a Pumpkin
+Button/Tooltip/PlantPumpkind=I don't like pumpkins lol
+Button/Tooltip/PowerBeak=15% chance to attack 7 additional enemies for 40% damage<n/>Beaks used? : <d ref="$BehaviorStackCount:C8$"/>
+Button/Tooltip/PsionicDomination=15% chance to fire a shotgun blast dealing <d ref="Effect,NovaWeaponHellfireShotgunBlastDamage,Amount"/> damage in an arc<n/>Shotgun Blasts: <d ref="$BehaviorStackCount:T7$"/>
+Button/Tooltip/PsionicSlash=4% chance to deal 500% extra damage<n/>Psionic Slashes: <d ref="$BehaviorStackCount:Z8$"/>
+Button/Tooltip/PsionicWill=Increases attackspeed by 8% for all towers
+Button/Tooltip/SCV=Builds Towers, Plants plants<n/>all-around pretty nice guy<n/><n/>Current Mastery: <c val="EEFE81"><d ref="$BehaviorStackCount:PlantmasteryC$"/>/<d ref="$BehaviorStackCount:PlantmasteryN$"/><n/></c>Current Skill: <c val="80FF00"><d ref="$BehaviorStackCount:PlantmasteryS$"/>
+Button/Tooltip/Sell=Sell This <c val="FAD58F"> (Artifact)</c> Tower<n/><c val="03B8FC">+4500</c><IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Sell2=Sell This <c val="FFFFFF"> (Common)</c> Tower</c><n/><c val="03B8FC">+131</c><IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Sell22=Sell This <c val="86F40B"> (Uncommon)</c> Tower<n/><c val="03B8FC">+262</c><IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Sell222=Sell This <c val="09A9F7"> (Rare)</c> Tower<n/><c val="03B8FC">+525</c><IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Sell2222=Sell This <c val="CF05FA"> (Epic)</c> Tower<n/><c val="03B8FC">+1125</c><IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Sell22222=Sell This <c val="F4A30B"> (Legendary)</c> Tower<n/><c val="03B8FC">+2250</c><IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/ShadowFury=7% chance to gain triple attack rate for 4 sec<n/>Shadow Furries: <d ref="$BehaviorStackCount:P6$"/>
+Button/Tooltip/Siegetank=18% chance to gain +5 range for 8 sec<n/>Times Stabilized: <d ref="$BehaviorStackCount:T5$"/>
+Button/Tooltip/SlowSpines=25% chance to apply 60% slow for 6 sec<n/>Slow Spines: <d ref="$BehaviorStackCount:C6$"/>
+Button/Tooltip/Smartservos=15% chance to instantly attack agian<n/>Oil Changes: <d ref="$BehaviorStackCount:D8$"/>
+Button/Tooltip/StatisWard=5% chance to root all enemies for 3 sec <n/>(bosses have half duration)<n/>Statis Wards Placed: <d ref="$BehaviorStackCount:Ta6$"/>
+Button/Tooltip/SummonThirdboss=Summons the Strongest boss<n/><n/><c val="00FF00">Health: <d ref="Unit,pCreep43,LifeMax"/><c><c><n/>Reward for killing: <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Summonfirstboss=Summons the weakest boss<n/><n/><c val="00FF00">Health: <d ref="Unit,lCreep41,LifeMax"/><c><c><n/>Reward for killing: <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/Summonsecoundboss=Summons the (whatever word is between strongest and weakest) boss<n/><n/><c val="00FF00">Health: <d ref="Unit,Clreep42,LifeMax"/><n/><c><c></c>Reward for killing: <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Button/Tooltip/SupplyDepot=Rolling the Dice for a random basic tower
+Button/Tooltip/SupplyDepot2=Growing Carrots...
+Button/Tooltip/SupplyDepot22=Growing Hollow Pumpkin...
+Button/Tooltip/T1U1=<s val="FilePanelDetailsName"><c val="9D09F7">Zergling</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,Claws,Amount/0.5"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T1U2=<s val="FilePanelDetailsName"><c val="F86207">Dominion Trooper</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,TrooperMengskDamage,Amount/1"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T1U3=<s val="FilePanelDetailsName"><c val="B9BCC8">Lava Crab</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,Spines,Amount/1"precision="1"/></s><n/>Optimal DPS (<s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,Spines,Amount*4)/1"precision="1"/></s>)<n/>Ability:<img path="Assets\Textures\btn-ability-hornerhan-raven-analyzetargetmultilock.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks 3 additional enemies</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T1U4=<s val="FilePanelDetailsName"><c val="FCD703">Zealot</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PsiBlades,Amount/0.8"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T1U5=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Zergling</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,ZerglingClawsDamageStetmann,Amount/1.2"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T1U6=<s val="FilePanelDetailsName"><c val="05C2FA">Marine</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,GuassRifle,Amount/1"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T1U7=<s val="FilePanelDetailsName"><c val="F20000">Supplicant</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,SupplicantDamage,Amount/1.35"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T2U1=<s val="FilePanelDetailsName"><c val="9D09F7">Roach</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,AcidSalivaU,Amount/0.9"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T2U2=<s val="FilePanelDetailsName"><c val="F86207">Missile Turret</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,LongboltMissileU,Amount*2)/1.2"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T2U3=<s val="FilePanelDetailsName"><c val="B9BCC8">Lyote</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,Swarmling,Amount/1.3"precision="1"/></s><n/>Optimal DPS (<s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,Swarmling,Amount*5)/1.3"precision="1"/></s>)<n/>Ability:<img path="Assets\Textures\btn-ability-hornerhan-raven-analyzetargetmultilock.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks 4 additional enemies</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T2U4=<s val="FilePanelDetailsName"><c val="FCD703">Adept</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,AdeptDamage,Amount/0.9"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T2U5=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Spawning Pool</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PrimalBaseWeaponDamage,Amount/1.3"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T2U6=<s val="FilePanelDetailsName"><c val="05C2FA">Auto Turret</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,AutoTurret,Amount/1.2"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T2U7=<s val="FilePanelDetailsName"><c val="F20000">Havoc</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,ZeratulDisruptionBeamDamage,Amount/0.4"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T3U1=<s val="FilePanelDetailsName"><c val="9D09F7">Hydralisk</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,NeedleSpinesDamage,Amount/0.5"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T3U2=<s val="FilePanelDetailsName"><c val="F86207">Aegis Guard</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PunisherGrenadesMengskU,Amount/1.6"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-ability-mengsk-marauder-superconcussiveshells.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks slow enemies for 30% for 1 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T3U3=<s val="FilePanelDetailsName"><c val="B9BCC8">Sheep</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,NeedleClaws,Amount/1.2"precision="1"/></s><n/>Optimal DPS (<s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,NeedleClaws,Amount*6)/1.2"precision="1"/></s>)<n/>Ability:<img path="Assets\Textures\btn-ability-hornerhan-raven-analyzetargetmultilock.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks 5 additional enemies</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T3U4=<s val="FilePanelDetailsName"><c val="FCD703">Immortal</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PhaseDisruptors,Amount/1.5"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T3U5=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Ravager</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,RavagerStetmannDamage,Amount/1.67"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T3U6=<s val="FilePanelDetailsName"><c val="05C2FA">Goliath</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,GoliathG,Amount/1.2"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T3U7=<s val="FilePanelDetailsName"><c val="F20000">Photon Cannon</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PhotonCannonU,Amount/0.4"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-karax-turretattackspeed.dds" height="32" width="32"alignment="absolutemiddle"/>15% chance when attacking to attack 5 times additional times</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T4U1=<s val="FilePanelDetailsName"><c val="9D09F7">Queen</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,AcidSpines,Amount/0.68"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-kerrigan-malignantcreep.dds" height="32" width="32"alignment="absolutemiddle"/>Increases Damage by 5% for all towers</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T4U2=<s val="FilePanelDetailsName"><c val="F86207">Imperial Witness</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,ArchAngelCoopShootDamage,Amount/1.1"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-ability-mengsk-blimp-propagandamode.dds" height="32" width="32"alignment="absolutemiddle"/>Slows all creeps in your maze by 10%</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T4U3=<s val="FilePanelDetailsName"><c val="B9BCC8">Karak</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,KerriganInfestBroodling,Amount/0.9"precision="1"/></s><n/>Optimal DPS (<s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,KerriganInfestBroodling,Amount*6)/0.9"precision="1"/></s>)<n/>Ability:<img path="Assets\Textures\btn-ability-hornerhan-raven-analyzetargetmultilock.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks 6 additional enemies</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T4U4=<s val="FilePanelDetailsName"><c val="FCD703">High Templar</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,HighTemplarWeaponDamage,Amount/1.4"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-protoss-feedbackaoe-color.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks apply 30% slow for 2 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T4U5=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Hydralisk</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,HydraliskNeedleSpinesStetmannDamage,Amount/0.5"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-stetmann-hydraliskmissilepoweron.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to deal 200% extra damage</c></s><n/>Type:<img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T4U6=<s val="FilePanelDetailsName"><c val="05C2FA">Ghost</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,C10CanisterRifle,Amount/1.2"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T4U7=<s val="FilePanelDetailsName"><c val="F20000">Ascendant</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,AscendantWeaponDamage,Amount/0.9"precision="1"/></s><n/>Ability: None<n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T5U1=<s val="FilePanelDetailsName"><c val="9D09F7">Ultralisk</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,HotSUltraliskKaiserBladesDamage,Amount/1.8"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds" height="32" width="32"alignment="absolutemiddle"/>20% chance to increase allied tower 20% attack rate for 20 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T5U2=<s val="FilePanelDetailsName"><c val="F86207">Emperor's Shadow</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,C10CanisterRifleMengsk,Amount/1.5"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds" height="32" width="32"alignment="absolutemiddle"/>20% chance to Deal 100% extra Damage</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T5U3=<s val="FilePanelDetailsName"><c val="B9BCC8">Scantipede</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,ScantipedeParasiticSmallDamage,Amount/1.1"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-zerg-hydriaticacid.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to poison all enemies for 350 damage over 7 sec</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T5U4=<s val="FilePanelDetailsName"><c val="FCD703">Archon</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PsionicShockwaveDamage,Amount/0.6"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-zeratul-chargedcrystal-psionicwinds.dds" height="32" width="32"alignment="absolutemiddle"/>Increases attackspeed by 8% for all towers</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T5U5=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Brood Lord</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,BroodlingEscortDamageStetmann,Amount/1.5"precision="1"/></s><n/>Ability:<img path="Assets\Textures\talent-zagara-level08-incubatebroodlings.dds" height="32" width="32"alignment="absolutemiddle"/>Attacks Summon Mecha Broodlings</c></s><n/>Type:<img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T5U6=<s val="FilePanelDetailsName"><c val="05C2FA">Siege Tank</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,CrucioShockCannonBlast,Amount/1.2"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-terran-nova-siegetankrange.dds" height="32" width="32"alignment="absolutemiddle"/>18% chance to gain +5 range for 8 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T5U7=<s val="FilePanelDetailsName"><c val="F20000">Wrathwalker</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,ColossusTaldarimDamage,Amount/2"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-protoss-alarak-ascendant'spsiorbtravelsfurther.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to Deal medium splash damage</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T6U1=<s val="FilePanelDetailsName"><c val="9D09F7">Carbot Zergling</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,PrimalZergling,Amount/1.1"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-upgrade-zerg-metabolicboost.dds" height="32" width="32"alignment="absolutemiddle"/>15% chance to Deal 750 medium splash damage</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T6U10=<s val="FilePanelDetailsName"><c val="FCD703">Matriarch Vorazun</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,DarkTemplarChampionDamage,Amount/1.5"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-nova-furyofone.dds" height="32" width="32"alignment="absolutemiddle"/>7% chance to gain triple attack rate for 4 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T6U11=<s val="FilePanelDetailsName"><c val="FCD703">Warp Gate</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,DragoonDamage,Amount/1.6"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds" height="32" width="32"alignment="absolutemiddle"/>2% chance to teleport an enemy back to the beginning (bosses are immune)</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T6U12=<s val="FilePanelDetailsName"><c val="FCD703">Void Seeker</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,VoidSeekerU,Amount/1.8"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds" height="32" width="32"alignment="absolutemiddle"/>15% chance to root for 4 sec and deal 300 damage (only last 2 sec on bosses)</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="FCD703">Protoss</c></s>
+Button/Tooltip/T6U13=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Evolution Chamber</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,HotSRaptorClawsDamage,Amount/0.7"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-progression-stetmann-09-dualqueue.dds" height="32" width="32"alignment="absolutemiddle"/>2% chance to turn the enemy into minerals killing them instantly, they drop 200 minerals<n/>(bosses are immune)</c></s><n/>Type:<img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T6U14=<s val="FilePanelDetailsName"><c val="86F40B">Mecha Ultralisk</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,UltraliskKaiserBladesDamageStetmann,Amount/1.1"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-stetmann-ultraliskrespawn.dds" height="32" width="32"alignment="absolutemiddle"/>13% chance to apply 1000 damage over 20 sec</c></s><n/>Type:<img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T6U15=<s val="FilePanelDetailsName"><c val="86F40B">Gary</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,GaryStetmannDamage,Amount/2"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-stetmann-garyattackandregen.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to Increase all towers damage by 30% for 5 sec</c></s><n/>Type:<img path="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="86F40B">Mecha Swarm</c></s>
+Button/Tooltip/T6U16=<s val="FilePanelDetailsName"><c val="05C2FA">November Terra</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,NovaWeaponImprovedCanisterRifleUncloaked,Amount/1.4"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-nova-shotgun.dds" height="32" width="32"alignment="absolutemiddle"/>15% chance to fire a shotgun blast dealing 250 damage in an arc</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T6U17=<s val="FilePanelDetailsName"><c val="05C2FA">Dusk Wing</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,CrucioShockCannonBlast,Amount*2)/1"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-terran-nova-bansheemissilestrik.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to deal dobble damage for 3 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T6U18=<s val="FilePanelDetailsName"><c val="05C2FA">Tychus Findlay</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,TychusCoopChaingunDamage,Amount/0.2"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-tychus-tychus-ripperrounds.dds" height="32" width="32"alignment="absolutemiddle"/>4% chance to give target -75 armor for 5 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="05C2FA">Terran</c></s>
+Button/Tooltip/T6U19=<s val="FilePanelDetailsName"><c val="F20000">Highlord Alarak</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,AlarakBaneBladesDamage,Amount/1.2"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-protoss-alarak-dashrange&cdr.dds" height="32" width="32"alignment="absolutemiddle"/>8% chance to instantly kill an enemy if they are under 30% hp (bosses are immune)</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T6U2=<s val="FilePanelDetailsName"><c val="9D09F7">Sarah Kerrigan</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,RazorTalonsDamage,Amount/0.5"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-ability-kerrigan-abilityefficiency.dds" height="32" width="32"alignment="absolutemiddle"/>4% chance to deal 500% extra damage</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T6U20=<s val="FilePanelDetailsName"><c val="F20000">Blood Hunter</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,WarpBlades,Amount/0.7"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds" height="32" width="32"alignment="absolutemiddle"/>5% chance to root all enemies for 3 sec <n/>(bosses have half duration)</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T6U21=<s val="FilePanelDetailsName"><c val="F20000">Tal'darim Mothership</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,SOAMothershipv4BeamDamage,Amount*6)/1.7"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-protoss-thermallance.dds" height="32" width="32"alignment="absolutemiddle"/>20% chance to fire a Thermal lance, dealing 300 damage to all enemies in a line</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F20000">Tal'darim</c></s>
+Button/Tooltip/T6U3=<s val="FilePanelDetailsName"><c val="9D09F7">Broodmother Zagara</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,ZagaraVoidCoopRangedDamage,Amount/1"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds" height="32" width="32"alignment="absolutemiddle"/>25% chance to Gain 8 minerals</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="9E1AE6">Zerg</c></s>
+Button/Tooltip/T6U4=<s val="FilePanelDetailsName"><c val="F86207">Earthsplitter Ordnance</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,BacklashRocketsU,Amount*2)/1.2"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-ability-mengsk-topbar-contaminatedstrike.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to infect an area with 20% slow and 175 damage per sec to all enemies inside <n/>last 5 sec</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T6U5=<s val="FilePanelDetailsName"><c val="F86207">The Odin</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="(Effect,OdinDamageLeft,Amount*2)/1.5"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds" height="32" width="32"alignment="absolutemiddle"/>15% chance to instantly attack agian</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T6U6=<s val="FilePanelDetailsName"><c val="F86207">Nukeclear Silo</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,HHLaserBatteryU,Amount/2.2"precision="1"/></s><n/>Ability: <img path="Assets\Textures\btn-progression-hornerhan-14-nukefortelefrag.dds" height="32" width="32"alignment="absolutemiddle"/>5% chance to deal 3500 Large Splash damage</c></s><n/>Type: <img path="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="F86207">Dominion</c></s>
+Button/Tooltip/T6U7=<s val="FilePanelDetailsName"><c val="B9BCC8">Urubu</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,MutatorTurkeyPeckDamage,Amount/1.5"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-zerg-dehaka-mutalisk-shiftingcarapace.dds" height="32" width="32"alignment="absolutemiddle"/>15% chance to attack 7 additional enemies for 40% damage</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T6U8=<s val="FilePanelDetailsName"><c val="B9BCC8">Ursadon</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,YetiMatriarchClaws,Amount/0.7"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-ability-neutral-ursadonleap.dds" height="32" width="32"alignment="absolutemiddle"/>10% chance to deal 800 damage to all enemies</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/T6U9=<s val="FilePanelDetailsName"><c val="B9BCC8">Artosilope</c></s><n/><n/>DPS: <s val="InfoPaneUnitInfo_Zerg"><d ref="Effect,HunterKillerU,Amount/1.1"precision="1"/></s><n/>Ability:<img path="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds" height="32" width="32"alignment="absolutemiddle"/>25% chance to apply 60% slow for 6 sec</c></s><n/>Type: <img path="Assets\Textures\btn-ability-zerg-stabburst.dds" height="32" width="32"alignment="absolutemiddle"/><s val="InfoPaneUnitInfo_Zerg"><c val="B9BCC8">Critter</c></s>
+Button/Tooltip/TerazineTestSubjects=2% chance to turn the enemy into minerals killing them instantly, they drop 200 minerals<n/>(bosses are immune)<n/>Successful Experiments: <d ref="$BehaviorStackCount:M7$"/>
+Button/Tooltip/TerranBuild=Builds a Random low tier tower<n/><n/><c val="FFFFFF">84% to be Common</c><n/><c val="86F40B">12% to be Uncommon</c><n/><c val="09A9F7">4% to be Rare</c>
+Button/Tooltip/TerranBuildAdvanced=Builds a Random high tier tower<n/><n/><c val="CF05FA">90% to be Epic</c><n/><c val="F4A30B">10% to be Legendary</c>
+Button/Tooltip/TowerAbilty1=Attacks slow enemies for 30% for 1 sec
+Button/Tooltip/ToxicTyrant=10% chance to infect an area with 20% slow and <d ref="Behavior,PoisonGas,Modification.VitalRegenArray[Life]"/> damage per sec to all enemies inside <n/>last 5 sec<n/>Toxic Blasts: <d ref="$BehaviorStackCount:D6$"/>
+Button/Tooltip/UnknownButton2=admin stuff
+Button/Tooltip/Unstableblast=10% chance to Deal medium splash damage<n/>Unstable Blasts: <d ref="$BehaviorStackCount:Ta5$"/>
+Button/Tooltip/UpgradeCritterWeapons=Increases <c val="B9BCC8">Critter Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/UpgradeDominionWeapons=Increases <c val="F86207">Dominion Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/UpgradeMechaWeapons=Increases <c val="86F40B">Mecha Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/UpgradeProtossWeapons=Increases <c val="FCD703">Protoss Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/UpgradeTaldarimWeapons=Increases <c val="F20000">Tal'darim Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/UpgradeTerranWeapons=Increases <c val="05C2FA">Terran Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/UpgradeZergWeapons=Increases <c val="9D09F7">Zerg Towers</c> Weapon and Ability Damage by 15%
+Button/Tooltip/VoidPrisonCannons=15% chance to root for 4 sec and deal <d ref="Effect,voidseeker,Amount+300"/> damage (only last 2 sec on bosses)<n/>Void Ensnares: <d ref="$BehaviorStackCount:P7$"/>
+Button/Tooltip/WarpHarmonization=2% chance to teleport an enemy back to the beginning (bosses are immune)<n/>Enemies teleported back: <d ref="$BehaviorStackCount:P8$"/>
+Button/Tooltip/lCreep41=pretend there is stuff here
+Button/Tooltip/pCreep43=pretend there is stuff here
+Button/Tooltip/sellC=temp sell carrot button
+Button/Tooltip/sellpear=temp sell pear button
+Button/Tooltip/sellpumpkin=temp sell pumpkin button
+DocInfo/DescLong=Plant your crops and sow the rewards to bolster your forces in this Tower Defense!<n/><n/>(The more players you have in your lobby, the more experience you will receive)<n/><n/>https://discord.com/invite/XHGYsEVtnQ
+DocInfo/DescShort=1 or more
+DocInfo/Name=Farm TD (Testing Build)
+Effect/Name/Carbot=Carbot
+Effect/Name/EshadowCopy=E shadow Copy
+Effect/Name/HydraliskNeedleSpinesStetmannDamage2=Needle Spines missile
+Effect/Name/Karakmultishot=Karak multishot
+Effect/Name/KerriganInfestBroodling=karak
+Effect/Name/Lavacrabmultishot=Lava crab multishot
+Effect/Name/Lyotemultishot=Lyote multishot
+Effect/Name/NeedleClaws=sheep
+Effect/Name/Swarmling=Lyote
+Effect/Name/TrooperMengskDamage2=TrooperMengskDamage
+Effect/Name/Wrath=Wrath
+Effect/Name/ZerglingClawsDamageStetmann2=Claws
+Effect/Name/mechaultra=mecha ultra
+Effect/Name/nuke=nuke
+Effect/Name/sheepmultishot=sheep multishot
+Effect/Name/ursadon=ursadon
+Effect/Name/voidseeker=void seeker
+ItemClass/Name/UnknownItemClass=Unknown Item Class
+MapInfo/Player00/Name=Neutral
+MapInfo/Player01/Name=Player 1
+MapInfo/Player02/Name=Player 2
+MapInfo/Player03/Name=Player 3
+MapInfo/Player04/Name=Player 4
+MapInfo/Player05/Name=Player 5
+MapInfo/Player06/Name=Player 6
+MapInfo/Player07/Name=Player 7
+MapInfo/Player08/Name=Player 8
+MapInfo/Player09/Name=Player 9
+MapInfo/Player10/Name=Player 10
+MapInfo/Player11/Name=Player 11
+MapInfo/Player12/Name=Player 12
+MapInfo/Player13/Name=Hostile
+MapInfo/Player14/Name=Hostile
+Param/Value/00A0F7BF=<IMG path="pumpkin.tga" height="32" width="32" alignment="absolutemiddle"/> Sell Pumpkins
+Param/Value/01962E0E=<IMG path="Assets\Textures\btn-ability-nova-furyofone.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/01CAD315=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/02A93E27=<IMG path="Assets\Textures\btn-upgrade-protoss-alarak-dashrange&cdr.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/02AE2638=Current Wave
+Param/Value/031E57CD=<s val="ChatBar">Choose Mutations</s>
+Param/Value/033C4DF6=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/04065B0B=Enemies have 30% Extra Health
+Param/Value/05F65CC3= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/0692720E=<c val="F8DA07">Hard</c>
+Param/Value/06CF88A9=<IMG path="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/071F363E=Enemies have 180% Extra Health
+Param/Value/0804608A=<IMG path="carrot.tga" height="32" width="32" alignment="absolutemiddle"/> Sell Carrots
+Param/Value/086BAA21= Gas 
+Param/Value/08A09777= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/09B9139B= <c val="FF8000">Pumpkins</c> for 
+Param/Value/0A8F193D=Player
+Param/Value/0C497204=<IMG path="Assets\Textures\btn-ability-terran-stimpack-color.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/0CA34780=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/0DF01477=Crops
+Param/Value/0DF431A7= (
+Param/Value/0E2255E9= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/0E60C826= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/0E6379E1=<IMG path="Assets\Textures\btn-upgrade-karax-turretattackspeed.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/0EAAEAF3=Todays Market [
+Param/Value/0F3D6326=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/10D28C79= Has Completed Mission: <c val="FF8000">Big Stonks</c>
+Param/Value/112598F3=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/12475282= Difficulty
+Param/Value/1364FF05= Has Completed Mission: <c val="FF8000">Selling spree</c>
+Param/Value/1471A235=Creeps Alive: 
+Param/Value/14F65B15=<c val="160501">Bye</c>
+Param/Value/14F94E63= <IMG path="
+Param/Value/14FBA837=+15 Crops Cost
+Param/Value/1519E020=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/152A6430= Has Completed Mission: <c val="FF8000">Mass Recall</c>
+Param/Value/15B8269D=]
+Param/Value/15D2B9A8=<c val="FFFF00">Game starts in: 
+Param/Value/1636A47D=<c val="F5920A">Hell</c>
+Param/Value/16373DB3=Selected Towers do not match
+Param/Value/17A6205C= Has Completed Mission: <c val="FF8000">Mergefest</c>
+Param/Value/17BB266B=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/18EABE9A=)
+Param/Value/19C7279E=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/1A3956A9=Enemies have 200% Extra Health
+Param/Value/1B5BD85D= <IMG path="
+Param/Value/1C8A85EF= XP<c></s>
+Param/Value/1C9E9EF5=<c val="BA2905">Brutal+4</c>
+Param/Value/1CDAA5E5=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/1CE22CD7=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/1D26374F=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/1DA0C15D=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/1DAAF6D7=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/1DD16259=<n/><c val="80FF80">Pears: </c>
+Param/Value/1E2B05ED=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/1FAD2F6D=<c val="631603">Death</c>
+Param/Value/24FCEE8E=All your towers deal 10% more damage
+Param/Value/256E4F97=Creeps Alive: 
+Param/Value/26121008=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/26381D49=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/26DB6537=Profit
+Param/Value/27089CA5=2 Mutations
+Param/Value/274D4AD0=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/281F36C8= XP<c></s>
+Param/Value/28B9FA03= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/28D07EB8=Not Picked
+Param/Value/293BE70D=Damage Increase
+Param/Value/297731F3=% chance 
+Param/Value/29921065=<c val="BA2905">Nightmare</c>
+Param/Value/29DD51C6=<c val="F83707">Brutal+3</c>
+Param/Value/2A4BE142=<c val="80FF00">Plant Mastery Rank 
+Param/Value/2A4DE727=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/2A874F16=<c val="FF8040">Pumpkin</c>
+Param/Value/2AC9A487=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/2BAA7194=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/2C99FD84= XP<c></s>
+Param/Value/2CD9D853=Difficulty
+Param/Value/2D79B3C2=Sell All your Pears for the Current Price of the day
+Param/Value/2E0A50E7=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/2FE80A73=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/3012002A= <IMG path="
+Param/Value/3022A528=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/3076CCCB=5 Mutations
+Param/Value/30A9C33B= has chosen 
+Param/Value/32E1441B= [
+Param/Value/336011C7=<c val="160501">Brutal+6</c>
+Param/Value/345BA530=<c val="A5FA05">Brutal+</c>
+Param/Value/34ADC0EB=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/35686A8C=<IMG path="Assets\Textures\btn-ability-zerg-dehaka-ultralisk-brutalcharge.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/374068BC=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/37995C1D=<s val="ChatBar">Choose Difficulty</s>
+Param/Value/3802DBD4=+1 free advanced tower
+Param/Value/387CCC64=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/38DA4802=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/3901E2ED=<c val="F8DA07">Hard</c>
+Param/Value/391B8221=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/397EB3CC=)
+Param/Value/398454AE=Enemies have 55% Extra Health
+Param/Value/3BB369E8=<c val="F8DA07">Brutal+1</c>
+Param/Value/3C6D2B64=+3 Artifact Rerolls
+Param/Value/3C75F707=<IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/3CAD90DE=</c>
+Param/Value/3CC8BC2B= Has Completed Mission: <c val="FF8000">Ursadonny Vermillion</c>
+Param/Value/3CD9677C=20
+Param/Value/3E1F92CC=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/3E40C5FB= XP<c></s>
+Param/Value/3E6DED0E=" height="45" width="45" alignment="absolutemiddle"/>
+Param/Value/401C50A5=LITTERLY ALL THE MUTATIONS
+Param/Value/41848C13= Difficulty
+Param/Value/427CC5CD= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/440F0D36= Has Completed Mission: <c val="FF8000">My favorite common</c>
+Param/Value/446ED552=<IMG path="Assets\Textures\btn-progression-stetmann-09-dualqueue.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/44CF0F9D=Enemies have 0% Extra Health
+Param/Value/456B91AD=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/4572E662=<c val="F83707">Brutal</c>
+Param/Value/457FEEA3=<c val="FFFF00">Active Wave
+Param/Value/4624AEFF= Has Completed Mission: <c val="FF8000">Artificial Power</c>
+Param/Value/46BFEC34=<IMG path="Assets\Textures\btn-upgrade-terran-nova-bansheemissilestrik.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/4756ED9A= Has Completed Mission: <c val="FF8000">Large Farm</c>
+Param/Value/47640595= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/47F3F8E1= Has Completed Mission: <c val="FF8000">Annual Animal meeting</c>
+Param/Value/48879ACB=Level
+Param/Value/48883965=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/48BFD545=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/49022C85=<IMG path="Assets\Textures\btn-ability-zerg-dehaka-mutalisk-shiftingcarapace.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/4A436952= XP<c></s>
+Param/Value/4A510F4C= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/4B79888E=<IMG path="Assets\Textures\btn-ability-kerrigan-abilityefficiency.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/4C104A98=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/506D950D= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/510863E5=Lives
+Param/Value/518C2A6D=<c val="FF8040">Carrot</c>
+Param/Value/542B5080= XP<c></s>
+Param/Value/548CF6F0= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/54D51D9B=Lives
+Param/Value/55CE182F=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/56AA3A69= XP<c></s>
+Param/Value/577418E9=" height="45" width="45" alignment="absolutemiddle"/>
+Param/Value/5825C930=No Mutations
+Param/Value/58C1A7C4=1 Mutation
+Param/Value/591FB5BD=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/5B42D6B1= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/5B787220=Stock
+Param/Value/5BEAA876=<c val="00FF40">No Mutations</c>
+Param/Value/5C4AEF9E=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/5C9C81ED=Creeps Alive: 
+Param/Value/5CC72860=Third Boss can now be sent
+Param/Value/5E0E9180=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/5EE8AF05=<IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/5F07258C= Has Completed Mission: <c val="FF8000">Your powered up, get in there</c>
+Param/Value/5F2F98F7=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/5F3DAC0D= Minerals 
+Param/Value/5FB05BF7=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/60C821FE=7 Mutations
+Param/Value/6196CAFA= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/61F3E340= got a 
+Param/Value/627AD9CA=<c val="F5920A">Hell</c>
+Param/Value/62CC6E16= Has Completed Mission: <c val="FF8000">Terran up the Night</c>
+Param/Value/63FCED86=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/64D50BFA=<n/><c val="FF8040">Pumpkins: </c>
+Param/Value/64F97B31=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/656A4D5C=<IMG path="pear.tga" height="32" width="32" alignment="absolutemiddle"/> Sell Pears
+Param/Value/65F324B6=<c val="F5920A">Brutal+2</c>
+Param/Value/66717DD7= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/66893F44=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/67563F6D= Sold Their 
+Param/Value/6786CFEB=3 Mutations
+Param/Value/6828347D=<c val="00FF40">Easy</c>
+Param/Value/6843C414=<IMG path="Assets\Textures\btn-upgrade-zerg-hydriaticacid.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/6889BB89= Has Completed Mission: <c val="FF8000">The Death Fleet</c>
+Param/Value/691A6C8D=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/695E4873= XP<c></s>
+Param/Value/69E0AD27= has chosen 
+Param/Value/6B226D4F= Has Completed Mission: <c val="FF8000">Not a Picky Farmer</c>
+Param/Value/6B6DAFF5=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/6BEB7A76=Welcome to Farm TD Single Player version<n/>There is also a Team version I recommend checking out of you like the game :D
+Param/Value/6CF06286=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/6E51291F= Has Completed Mission: <c val="FF8000">Rareity collector</c>
+Param/Value/6E630EAF=<IMG path="Assets\Textures\btn-progression-hornerhan-14-nukefortelefrag.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/6E69CEE0=<IMG path="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/6E7E1372= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/6E9D967D= Sold Their 
+Param/Value/6F750BD1=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/71BBE491=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/7471D34E=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/76B6E8B5=Sell All your Pears for the Current Price of the day
+Param/Value/77A2ACDA= XP<c></s>
+Param/Value/77B5FE44=<IMG path="Assets\Textures\btn-upgrade-terran-nova-combatmastery.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/7A0C62A3= Has Reached level 
+Param/Value/7C0AD9FF=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/7CCC9020=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/7D2785C8=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/7DCEEF21=<c val="80FF00">Pear</c>
+Param/Value/7DCF6B64= has merged a 
+Param/Value/7E9E0A96=<IMG path="Assets\Textures\btn-upgrade-tychus-tychus-ripperrounds.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/7EABCA16=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/7F15CCD5=<c val="631603">Brutal+5</c>
+Param/Value/80714DBF= XP<c></s>
+Param/Value/80798E73= Has been Defeated!
+Param/Value/80EF3603= XP<c></s>
+Param/Value/82ABB644=</c>
+Param/Value/837EFB30=<s val="ChatBar">Choose Mutations</s>
+Param/Value/83E219C0=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/85591E62=LITTERLY ALL THE MUTATIONS
+Param/Value/85D7D118=<IMG path="Assets\Textures\btn-upgrade-dehaka-missileattacks-level2.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/85E6A7F1=<IMG path="Assets\Textures\btn-upgrade-zerg-metabolicboost.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/871DEF4D=Not Picked
+Param/Value/876D8AB8=<IMG path="Assets\Textures\btn-ability-neutral-ursadonleap.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/882DB8ED=<IMG path="Assets\Textures\btn-ability-stetmann-garyattackandregen.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/88467231=<IMG path="Assets\Textures\icon-mineral-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/88913493= Has Completed Mission: <c val="FF8000">Green hands mastery</c>
+Param/Value/88B1B15A= Has Completed Mission: <c val="FF8000">Rare event</c>
+Param/Value/88BD71CA=<c val="F83707">Brutal+3</c>
+Param/Value/891E8C18=<c val="BA2905">Brutal+4</c>
+Param/Value/893A3167=<IMG path="Assets\Textures\btn-upgrade-tychus-warhound-fearrounds.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/8B261B11= XP<c></s>
+Param/Value/8BD77E13=Wave Cleared...next wave starts in 10 sec<n/><n/><c val="DF07F8">Todays Market:</c>
+Param/Value/8BE7CBB3= <c val="80FF00">Pears</c> for 
+Param/Value/8BEEF111= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/8C1A706D=<s val="BattleChatAchievement 2">Plant Mastery 
+Param/Value/8CA3A057=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/8D720B61=<IMG path="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/8E258058= XP<c></s>
+Param/Value/8F0EF7ED=All crops sell for 15 minerals more
+Param/Value/8FAF07AF= Sold Their 
+Param/Value/8FCD787E= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/8FDF51B5=4 Mutations
+Param/Value/906E89B9=<c val="FFFF00">Game starts in: 
+Param/Value/909E6577= Has Completed Mission: <c val="FF8000">Full Epic gear</c>
+Param/Value/90FCD979=<IMG path="Assets\Textures\btn-ability-stetmann-ultraliskrespawn.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/913D010E= XP<c></s>
+Param/Value/91BF4352=Enemies have 140% Extra Health
+Param/Value/91C66DF1= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/921F0BCF=<c val="160501">Bye</c>
+Param/Value/9261152A=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/92858788=<c val="FF0000">-5 Life</c>
+Param/Value/945E3813=<IMG path="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/951C85CA= XP<c></s>
+Param/Value/9591D960=<IMG path="Assets\Textures\btn-ability-terran-ignorearmor.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/973F7381=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/97F992C8=<IMG path="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/98814AEB=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/98CB12BC= has chosen 
+Param/Value/9A8490FB=<c val="A5FA05">Normal</c>
+Param/Value/9BA47262=Price
+Param/Value/9BF9760D=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/9C270010=<IMG path="Assets\Textures\btn-ability-stetmann-hydraliskmissilepoweron.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/9CA897BE=Get a free advanced tower<n/><c val="CF05FA">90% to be Epic</c><n/><c val="F4A30B">10% to be Legendary</c>
+Param/Value/9CE8EDF8=<IMG path="Assets\Textures\btn-upgrade-nova-shotgun.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/9E453447=<IMG path="Assets\Textures\btn-ability-terran-stimpack.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/A139A243=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/A1A10BD7= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/A318E05B=You don't have any pears to sell
+Param/Value/A3D91116= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/A4250785= Has Completed Mission: <c val="FF8000">Faithful to Basics</c>
+Param/Value/A492B441=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/A4CD63AF=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/A4D65443=<IMG path="Assets\Textures\btn-upgrade-terran-highground.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/A54155AA=<c val="F8DA07">Brutal+1</c>
+Param/Value/A54D2631=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/A5861AA8= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/A719D13F=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/A71E5361=Sell All your Carrots for the Current Price of the day
+Param/Value/A7D9C27A=% chance 
+Param/Value/A92A0E4F= XP<c></s>
+Param/Value/AA2D2E2A=+10% Damage
+Param/Value/AA61D4CC=)
+Param/Value/AAD44AAC= Has Completed Mission: <c val="FF8000">Living on the Edge</c>
+Param/Value/AB1DEA3E=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/AB408002=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/AB50796C=<c val="FF0000">-1 Life</c>
+Param/Value/AB5DDD26=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/AC5BAC07= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/AC86075E= XP<c></s>
+Param/Value/AD5BAE6A=Second Boss can now be sent
+Param/Value/AD7EF517= XP<c></s>
+Param/Value/AE40FE69=<IMG path="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/AF82CBEC=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/AF92EE72=<c val="F83707">Brutal</c>
+Param/Value/B00F23C9=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/B0270A66=Increase Crop Prices
+Param/Value/B0D42FCD= Has been Defeated!
+Param/Value/B0F41E05=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/B2667AAA=7 Mutations
+Param/Value/B3937303=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/B4375E20=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/B4D5D3B9=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/B5AD2EC0=<c val="160501">Brutal+6</c>
+Param/Value/B5F25083=Wave Cleared...next wave starts in 10 sec<n/><n/>Carrots: 
+Param/Value/B62586F8=</c>
+Param/Value/B668CEEB=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/B77580E4=Creeps Alive: 0
+Param/Value/B7949EB6= Has Completed Mission: <c val="FF8000">This is amazing..but I like this</c>
+Param/Value/B7A013C1= (
+Param/Value/B8321DF8=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/B876DA2D= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/B892E2E3=5 Mutations
+Param/Value/BA100A75=]
+Param/Value/BC13E638= Difficulty
+Param/Value/BCDB6B5E=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/BD5A5314= <c val="FF8000">Carrots</c> for 
+Param/Value/BDDD8247= <c val="80FF00">+100</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/BE092106=<IMG path="Assets\Textures\btn-upgrade-terran-nova-siegetankrange.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/BEAB6F85=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/BEB40FBF=Creeps Alive: 
+Param/Value/C0B77B68=Current Wave
+Param/Value/C16B6A8C= has merged a 
+Param/Value/C275B887=" height="45" width="45" alignment="absolutemiddle"/>
+Param/Value/C2EBB34A=<c val="631603">Death</c>
+Param/Value/C326D81D=Enemies have 90% Extra Health
+Param/Value/C3282E0E= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/C35E1E37=3 Mutations
+Param/Value/C4C76FDC=2 Mutations
+Param/Value/C5735F6C= XP<c></s>
+Param/Value/C6764D9A=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/C7D9150F= Has Completed Mission: <c val="FF8000">My fellow Terrans, we shall win though, no matter the cost</c>
+Param/Value/C86BAF20=First Boss can now be sent
+Param/Value/C88D5CE3=<IMG path="Assets\Textures\btn-upgrade-terran-jumpjets.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/C9096F2F=<IMG path="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/C90C5A16=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/CA3874BA=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/CAF514BB=<s val="ChatBar">Choose Reward</s>
+Param/Value/CD0D01EB=<c val="80FF00">Plant Mastery Rank 1</c>
+Param/Value/CD2F24FF=1 Mutation
+Param/Value/CE27D4B9=</c>
+Param/Value/D01D78A0=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/D091810D=/15
+Param/Value/D0EBA550=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/D16CA238=<c val="80FF00">Plant Mastery Rank 1</c>
+Param/Value/D3EC7BD0= has chosen 
+Param/Value/D5CE1E25=4 Mutations
+Param/Value/D5EEE3C3=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/D6765D7F=No Mutations
+Param/Value/D6944200=Enemies have 200% Extra Health and +0.7 movement speed
+Param/Value/D6AB32D7=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/D8F0CA00=~
+Param/Value/D9ADEF2B= (
+Param/Value/DA6B26BC=<IMG path="Assets\Textures\btn-ability-mengsk-topbar-contaminatedstrike.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/DC9F6C65=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/DDE6BB5A=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/DE2BF164=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/DF12D7EF=Plant Mastery 
+Param/Value/E025370E=20
+Param/Value/E03CDDCE=<IMG path="disblub.png" height="32" width="32" alignment="absolutemiddle"/> Discord
+Param/Value/E05905F4=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/E0D8319F= XP<c></s>
+Param/Value/E0EB5FE7=Like the map? Join our Discord to share your experience with others, eventually submit bugs, and suggest changes to make the map even better!
+Param/Value/E12ABA33=<c val="A5FA05">Normal</c>
+Param/Value/E204963C=<c val="BA2905">Nightmare</c>
+Param/Value/E276F2E9=<c val="631603">Brutal+5</c>
+Param/Value/E3500D69= XP<c></s>
+Param/Value/E420D50E= XP<c></s>
+Param/Value/E464F056=You don't have any pumpkins to sell
+Param/Value/E4D0833D=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/E547A322=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/E5AA29F1=<c val="FFFF00">Active Wave
+Param/Value/E5DE490E=~
+Param/Value/E5EFE2EC=<IMG path="Assets\Textures\btn-upgrade-protoss-khaydarinamulet.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/E6247794=/
+Param/Value/E6300012= Has Completed Mission: <c val="FF8000">The Swarm</c>
+Param/Value/E6B36C2B=Creeps Alive: 0
+Param/Value/E6B7DE0C=<n/><c val="FF8040">Carrots: </c>
+Param/Value/E710A6CF=<c val="FFFF00">Incoming in: 
+Param/Value/E7226A94=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/E738B089=<c val="00FF40">Easy</c>
+Param/Value/E9892AA9=Todays Market
+Param/Value/E9AD3988=<c val="F5920A">Brutal+2</c>
+Param/Value/E9E7F649=You don't have any carrots to sell
+Param/Value/EB8D3B06=Creeps Alive: 
+Param/Value/ED15BB36= Has Completed Mission: <c val="FF8000">Uncommon Taste</c>
+Param/Value/ED236640=1 Free Advanced Tower
+Param/Value/ED3EC0BE= got a 
+Param/Value/EE94525E= XP<c></s>
+Param/Value/EEB71007=<IMG path="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/EFC5AD91= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/F0B41F48=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/F0B7848B=% chance 
+Param/Value/F10E72A3=<IMG path="Assets\Textures\btn-upgrade-protoss-alarak-ascendant'spsiorbtravelsfurther.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/F12E8F91=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/F169E807=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/F2195F0A=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/F258DC7E=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/F268C1AA=<c val="00FF00"> For Selling </c>
+Param/Value/F2CADE25=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/F343A1F6= XP<c></s>
+Param/Value/F3D28A4F= Has Completed Mission: <c val="FF8000">I will turn this Map into a radiated ruin if I have to ANOTHER NUKE SILO</c>
+Param/Value/F43A18C6=<c val="00FF40">No Mutations</c>
+Param/Value/F4C36D12= XP<c></s>
+Param/Value/F5CEB089=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/F5EF1F20=<c val="FFFF00">Next wave in: 
+Param/Value/F70B43C2=<IMG path="Assets\Textures\btn-upgrade-zerg-hydriaticacid.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/F8C0B81F=<IMG path="Assets\Textures\btn-ability-protoss-thermallance.dds" height="49" width="49" alignment="absolutemiddle"/>
+Param/Value/F8C56691=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/F95A426F= XP<c></s>
+Param/Value/FA4DD371=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
+Param/Value/FA89F3A4=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
+Param/Value/FADC0FBF=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/FB1A0409=<c val="A5FA05">Brutal+</c>
+Param/Value/FB7F3C44=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
+Param/Value/FE133162= XP<c></s>
+Param/Value/FEFFB8E7= got a 
+Param/Value/FF2CFE01=<c val="00FF00">You have Received </c>
+Param/Value/FF981EA7= Has Completed Mission: <c val="FF8000">Mecha Mayhem</c>
+Rank/T6U15=Best Friend
+Unit/LifeArmorName/ProtossArmor=Probe Armor
+Unit/LifeArmorName/TerranInfantryArmor7=Larva Carapace
+Unit/LifeArmorName/TerranInfantryArmorad=Impressively Strong Acid Bulbs
+Unit/LifeArmorName/TerranInfantryArmoradd=Undead Armor
+Unit/LifeArmorName/TerranInfantryArmorasss=Protoss Plating
+Unit/LifeArmorName/TerranInfantryArmorbra=Heavy Primal Carapace
+Unit/LifeArmorName/TerranInfantryArmorch=Changeing Carapace
+Unit/LifeArmorName/TerranInfantryArmorcy=Cyclone Plating...oh sorry Diamondback Plating
+Unit/LifeArmorName/TerranInfantryArmord=Locust Carapace
+Unit/LifeArmorName/TerranInfantryArmorda=Overlord Carapace
+Unit/LifeArmorName/TerranInfantryArmordw=ZAAAAAAAAAAAAP
+Unit/LifeArmorName/TerranInfantryArmordww=THOR IS HERE
+Unit/LifeArmorName/TerranInfantryArmorfire=CMC-660 Armor
+Unit/LifeArmorName/TerranInfantryArmorgear=Item Level 42070 Gear
+Unit/LifeArmorName/TerranInfantryArmorh=Merc Armor
+Unit/LifeArmorName/TerranInfantryArmorhost=Baby Carapace
+Unit/LifeArmorName/TerranInfantryArmorin=Infestor Carapace
+Unit/LifeArmorName/TerranInfantryArmoriu=Lurker Carapace
+Unit/LifeArmorName/TerranInfantryArmork=Brutal Carapace
+Unit/LifeArmorName/TerranInfantryArmormule=MULE Plating
+Unit/LifeArmorName/TerranInfantryArmoro=Just your Average Primal Carapace
+Unit/LifeArmorName/TerranInfantryArmoroi=Big Boi Viking Plating
+Unit/LifeArmorName/TerranInfantryArmoroij=Siegetank but Flying Plating
+Unit/LifeArmorName/TerranInfantryArmorp=Selendis COOP Commander When?
+Unit/LifeArmorName/TerranInfantryArmorpre=Arguably the Plating in the game
+Unit/LifeArmorName/TerranInfantryArmorre=Protoss Mount Armor
+Unit/LifeArmorName/TerranInfantryArmorrp=Protoss Armor
+Unit/LifeArmorName/TerranInfantryArmors=Medivac Plating
+Unit/LifeArmorName/TerranInfantryArmortyt=Protoss Plating
+Unit/LifeArmorName/TerranInfantryArmoru=Protoss Plating
+Unit/LifeArmorName/TerranInfantryArmoruy=yeah what do they wear...just regluar protoss clothes?
+Unit/LifeArmorName/TerranInfantryArmorva=Vulture Plating
+Unit/LifeArmorName/TerranInfantryArmorw=Hellbat Plating
+Unit/LifeArmorName/TerranInfantryArmorwad=Stupid Plating
+Unit/LifeArmorName/TerranInfantryArmorwar=Warp Prism Plating
+Unit/LifeArmorName/TerranInfantryArmorwd=Papir
+Unit/LifeArmorName/TerranInfantryArmorwg=Litterly Wet Papir
+Unit/LifeArmorName/TerranInfantryArmorww=Protoss Plating
+Unit/LifeArmorName/ZergGroundArmord=Xel'naga Magic
+Unit/Name/Broodling=Mecha Broodling
+Unit/Name/Clreep42=Tauren Space Marine
+Unit/Name/Creep1=Infested Terran
+Unit/Name/Creep10=Brakk
+Unit/Name/Creep11=Baby Baneling
+Unit/Name/Creep12=HERC
+Unit/Name/Creep122=HERC Copy
+Unit/Name/Creep13=Medic
+Unit/Name/Creep132=Medic Copy
+Unit/Name/Creep14=Preserver
+Unit/Name/Creep15=Medivac
+Unit/Name/Creep16=Infestor
+Unit/Name/Creep17=Vulture
+Unit/Name/Creep18=Wraith
+Unit/Name/Creep19=Dragoon
+Unit/Name/Creep2=Probe
+Unit/Name/Creep20=Archangel
+Unit/Name/Creep21=Lurker
+Unit/Name/Creep22=Predator
+Unit/Name/Creep23=Spectre
+Unit/Name/Creep24=Liberator
+Unit/Name/Creep25=Void Ray
+Unit/Name/Creep26=Swarm Host
+Unit/Name/Creep27=Warp Prism
+Unit/Name/Creep28=Scout
+Unit/Name/Creep29=Aberration
+Unit/Name/Creep3=MULE
+Unit/Name/Creep30=Mothership
+Unit/Name/Creep31=Dark Templar
+Unit/Name/Creep32=Diamondback
+Unit/Name/Creep33=Reaver
+Unit/Name/Creep34=Phoenix
+Unit/Name/Creep35=Oracle
+Unit/Name/Creep36=Thor
+Unit/Name/Creep37=Assault Galleon
+Unit/Name/Creep38=Colossus
+Unit/Name/Creep39=Primal Ultralisk
+Unit/Name/Creep4=Larva
+Unit/Name/Creep40=Unbound Fanatic
+Unit/Name/Creep41=Sky Fury
+Unit/Name/Creep412=Brutalisk
+Unit/Name/Creep42=Blimp
+Unit/Name/Creep422=Blimp
+Unit/Name/Creep43=Lab Bot 1-X
+Unit/Name/Creep432=Lab Bot 1-X
+Unit/Name/Creep44=Xel'Naga Shieldguard
+Unit/Name/Creep442=Xel'Naga Shieldguard
+Unit/Name/Creep45=Bulldozer
+Unit/Name/Creep452=Bulldozer
+Unit/Name/Creep46=Baneling
+Unit/Name/Creep462=Vega
+Unit/Name/Creep47=Primal Zergling
+Unit/Name/Creep472=Zergling
+Unit/Name/Creep48=Hunterling
+Unit/Name/Creep482=Diamondback Copy
+Unit/Name/Creep49=Spore Ray
+Unit/Name/Creep5=Firebat
+Unit/Name/Creep50=Dancing Oracle
+Unit/Name/Creep502=Dancing Oracle
+Unit/Name/Creep51=Primal Igniter
+Unit/Name/Creep512=Primal Igniter
+Unit/Name/Creep52=Mutalisk
+Unit/Name/Creep522=Mutalisk
+Unit/Name/Creep53=Cleaning Bot
+Unit/Name/Creep532=Cleaning Bot
+Unit/Name/Creep54=Theia Raven
+Unit/Name/Creep542=Theia Raven
+Unit/Name/Creep55=Xel'Naga Abrogator
+Unit/Name/Creep552=Xel'Naga Abrogator
+Unit/Name/Creep56=Fat Man
+Unit/Name/Creep562=Volatile Infested
+Unit/Name/Creep57=Brood Queen
+Unit/Name/Creep572=Brood Queen
+Unit/Name/Creep58=Tyrannozor
+Unit/Name/Creep582=Tyrannozor
+Unit/Name/Creep59=Kaldalis
+Unit/Name/Creep592=Kaldalis
+Unit/Name/Creep6=Changeling
+Unit/Name/Creep60=Apocalisk
+Unit/Name/Creep602=Aleksander
+Unit/Name/Creep61=Shock Division
+Unit/Name/Creep612=Shock Division
+Unit/Name/Creep62=Death Grip Crystal
+Unit/Name/Creep622=Death Grip Crystal
+Unit/Name/Creep63=Infested SCV
+Unit/Name/Creep632=Infested SCV
+Unit/Name/Creep64=Helicopter Zealot
+Unit/Name/Creep65=Box
+Unit/Name/Creep652=Reptile Crate
+Unit/Name/Creep66=Strike Goliath
+Unit/Name/Creep662=Strike Goliath
+Unit/Name/Creep67=Void Reanimator
+Unit/Name/Creep68=Murloc Marine
+Unit/Name/Creep682=Murloc Marine
+Unit/Name/Creep69=Mineral Cluster
+Unit/Name/Creep7=Locust
+Unit/Name/Creep72=Locust
+Unit/Name/Creep8=Overlord
+Unit/Name/Creep82=Overlord
+Unit/Name/Creep9=Hellbat
+Unit/Name/Creep92=Hellbat
+Unit/Name/Drone=Free Advanced Tower
+Unit/Name/Item1=Headshot Indicator
+Unit/Name/Item10=Psionic Strength
+Unit/Name/Item11=Acid Rain
+Unit/Name/Item12=Khaydian Amulet
+Unit/Name/Item13=Aimbot
+Unit/Name/Item14=Warp Technology abuser
+Unit/Name/Item15=Weakspot callout
+Unit/Name/Item16=Unstable Stimpack
+Unit/Name/Item17=Acidic rediance
+Unit/Name/Item2=Morale Booster
+Unit/Name/Item3=Andrelin Infuser
+Unit/Name/Item4=Psionic Emitter
+Unit/Name/Item5=Rocket boosters
+Unit/Name/Item6=Panic rounds
+Unit/Name/Item7=Lemon Juice
+Unit/Name/Item8=Experimental Amplifikation muzzle
+Unit/Name/Item9=Hivemind Training
+Unit/Name/KerriganEpilogue03=Xel'naga Kerrigan
+Unit/Name/Pear=Pear
+Unit/Name/Pylon=Advanced Tower Warpin Beacon
+Unit/Name/SupplyDepot=Basic Tower Construction Site
+Unit/Name/SupplyDepot2=Carrot
+Unit/Name/SupplyDepot22=Pumpkin
+Unit/Name/T1U1=Zergling<c val="FFFFFF"> (Common)</c>
+Unit/Name/T1U2=Dominion Trooper<c val="FFFFFF"> (Common)</c>
+Unit/Name/T1U3=Lava Crab<c val="FFFFFF"> (Common)</c>
+Unit/Name/T1U4=Zealot<c val="FFFFFF"> (Common)</c>
+Unit/Name/T1U5=Mecha Zergling<c val="FFFFFF"> (Common)</c>
+Unit/Name/T1U6=Marine<c val="FFFFFF"> (Common)</c>
+Unit/Name/T1U7=Supplicant<c val="FFFFFF"> (Common)</c>
+Unit/Name/T2U1=Roach<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T2U2=Missile Turret<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T2U3=Lyote<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T2U4=Adept<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T2U5=Mecha Spawning Pool<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T2U6=Auto Turret<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T2U7=Havoc<c val="86F40B"> (Uncommon)</c>
+Unit/Name/T3U1=Hydralisk<c val="09A9F7"> (Rare)</c>
+Unit/Name/T3U2=Aegis Guard<c val="09A9F7"> (Rare)</c>
+Unit/Name/T3U3=Sheep<c val="09A9F7"> (Rare)</c>
+Unit/Name/T3U4=Immortal<c val="09A9F7"> (Rare)</c>
+Unit/Name/T3U5=Mecha Ravager<c val="09A9F7"> (Rare)</c>
+Unit/Name/T3U6=Goliath<c val="09A9F7"> (Rare)</c>
+Unit/Name/T3U7=Photon Cannon<c val="09A9F7"> (Rare)</c>
+Unit/Name/T4U1=Queen<c val="CF05FA"> (Epic)</c>
+Unit/Name/T4U2=Imperial Witness<c val="CF05FA"> (Epic)</c>
+Unit/Name/T4U3=Karak<c val="CF05FA"> (Epic)</c>
+Unit/Name/T4U4=High Templar<c val="CF05FA"> (Epic)</c>
+Unit/Name/T4U5=Mecha Hydralisk<c val="CF05FA"> (Epic)</c>
+Unit/Name/T4U6=Ghost<c val="CF05FA"> (Epic)</c>
+Unit/Name/T4U7=Ascendant<c val="CF05FA"> (Epic)</c>
+Unit/Name/T5U1=Ultralisk<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T5U2=Emperor's Shadow<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T5U3=Scantipede<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T5U4=Archon<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T5U5=Mecha Brood Lord<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T5U6=Siege Tank<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T5U7=Wrathwalker<c val="F4A30B"> (Legendary)</c>
+Unit/Name/T6U1=Carbot Zergling<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U10=Matriarch Vorazun<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U11=Warp Gate<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U12=Void Seeker<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U13=Mecha Evolution Chamber<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U14=Mecha Ultralisk<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U15=Gary<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U16=November Terra<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U17=Dusk Wing<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U18=Tychus Findlay<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U19=Highlord Alarak<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U2=Sarah Kerrigan<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U20=Blood Hunter<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U21=Tal'darim Mothership<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U3=Broodmother Zagara<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U4=Earthsplitter Ordnance<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U5=The Odin<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U6=Nukeclear Silo<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U7=Urubu<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U8=Ursadon<c val="FAD58F"> (Artifact)</c>
+Unit/Name/T6U9=Artosilope<c val="FAD58F"> (Artifact)</c>
+Unit/Name/UnknownActor=Zergling
+Unit/Name/carrot=Basic Tower Construction Site
+Unit/Name/lCreep41=Brutalisk
+Unit/Name/mizmodel=miz model
+Unit/Name/mizmodel2=miz model Copy
+Unit/Name/pCreep43=Selendis
+Unit/Name/redoartifact=redo artifact
+Unit/Name/redoartifact2=redo item
+UnitKillRank/Creep60=Former UED Flagship
+UnitKillRank/Creep602=Former UED Flagship
+UnitKillRank/Crjeep43=High Executor
+UnitKillRank/T6U12=Star Relic
+UnitKillRank/T6U16=Dominion Assassin
+UnitKillRank/T6U5=Prototype
+Upgrade/Name/CritterWea=Critter Wea
+Upgrade/Name/DominionWea=Dominion Wea
+Upgrade/Name/MechaWea=Mecha Wea
+Upgrade/Name/Mission01=Mission 01
+Upgrade/Name/Mission02=Mission 02
+Upgrade/Name/Mission03=Mission 03
+Upgrade/Name/Mission04=Mission 04
+Upgrade/Name/Mission05=Mission 05
+Upgrade/Name/Mission06=Mission 06
+Upgrade/Name/Mission07=Mission 07
+Upgrade/Name/Mission08=Mission 08
+Upgrade/Name/Mission09=Mission 09
+Upgrade/Name/Mission10=Mission 10
+Upgrade/Name/Mission11=Mission 11
+Upgrade/Name/Mission12=Mission 12
+Upgrade/Name/Mission13=Mission 13
+Upgrade/Name/Mission14=Mission 14
+Upgrade/Name/Mission15=Mission 15
+Upgrade/Name/Mission16=Mission 16
+Upgrade/Name/Mission17=Mission 17
+Upgrade/Name/Mission18=Mission 18
+Upgrade/Name/Mission19=Mission 19
+Upgrade/Name/Mission20=Mission 20
+Upgrade/Name/Mission21=Mission 21
+Upgrade/Name/Mission22=Mission 22
+Upgrade/Name/Mission23=Mission 23
+Upgrade/Name/Mission24=Mission 24
+Upgrade/Name/Mission25=Mission 25
+Upgrade/Name/Mission252=Mission 26
+Upgrade/Name/ProtossWea=Protoss Wea
+Upgrade/Name/TaldarimWea=Tal'darim Wea
+Upgrade/Name/TerranWea=Terran Wea
+Upgrade/Name/ZergWea=Zerg Wea
+Upgrade/Name/admin=admin
+Upgrade/Name/diff1=diff ez
+Upgrade/Name/diff2=diff normal
+Upgrade/Name/diff3=diff hard
+Upgrade/Name/diff4=diff hell
+Upgrade/Name/diff5=diff brutal
+Upgrade/Name/diff6=diff nightmare
+Upgrade/Name/diff7=diff death
+Upgrade/Name/diff8=diff bye
+Variant001/ModeDesc=kill stuff
+Variant001/ModeName=Farm TD
+Weapon/Name/ArchAngelCoopGun=LB-10 Propaganda Minigun
+Weapon/Name/BacklashRockets=Artillery Rockets
+Weapon/Name/Bloodhunter=Blood Scythe
+Weapon/Name/Dragoon=Hostile Warp Disruption
+Weapon/Name/HHLaserBattery=Mini Nuke
+Weapon/Name/HotSRaptorClaws=Mecha Experimentation
+Weapon/Name/HunterKiller=Silope Spines
+Weapon/Name/KerriganInfestBroodling=Karak Bite
+Weapon/Name/NeedleClaws=Sheep Claws
+Weapon/Name/PrimalBaseWeapon=Spawning Pool Acid
+Weapon/Name/PrimalZergling=Cute Claws
+Weapon/Name/Spines=Splitting Spines
+Weapon/Name/Swarmling=Lyote Bite
+Weapon/Name/TrooperMengsk2=Ferromag SMG
+Weapon/Name/ZagaraVoidCoopRanged=Medusa Spines
+Weapon/Name/ZerglingClawsStetmann2=Mecha Claws
+Weapon/Tip/AcidSaliva=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/AcidSpines=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/Adept=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/ArchAngelCoopGun=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/AscendantWeapon=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/AutoTurret=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/BacklashRockets=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/BroodlingNeedleClawsStetmann=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/BroodlingStrikeStetmann=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/C10CanisterRifle=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/C10CanisterRifleMengsk=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/Claws=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/ColossusTaldarimChargedBeam=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/CrucioShockCannon=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/DarkArchonChampionWeaponFunctionalHoldPos=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/DarkTemplarChampionWeapon=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/DarkTemplarTaldarim=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/Dragoon=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/DuskWingBanshee=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/GaryStetmannGun=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/GoliathG=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/GuassRifle=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/HHLaserBattery=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/HighTemplarWeapon=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/HotSRaptorClaws=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/HunterKiller=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/HydraliskNeedleSpinesStetmann=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/KaiserBlades=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/KerriganInfestBroodling=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/LongboltMissile=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/MutatorTurkeyPeck=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/NeedleClaws=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/NeedleSpines=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/NovaWeaponImprovedCanisterRifle=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/Odin=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/PhaseDisruptors=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/PhotonCannon=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/PrimalBaseWeapon=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/PrimalZergling=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/PsiBlades=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/PsionicShockwave=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/PunisherGrenadesMengsk=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/RavagerStetmannPlasmaDischarge=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/RazorTalons=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/SOAMothershipv4Weapon=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/ScantipedeParasiticSmall=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/Spines=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/SupplicantWeapon=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/Swarmling=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/TrooperMengsk=<c val="F86207">Dominion Weapon</c>
+Weapon/Tip/TychusCoopChaingun=<c val="05C2FA">Terran Weapon</c>
+Weapon/Tip/UltraliskKaiserBladesStetmann=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/VoidSeeker=<c val="FCD703">Protoss Weapon</c>
+Weapon/Tip/YetiMommaClaws=<c val="B9BCC8">Critter Weapon</c>
+Weapon/Tip/ZagaraVoidCoopRanged=<c val="9D09F7">Zerg Weapon</c>
+Weapon/Tip/ZeratulDisruptionBeam=<c val="F20000">Tal'darim Weapon</c>
+Weapon/Tip/ZerglingClawsStetmann=<c val="86F40B">Mecha Weapon</c>
+Weapon/Tip/ZerglingMengskClaws=<c val="9D09F7">Zerg Weapon</c>
+e_gameUIStringInventoryPickup=<n/>Only Artifact towers can carry items Right-click to pick up an item and then left-click on a nearby location or other Artifact tower to move or drop the item.
+e_unitAttributeArmored=<c val="05C2FA">Terran</c>
+e_unitAttributeBiological=<c val="FCD703">Protoss</c>
+e_unitAttributeHeroic=<c val="9D09F7">Zerg</c>
+e_unitAttributeHover=<c val="F20000">Tal'darim</c>
+e_unitAttributeLight=<c val="B9BCC8">Critter</c>
+e_unitAttributeMassive=<c val="F86207">Dominion</c>
+e_unitAttributeMechanical=<c val="86F40B">Mecha Swarm</c>
+e_unitAttributePsionic=<c val="0C4EFC">Main Structure</c>
+e_unitAttributeRobotic=<c val="F365C1">Item</c>
+e_unitAttributeStructure=<c val="707D89">Tower</c>
+e_unitAttributeSummoned=<c val="614673">Creep</c>
+infesteds=Infested Terran Skin
+re=Transform this Artifact Tower into another Artifact
+re2=Transform this Item into another Item

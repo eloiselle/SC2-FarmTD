@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWater id="Agria">
+        <State index="0" Height="14.550000"/>
+    </CWater>
+    <CWater id="AiurCreep">
+        <State index="0" Height="-24.000000"/>
+    </CWater>
+    <CWater id="Albion">
+        <State index="0" Height="3.100000"/>
+    </CWater>
+    <CWater id="BelShir">
+        <State index="0" Height="7.800000"/>
+    </CWater>
+    <CWater id="Char">
+        <State index="0" Height="8.050000"/>
+    </CWater>
+</Catalog>

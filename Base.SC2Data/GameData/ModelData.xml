@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="GuardianShield">
+        <Model value="Assets\Effects\Neutral\MineralSpawn\MineralSpawn.m3"/>
+    </CModel>
+    <CModelFoliage id="UnknownModel">
+        <Model value="Assets\Doodads\NaturalMinerals_Death\NaturalMinerals_Death.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModelFoliage>
+</Catalog>

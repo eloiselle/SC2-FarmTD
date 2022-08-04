@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="AbathurMorphTimeCostReduced">
+        <EffectArray index="3" Value="xel1"/>
+        <EffectArray index="5" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="CommanderPrestigeKaraxArmy">
+        <EffectArray index="0" Value="6"/>
+        <EffectArray index="2" Value="6"/>
+        <EffectArray index="4" Value="6"/>
+        <EffectArray index="6" Value="6"/>
+        <EffectArray index="12" Value="6"/>
+    </CUpgrade>
+    <CUpgrade id="CommanderPrestigeRaynorAir">
+        <EffectArray index="16" Value="8"/>
+    </CUpgrade>
+    <CUpgrade id="CommanderPrestigeSwannHercules">
+        <EffectArray index="0" Value="4"/>
+        <EffectArray index="1" Value="4"/>
+    </CUpgrade>
+    <CUpgrade id="CommanderPrestigeZagaraMaxSupply">
+        <EffectArray index="4" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="FenixResearchCostReduction">
+        <EffectArray index="15" Value="xel1"/>
+        <EffectArray index="16" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="HighCapacityBarrels">
+        <EffectArray index="1" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="KaraxPylonCannonCharges">
+        <EffectArray index="1" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="KerriganVoidCoopFasterUnitMorph">
+        <EffectArray index="17" Value="xel1"/>
+        <EffectArray index="18" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryFenixChampionLifeShieldBuff">
+        <EffectArray index="21" Value="xel1"/>
+        <EffectArray index="22" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryKaraxBuildingVital">
+        <EffectArray index="49" Value="xel1"/>
+        <EffectArray index="50" Value="xel1"/>
+        <EffectArray index="51" Value="xel1"/>
+        <EffectArray index="52" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="MechaWea">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <Alert value="UpgradeComplete_Zerg"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research5].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Weapon,ZerglingClawsStetmann,Level" Value="1"/>
+        <EffectArray Reference="Effect,ZerglingClawsDamageStetmann,Amount" Value="3.45"/>
+        <EffectArray Reference="Effect,PrimalBaseWeaponDamage,Amount" Value="9"/>
+        <EffectArray Reference="Effect,RavagerStetmannDamage,Amount" Value="25.5"/>
+        <EffectArray Reference="Effect,HydraliskNeedleSpinesStetmannDamage,Amount" Value="17.25"/>
+        <EffectArray Reference="Effect,BroodlingEscortDamageStetmann,Amount" Value="48.75"/>
+        <EffectArray Reference="Effect,ZerglingClawsDamageStetmann2,Amount" Value="3.45"/>
+        <EffectArray Reference="Effect,GaryStetmannDamage,Amount" Value="378"/>
+        <EffectArray Reference="Effect,HotSRaptorClawsDamage,Amount" Value="97.5"/>
+        <EffectArray Reference="Effect,UltraliskKaiserBladesDamageStetmann,Amount" Value="218.4"/>
+        <EffectArray Reference="Weapon,PrimalBaseWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,RavagerStetmannPlasmaDischarge,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HydraliskNeedleSpinesStetmann,Level" Value="1"/>
+        <EffectArray Reference="Weapon,BroodlingStrikeStetmann,Level" Value="1"/>
+        <EffectArray Reference="Weapon,UltraliskKaiserBladesStetmann,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GaryStetmannGun,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HotSRaptorClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,BroodlingNeedleClawsStetmann,Level" Value="1"/>
+        <EffectArray Reference="Effect,BroodlingEscortDamage,Amount" Value="97.5"/>
+        <EffectArray Reference="Effect,BroodlingNeedleClawsStetmann,Amount" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,ElectromagticSurge,Modification.VitalRegenArray[Life]" Value="8.000000"/>
+        <EffectArray Reference="Effect,mechaultra,Amount" Value="150"/>
+        <LeaderAlias value="DominionWea"/>
+        <MaxLevel value="20"/>
+    </CUpgrade>
+    <CUpgrade id="DominionWea">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <Alert value="UpgradeComplete_Terr"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research4].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Effect,TrooperMengskDamage,Amount" Value="2.85"/>
+        <EffectArray Reference="Effect,LongboltMissileU,Amount" Value="8.25"/>
+        <EffectArray Reference="Effect,PunisherGrenadesMengskU,Amount" Value="33"/>
+        <EffectArray Reference="Effect,ArchAngelCoopShootDamage,Amount" Value="31.5"/>
+        <EffectArray Reference="Effect,C10CanisterRifleMengsk,Amount" Value="118.5"/>
+        <EffectArray Reference="Effect,BacklashRocketsU,Amount" Value="120.3"/>
+        <EffectArray Reference="Effect,OdinDamageLeft,Amount" Value="270"/>
+        <EffectArray Reference="Effect,OdinDamageRight,Amount" Value="270"/>
+        <EffectArray Reference="Effect,HHLaserBatteryU,Amount" Value="412.7"/>
+        <EffectArray Reference="Weapon,TrooperMengsk,Level" Value="1"/>
+        <EffectArray Reference="Weapon,LongboltMissile,Level" Value="1"/>
+        <EffectArray Reference="Weapon,PunisherGrenadesMengsk,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ArchAngelCoopGun,Level" Value="1"/>
+        <EffectArray Reference="Weapon,C10CanisterRifleMengsk,Level" Value="1"/>
+        <EffectArray Reference="Weapon,BacklashRockets,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HHLaserBattery,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Odin,Level" Value="1"/>
+        <EffectArray Reference="Effect,OdinDamage,Amount" Value="270"/>
+        <EffectArray Reference="Effect,nuke,Amount" Value="525"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,PoisonGas,Modification.VitalRegenArray[Life]" Value="12.000000"/>
+        <MaxLevel value="20"/>
+    </CUpgrade>
+    <CUpgrade id="Mission01">
+        <EffectArray Operation="Set" Reference="Button,Mission01,Tooltip" Value="Button/Tooltip/Mission01C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission01,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+    </CUpgrade>
+    <CUpgrade id="Mission02">
+        <EffectArray Operation="Set" Reference="Button,Mission02,Tooltip" Value="Button/Tooltip/Mission02C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission02,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission03">
+        <EffectArray Operation="Set" Reference="Button,Mission03,Tooltip" Value="Button/Tooltip/Mission03C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission03,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission04">
+        <EffectArray Operation="Set" Reference="Button,Mission04,Tooltip" Value="Button/Tooltip/Mission04C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission04,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission05">
+        <EffectArray Operation="Set" Reference="Button,Mission05,Tooltip" Value="Button/Tooltip/Mission05C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission05,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission06">
+        <EffectArray Operation="Set" Reference="Button,Mission06,Tooltip" Value="Button/Tooltip/Mission06C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission06,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission07">
+        <EffectArray Operation="Set" Reference="Button,Mission07,Tooltip" Value="Button/Tooltip/Mission07C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission07,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission08">
+        <EffectArray Operation="Set" Reference="Button,Mission08,Tooltip" Value="Button/Tooltip/Mission08C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission08,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission09">
+        <EffectArray Operation="Set" Reference="Button,Mission09,Tooltip" Value="Button/Tooltip/Mission09C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission09,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission10">
+        <EffectArray Operation="Set" Reference="Button,Mission10,Tooltip" Value="Button/Tooltip/Mission10C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission10,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission11">
+        <EffectArray Operation="Set" Reference="Button,Mission11,Tooltip" Value="Button/Tooltip/Mission11C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission11,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission12">
+        <EffectArray Operation="Set" Reference="Button,Mission12,Tooltip" Value="Button/Tooltip/Mission12C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission12,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission13">
+        <EffectArray Operation="Set" Reference="Button,Mission13,Tooltip" Value="Button/Tooltip/Mission13C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission13,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission14">
+        <EffectArray Operation="Set" Reference="Button,Mission14,Tooltip" Value="Button/Tooltip/Mission14C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission14,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission15">
+        <EffectArray Operation="Set" Reference="Button,Mission15,Tooltip" Value="Button/Tooltip/Mission15C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission15,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission16">
+        <EffectArray Operation="Set" Reference="Button,Mission16,Tooltip" Value="Button/Tooltip/Mission16C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission16,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission17">
+        <EffectArray Operation="Set" Reference="Button,Mission17,Tooltip" Value="Button/Tooltip/Mission17C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission17,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission18">
+        <EffectArray Operation="Set" Reference="Button,Mission18,Tooltip" Value="Button/Tooltip/Mission18C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission18,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission19">
+        <EffectArray Operation="Set" Reference="Button,Mission19,Tooltip" Value="Button/Tooltip/Mission19C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission19,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission20">
+        <EffectArray Operation="Set" Reference="Button,Mission20,Tooltip" Value="Button/Tooltip/Mission20C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission20,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission21">
+        <EffectArray Operation="Set" Reference="Button,Mission21,Tooltip" Value="Button/Tooltip/Mission21C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission21,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission22">
+        <EffectArray Operation="Set" Reference="Button,Mission22,Tooltip" Value="Button/Tooltip/Mission22C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission22,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission23">
+        <EffectArray Operation="Set" Reference="Button,Mission23,Tooltip" Value="Button/Tooltip/Mission23C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission23,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission24">
+        <EffectArray Operation="Set" Reference="Button,Mission24,Tooltip" Value="Button/Tooltip/Mission24C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission24,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission25">
+        <EffectArray Operation="Set" Reference="Button,Mission25,Tooltip" Value="Button/Tooltip/Mission25C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission25,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="Mission252">
+        <EffectArray Operation="Set" Reference="Button,Mission26,Tooltip" Value="Button/Tooltip/Mission26C"/>
+        <EffectArray Operation="Set" Reference="Button,Mission26,Icon" Value="Assets\Textures\btn-ability-protoss-chronobeam.dds"/>
+        <LeaderAlias value="Mission01"/>
+    </CUpgrade>
+    <CUpgrade id="SJPirateYamato">
+        <EffectArray index="0" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="SwannCommander">
+        <EffectArray index="30" Value="xel1"/>
+        <EffectArray index="36" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="SwannCommanderVehicleHealth">
+        <EffectArray index="14" Value="4"/>
+        <EffectArray index="15" Value="4"/>
+        <EffectArray index="16" Value="4"/>
+        <EffectArray index="17" Value="4"/>
+        <EffectArray index="18" Value="4"/>
+        <EffectArray index="19" Value="4"/>
+        <!-- Old 40% Health -->
+        <!--EffectArray Reference="Unit,Hellion,LifeMax" Value="36"/>
+        <EffectArray Reference="Unit,Hellion,LifeStart" Value="36"/>
+        <EffectArray Reference="Unit,HellionWreckage,LifeMax" Value="36"/>
+        <EffectArray Reference="Unit,HellionWreckage,LifeStart" Value="36"/>
+        <EffectArray Reference="Unit,HellionTank,LifeMax" Value="54"/>
+        <EffectArray Reference="Unit,HellionTank,LifeStart" Value="54"/>
+        <EffectArray Reference="Unit,HellbatWreckage,LifeMax" Value="54"/>
+        <EffectArray Reference="Unit,HellbatWreckage,LifeStart" Value="54"/>
+        <EffectArray Reference="Unit,Diamondback,LifeMax" Value="80"/>
+        <EffectArray Reference="Unit,Diamondback,LifeStart" Value="80"/>
+        <EffectArray Reference="Unit,DiamondbackWreckage,LifeMax" Value="80"/>
+        <EffectArray Reference="Unit,DiamondbackWreckage,LifeStart" Value="80"/>
+        <EffectArray Reference="Unit,SiegeTank,LifeMax" Value="64"/>
+        <EffectArray Reference="Unit,SiegeTank,LifeStart" Value="64"/>
+        <EffectArray Reference="Unit,SiegeTankSieged,LifeMax" Value="64"/>
+        <EffectArray Reference="Unit,SiegeTankSieged,LifeStart" Value="64"/>
+        <EffectArray Reference="Unit,SiegeTankWreckage,LifeMax" Value="64"/>
+        <EffectArray Reference="Unit,SiegeTankWreckage,LifeStart" Value="64"/>
+        <EffectArray Reference="Unit,Thor,LifeMax" Value="160"/>
+        <EffectArray Reference="Unit,Thor,LifeStart" Value="160"/>
+        <EffectArray Reference="Unit,ThorAP,LifeMax" Value="160"/>
+        <EffectArray Reference="Unit,ThorAP,LifeStart" Value="160"/>
+        <EffectArray Reference="Unit,ThorWreckageSwann,LifeMax" Value="160"/>
+        <EffectArray Reference="Unit,ThorWreckageSwann,LifeStart" Value="160"/>
+        <EffectArray Reference="Unit,Goliath,LifeMax" Value="60"/>
+        <EffectArray Reference="Unit,Goliath,LifeStart" Value="60"/>
+        <EffectArray Reference="Unit,GoliathWreckage,LifeMax" Value="60"/>
+        <EffectArray Reference="Unit,GoliathWreckage,LifeStart" Value="60"/>
+        <EffectArray Reference="Unit,Cyclone,LifeMax" Value="80"/>
+        <EffectArray Reference="Unit,Cyclone,LifeStart" Value="80"/>
+        <EffectArray Reference="Unit,CycloneWreckage,LifeMax" Value="80"/>
+        <EffectArray Reference="Unit,CycloneWreckage,LifeStart" Value="80"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/-->
+    </CUpgrade>
+    <CUpgrade id="TaldarimWea">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research3].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Effect,SupplicantDamage,Amount" Value="2.85"/>
+        <EffectArray Reference="Effect,ZeratulDisruptionBeamDamage,Amount" Value="2.625"/>
+        <EffectArray Reference="Effect,PhotonCannonU,Amount" Value="9.75"/>
+        <EffectArray Reference="Effect,AscendantWeaponDamage,Amount" Value="34.5"/>
+        <EffectArray Reference="Effect,ColossusTaldarimDamage,Amount" Value="186"/>
+        <EffectArray Reference="Effect,AlarakBaneBladesDamage,Amount" Value="260.1"/>
+        <EffectArray Reference="Effect,SOAMothershipv4BeamDamage,Amount" Value="54.65"/>
+        <EffectArray Reference="Effect,WarpBlades,Amount" Value="155.1"/>
+        <EffectArray Reference="Weapon,SupplicantWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ZeratulDisruptionBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,PhotonCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AscendantWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ColossusTaldarimChargedBeam,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DarkArchonChampionWeaponFunctionalHoldPos,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DarkTemplarTaldarim,Level" Value="1"/>
+        <EffectArray Reference="Weapon,SOAMothershipv4Weapon,Level" Value="1"/>
+        <EffectArray Reference="Effect,SOAMothershipLineAttackDamage,Amount" Value="45"/>
+        <LeaderAlias value="DominionWea"/>
+        <MaxLevel value="20"/>
+    </CUpgrade>
+    <CUpgrade id="TerranWea">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <Alert value="UpgradeComplete_Terr"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research2].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Effect,GuassRifle,Amount" Value="3.3"/>
+        <EffectArray Reference="Effect,AutoTurret,Amount" Value="7.8"/>
+        <EffectArray Reference="Effect,GoliathG,Amount" Value="26.25"/>
+        <EffectArray Reference="Effect,C10CanisterRifle,Amount" Value="55.5"/>
+        <EffectArray Reference="Effect,CrucioShockCannonDirected,Amount" Value="105"/>
+        <EffectArray Reference="Effect,NovaWeaponImprovedCanisterRifleCloaked,Amount" Value="295.7"/>
+        <EffectArray Reference="Effect,NovaWeaponImprovedCanisterRifleUncloaked,Amount" Value="295.7"/>
+        <EffectArray Reference="Effect,DuskWingBansheeDamage,Amount" Value="100.9"/>
+        <EffectArray Reference="Effect,TychusCoopChaingunDamage,Amount" Value="41.25"/>
+        <EffectArray Reference="Weapon,GuassRifle,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AutoTurret,Level" Value="1"/>
+        <EffectArray Reference="Weapon,GoliathG,Level" Value="1"/>
+        <EffectArray Reference="Weapon,C10CanisterRifle,Level" Value="1"/>
+        <EffectArray Reference="Weapon,CrucioShockCannon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NovaWeaponImprovedCanisterRifle,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DuskWingBanshee,Level" Value="1"/>
+        <EffectArray Reference="Weapon,TychusCoopChaingun,Level" Value="1"/>
+        <EffectArray Reference="Effect,CrucioShockCannonBlast,Amount" Value="105"/>
+        <EffectArray Reference="Effect,CrucioShockCannonDummy,Amount" Value="105"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,ArmorPenetratingRounds,Modification.LifeArmorBonus" Value="11.25"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,ArmorPenetratingRounds,Modification.ShieldArmorBonus" Value="11.25"/>
+        <EffectArray Reference="Effect,NovaWeaponHellfireShotgunBlastDamage,Amount" Value="68"/>
+        <LeaderAlias value="DominionWea"/>
+        <MaxLevel value="20"/>
+    </CUpgrade>
+    <CUpgrade id="CritterWea">
+        <Icon value="Assets\Textures\btn-ability-zerg-stabburst.dds"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research7].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Weapon,Spines,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Swarmling,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KerriganInfestBroodling,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ScantipedeParasiticSmall,Level" Value="1"/>
+        <EffectArray Reference="Weapon,YetiMommaClaws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,MutatorTurkeyPeck,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HunterKiller,Level" Value="1"/>
+        <EffectArray Reference="Effect,Spines,Amount" Value="0.9"/>
+        <EffectArray Reference="Effect,Swarmling,Amount" Value="2.25"/>
+        <EffectArray Reference="Effect,NeedleClaws,Amount" Value="5.25"/>
+        <EffectArray Reference="Effect,KerriganInfestBroodling,Amount" Value="6"/>
+        <EffectArray Reference="Effect,ScantipedeParasiticSmallDamage,Amount" Value="97.5"/>
+        <EffectArray Reference="Effect,MutatorTurkeyPeckDamage,Amount" Value="279.2"/>
+        <EffectArray Reference="Effect,YetiMatriarchClaws,Amount" Value="278.3"/>
+        <EffectArray Reference="Effect,HunterKillerU,Amount" Value="160.1"/>
+        <EffectArray Reference="Effect,ursadon,Amount" Value="120"/>
+        <EffectArray Reference="Effect,LightningBombDamage,Amount" Value="8"/>
+        <LeaderAlias value="DominionWea"/>
+        <MaxLevel value="20"/>
+    </CUpgrade>
+    <CUpgrade id="TychusCommander">
+        <EffectArray index="35" Value="xel1"/>
+        <EffectArray index="42" Value="xel1"/>
+        <EffectArray index="43" Value="xel1"/>
+    </CUpgrade>
+    <CUpgrade id="admin"/>
+    <CUpgrade id="diff2">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="6500"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="22100"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="84503"/>
+    </CUpgrade>
+    <CUpgrade id="ZergWea">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <Alert value="UpgradeComplete_Zerg"/>
+        <EffectArray Reference="Effect,Claws,Amount" Value="1.35"/>
+        <EffectArray Reference="Effect,AcidSalivaU,Amount" Value="6.3"/>
+        <EffectArray Reference="Effect,NeedleSpinesDamage,Amount" Value="11.4"/>
+        <EffectArray Reference="Effect,AcidSpines,Amount" Value="21.75"/>
+        <EffectArray Reference="Effect,HotSUltraliskKaiserBladesDamage,Amount" Value="136.5"/>
+        <EffectArray Reference="Effect,PrimalZergling,Amount" Value="210.9"/>
+        <EffectArray Reference="Effect,RazorTalonsDamage,Amount" Value="94.5"/>
+        <EffectArray Reference="Effect,ZagaraVoidCoopRangedDamage,Amount" Value="282.9"/>
+        <EffectArray Reference="Weapon,Claws,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AcidSaliva,Level" Value="1"/>
+        <EffectArray Reference="Weapon,NeedleSpines,Level" Value="1"/>
+        <EffectArray Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray Reference="Weapon,KaiserBlades,Level" Value="1"/>
+        <EffectArray Reference="Weapon,PrimalZergling,Level" Value="1"/>
+        <EffectArray Reference="Weapon,ZagaraVoidCoopRanged,Level" Value="1"/>
+        <EffectArray Reference="Weapon,RazorTalons,Level" Value="1"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research1].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Effect,ZerglingMengskAttackDamage,Amount" Value="12"/>
+        <EffectArray Reference="Weapon,ZerglingMengskClaws,Level" Value="1"/>
+        <EffectArray Reference="Effect,Carbot,Amount" Value="113"/>
+        <MaxLevel value="20"/>
+        <LeaderAlias value="DominionWea"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossWea">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <Alert value="UpgradeComplete_Prot"/>
+        <EffectArray Reference="Abil,Weaponupgrades,InfoArray[Research6].Resource[Minerals]" Value="100"/>
+        <EffectArray Reference="Effect,PsiBlades,Amount" Value="5.25"/>
+        <EffectArray Reference="Effect,AdeptDamage,Amount" Value="5.25"/>
+        <EffectArray Reference="Effect,PhaseDisruptors,Amount" Value="34.5"/>
+        <EffectArray Reference="Effect,HighTemplarWeaponDamage,Amount" Value="47.25"/>
+        <EffectArray Reference="Effect,PsionicShockwaveDamage,Amount" Value="55.5"/>
+        <EffectArray Reference="Effect,DarkTemplarChampionDamage,Amount" Value="300.8"/>
+        <EffectArray Reference="Effect,DragoonDamage,Amount" Value="285.8"/>
+        <EffectArray Reference="Effect,VoidSeekerU,Amount" Value="330.9"/>
+        <EffectArray Reference="Weapon,PsiBlades,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Adept,Level" Value="1"/>
+        <EffectArray Reference="Weapon,PhaseDisruptors,Level" Value="1"/>
+        <EffectArray Reference="Weapon,HighTemplarWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,PsionicShockwave,Level" Value="1"/>
+        <EffectArray Reference="Weapon,Dragoon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,DarkTemplarChampionWeapon,Level" Value="1"/>
+        <EffectArray Reference="Weapon,VoidSeeker,Level" Value="1"/>
+        <EffectArray Reference="Effect,voidseeker,Amount" Value="45"/>
+        <LeaderAlias value="DominionWea"/>
+        <MaxLevel value="20"/>
+    </CUpgrade>
+    <CUpgrade id="diff3">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="7750"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="26350"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="100753"/>
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+    <CUpgrade id="diff4">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="9499"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="32298"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="123493"/>
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+    <CUpgrade id="diff5">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="11999"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="40798"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="155993"/>
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+    <CUpgrade id="diff1">
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+    <CUpgrade id="diff6">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="14000"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="47600"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="182003"/>
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+    <CUpgrade id="diff7">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="15000"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="51000"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="195000"/>
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+    <CUpgrade id="diff8">
+        <EffectArray Operation="Set" Reference="Unit,lCreep41,LifeMax" Value="19250"/>
+        <EffectArray Operation="Set" Reference="Unit,Clreep42,LifeMax" Value="55250"/>
+        <EffectArray Operation="Set" Reference="Unit,pCreep43,LifeMax" Value="211250"/>
+        <LeaderAlias value="diff2"/>
+    </CUpgrade>
+</Catalog>

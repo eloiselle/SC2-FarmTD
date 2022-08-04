@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="27">
+    <ObjectPoint Id="510828191" Position="205.0397,68.89,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="1961661304" Position="23.3293,189.2683,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="2131424270" Position="196.98,97.5,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1027657496" Position="187.0397,198.64,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1293713608" Position="33.15,97.75,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1994152235" Position="88.91,129.0197,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1734870485" Position="148.5,82.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="466884658" Position="78.92,198.68,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="771167086" Position="106.68,86.7897,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1315301629" Position="79.0998,68.91,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="818113651" Position="135.19,129.4,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="382555670" Position="214.74,206.9,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="141479453" Position="187.2998,129.1198,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="2056667434" Position="23.2084,198.893,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="25683425" Position="41.0083,216.9877,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="935652909" Position="135.0498,189.2998,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="270194990" Position="51.0397,147.25,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="2135571076" Position="196.94,68.73,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="121958744" Position="187.22,68.8698,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="1564115362" Position="111.433,101.205,0" Scale="1,1,1" Type="Normal" Name="CC10" Color="0,0,0,0"/>
+    <ObjectPoint Id="486395668" Position="200.5,202.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="693220904" Position="51.17,129.2,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="886899149" Position="196.92,217.65,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="741655342" Position="187.16,189.0197,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="1018678696" Position="51.15,156.8698,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="344072618" Position="204.98,189.0397,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="1032666665" Position="54.962,161.1606,0" Scale="1,1,1" Type="Normal" Name="CC5" Color="0,0,0,0"/>
+    <ObjectPoint Id="1864341916" Position="33.0537,189.129,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1461564642" Position="187.18,138.74,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1410243903" Position="200.5,82.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1766109822" Position="214.8598,188.8498,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="654281077" Position="167.384,101.053,0" Scale="1,1,1" Type="Normal" Name="CC11" Color="0,0,0,0"/>
+    <ObjectPoint Id="2023023038" Position="50.9064,207.1494,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1610269992" Position="78.8498,157.45,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="500875256" Position="186.8298,217.3098,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="277080488" Position="162.88,156.9,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1088111056" Position="33.0927,217.901,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="914357956" Position="106.99,138.5898,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="1312406931" Position="111.23,160.9982,0" Scale="1,1,1" Type="Normal" Name="CC6" Color="0,0,0,0"/>
+    <ObjectPoint Id="1448415721" Position="152.93,69.17,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="578901535" Position="152.8698,189.3198,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="950714846" Position="221.7421,16.5153,0" Scale="1,1,1" Type="Normal" Name="Spawn area" Color="0,0,0,0"/>
+    <ObjectPoint Id="50631589" Position="33.19,129.23,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="438385752" Position="51.2697,138.7998,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="1514699286" Position="152.7897,96.8698,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="303819308" Position="79.0598,138.7797,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="306699829" Position="186.96,86.69,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="141760574" Position="214.8498,216.5197,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1104424244" Position="162.8498,198.73,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="1143135515" Position="162.7897,96.65,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="2040248162" Position="144.8698,97.7797,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1286411656" Position="96.72,216.7797,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="2034888345" Position="204.98,156.8398,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="884494632" Position="78.7797,206.88,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="1057784720" Position="23.13,86.94,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="1983899809" Position="186.89,97.16,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="502190971" Position="106.6198,206.94,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="45807118" Position="50.96,87,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="198874419" Position="79.18,129.16,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="419556044" Position="23.14,157.66,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="418912586" Position="41.0598,96.8398,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="380618591" Position="23.3498,138.99,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1191496135" Position="36.5,82.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1723251713" Position="23.47,129.3698,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="616089805" Position="92.5,82.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="1865416288" Position="144.8098,217.93,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1232136336" Position="106.8698,156.66,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1988134159" Position="111.0871,221.353,0" Scale="1,1,1" Type="Normal" Name="CC2" Color="0,0,0,0"/>
+    <ObjectPoint Id="1492384314" Position="78.7697,97.2,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="206981808" Position="106.9,78.3398,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="838624140" Position="167.0246,160.5502,0" Scale="1,1,1" Type="Normal" Name="CC7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1911948996" Position="88.8098,217.69,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="587783635" Position="51.0285,189.1015,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1304734220" Position="106.74,188.89,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1214973561" Position="51.1328,198.7011,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="1250979273" Position="51.0698,96.6198,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="914106497" Position="96.7797,96.63,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="1095743275" Position="23.39,69.1198,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="1897440764" Position="187.0998,78.49,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="446070087" Position="135.0698,139.0197,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1727277478" Position="144.7697,189.16,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="903448188" Position="214.9,96.3698,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="115464455" Position="167.2998,221.325,0" Scale="1,1,1" Type="Normal" Name="CC3" Color="0,0,0,0"/>
+    <ObjectPoint Id="949301063" Position="214.7897,86.75,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1939424800" Position="79.0397,189.0598,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="2126353300" Position="204.8398,216.74,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="1705268766" Position="51.19,78.5498,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="2035671394" Position="23.2697,78.74,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="926669923" Position="96.8598,156.88,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="397071441" Position="148.5,142.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1703596863" Position="36.5,142.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="1892681271" Position="219.2238,160.6977,0" Scale="1,1,1" Type="Normal" Name="CC8" Color="0,0,0,0"/>
+    <ObjectPoint Id="418885705" Position="134.7897,207.1198,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="654925692" Position="144.8298,69.0097,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1214866606" Position="134.99,78.7697,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1495354875" Position="88.8598,97.5397,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="759800168" Position="134.8498,86.97,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="747894151" Position="196.88,188.88,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1944888394" Position="106.88,128.99,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1448679163" Position="134.93,147.22,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="1204667131" Position="33.23,158,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="594189789" Position="23.0598,97.41,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="1204664535" Position="88.95,157.7897,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="738122482" Position="187.0397,146.94,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="2082291731" Position="162.89,129.23,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="2057732085" Position="214.96,198.45,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="44864483" Position="214.88,147,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="920938148" Position="162.68,87.0297,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1394402946" Position="97,129.18,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="92829662" Position="134.93,198.92,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="840431185" Position="96.92,68.93,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="643806756" Position="51.017,216.7736,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1746876701" Position="41.15,157.0898,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="353931464" Position="22.9992,217.559,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="685717694" Position="215.0998,138.5498,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="1642294092" Position="36.5,202.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="974768191" Position="162.7697,147.2797,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1428208782" Position="106.7998,68.74,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="921451932" Position="197.0598,157.75,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1594255366" Position="162.8098,68.98,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1987082957" Position="214.99,156.6198,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="25827822" Position="144.95,158.0297,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 12" Color="0,0,0,0"/>
+    <ObjectPoint Id="925326221" Position="162.99,138.8298,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="490504531" Position="88.8298,68.7697,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1183384720" Position="134.72,217.5898,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="1638573909" Position="78.98,78.5297,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1695760229" Position="144.91,129.2597,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1406747661" Position="162.91,78.5798,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="1641068222" Position="162.63,207.18,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1218799347" Position="23.21,147.19,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="2112798354" Position="200.5,142.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="858964212" Position="186.9,206.8398,0" Scale="1,1,1" Type="Normal" Name="Player 4 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="459946607" Position="41.1523,189.2915,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="116402272" Position="96.8698,189.0798,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="188353530" Position="215,128.95,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1472678571" Position="41.2897,129.39,0" Scale="1,1,1" Type="Normal" Name="Player 5 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="1615261545" Position="78.71,217.3498,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="395036504" Position="134.7797,97.44,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="1053813783" Position="41.21,69.14,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="423306720" Position="197.0197,128.98,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="2058270743" Position="92.5,142.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="229629860" Position="78.8398,86.73,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="788099547" Position="162.75,189.13,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="227750304" Position="88.7697,188.92,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="788495231" Position="148.5,202.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="1118070058" Position="162.74,216.7998,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1688317565" Position="33.1098,68.98,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 11" Color="0,0,0,0"/>
+    <ObjectPoint Id="1773916014" Position="152.73,217.0197,0" Scale="1,1,1" Type="Normal" Name="Player 3 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="1695337536" Position="134.8598,157.69,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="1820780943" Position="219.1911,220.921,0" Scale="1,1,1" Type="Normal" Name="CC4" Color="0,0,0,0"/>
+    <ObjectPoint Id="439512297" Position="205.1198,129.14,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="1989667243" Position="106.7897,96.41,0" Scale="1,1,1" Type="Normal" Name="Player 10 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1256502447" Position="51.0898,68.95,0" Scale="1,1,1" Type="Normal" Name="Player 9 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="435424621" Position="152.8698,157.1198,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="633311133" Position="92.5,202.5,0" Scale="1,1,1" Type="StartLoc" Name="Start Location 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="593158170" Position="215.0197,78.2998,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="410666718" Position="214.92,68.7,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 7" Color="0,0,0,0"/>
+    <ObjectPoint Id="1752879067" Position="106.7597,147.0397,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 3" Color="0,0,0,0"/>
+    <ObjectPoint Id="72774846" Position="23.0688,207.0922,0" Scale="1,1,1" Type="Normal" Name="Player 1 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="398445907" Position="55.0314,100.8403,0" Scale="1,1,1" Type="Normal" Name="CC9" Color="0,0,0,0"/>
+    <ObjectPoint Id="1998821313" Position="78.92,146.98,0" Scale="1,1,1" Type="Normal" Name="Player 6 Point 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="591179023" Position="135.1098,69.15,0" Scale="1,1,1" Type="Normal" Name="Player 11 Point 10" Color="0,0,0,0"/>
+    <ObjectPoint Id="1950023489" Position="204.9,96.5898,0" Scale="1,1,1" Type="Normal" Name="Player 12 Point 5" Color="0,0,0,0"/>
+    <ObjectPoint Id="1696430554" Position="55.2,221.16,0" Scale="1,1,1" Type="Normal" Name="CC1" Color="0,0,0,0"/>
+    <ObjectPoint Id="1247453107" Position="106.8498,198.49,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 8" Color="0,0,0,0"/>
+    <ObjectPoint Id="144850" Position="153.0097,129.42,0" Scale="1,1,1" Type="Normal" Name="Player 7 Point 6" Color="0,0,0,0"/>
+    <ObjectPoint Id="659917332" Position="218.9758,100.8542,0" Scale="1,1,1" Type="Normal" Name="CC12" Color="0,0,0,0"/>
+    <ObjectPoint Id="1206059824" Position="106.73,216.5598,0" Scale="1,1,1" Type="Normal" Name="Player 2 Point 4" Color="0,0,0,0"/>
+    <ObjectPoint Id="1433248755" Position="186.97,157.41,0" Scale="1,1,1" Type="Normal" Name="Player 8 Point 1" Color="0,0,0,0"/>
+    <ObjectUnit Id="1651717725" Position="71.5,11.5,0" Scale="1,1,1" UnitType="T3U6"/>
+    <ObjectUnit Id="1314933037" Position="77.5,19.5,0" Scale="1,1,1" UnitType="T6U4"/>
+    <ObjectUnit Id="214863636" Position="79.5,21.5,0" Scale="1,1,1" UnitType="T6U8"/>
+    <ObjectUnit Id="292253616" Position="73.5,13.5,0" Scale="1,1,1" UnitType="T4U7"/>
+    <ObjectUnit Id="238438713" Position="69.5,13.5,0" Scale="1,1,1" UnitType="T2U7"/>
+    <ObjectUnit Id="1826599576" Position="90.5,18.5,0" Scale="1,1,1" UnitType="Item3"/>
+    <ObjectUnit Id="38768145" Position="88.5,14.5,0" Scale="1,1,1" UnitType="Item10"/>
+    <ObjectUnit Id="628865439" Position="73.5,17.5,0" Scale="1,1,1" UnitType="T4U5"/>
+    <ObjectUnit Id="1801386454" Position="81.5,11.5,0" Scale="1,1,1" UnitType="T6U18"/>
+    <ObjectUnit Id="1228013139" Position="71.5,13.5,0" Scale="1,1,1" UnitType="T3U7"/>
+    <ObjectUnit Id="506019146" Variation="3" Position="88.5,16.5,0" Scale="1,1,1" UnitType="Item6"/>
+    <ObjectUnit Id="2041056325" Position="79.5,13.5,0" Scale="1,1,1" UnitType="T6U19"/>
+    <ObjectUnit Id="1023825447" Position="75.5,15.5,0" Scale="1,1,1" UnitType="T5U4"/>
+    <ObjectUnit Id="441479267" Position="71.5,9.5,0" Scale="1,1,1" UnitType="T3U1"/>
+    <ObjectUnit Id="28567859" Position="67.5,11.5,0" Scale="1,1,1" UnitType="T1U6"/>
+    <ObjectUnit Id="1120009738" Position="71.5,17.5,0" Scale="1,1,1" UnitType="T3U5"/>
+    <ObjectUnit Id="1400486921" Position="79.5,15.5,0" Scale="1,1,1" UnitType="T6U12"/>
+    <ObjectUnit Id="2109764950" Position="79.5,19.5,0" Scale="1,1,1" UnitType="T6U6"/>
+    <ObjectUnit Id="192560034" Variation="1" Position="92.5,18.5,0" Scale="1,1,1" UnitType="Item4"/>
+    <ObjectUnit Id="1648917018" Position="77.5,13.5,0" Scale="1,1,1" UnitType="T6U20"/>
+    <ObjectUnit Id="559349505" Position="75.5,13.5,0" Scale="1,1,1" UnitType="T5U7"/>
+    <ObjectUnit Id="287507608" Position="75.5,19.5,0" Scale="1,1,1" UnitType="T5U2"/>
+    <ObjectUnit Id="2051119987" Position="86.5,14.5,0" Scale="1,1,1" UnitType="Item9"/>
+    <ObjectUnit Id="1135802751" Position="71.5,19.5,0" Scale="1,1,1" UnitType="T3U2"/>
+    <ObjectUnit Id="342095704" Position="73.5,21.5,0" Scale="1,1,1" UnitType="T4U3"/>
+    <ObjectUnit Id="1579048702" Position="81.5,13.5,0" Scale="1,1,1" UnitType="T6U21"/>
+    <ObjectUnit Id="295690174" Position="73.5,9.5,0" Scale="1,1,1" UnitType="T4U1"/>
+    <ObjectUnit Id="508518434" Position="77.5,9.5,0" Scale="1,1,1" UnitType="T6U3"/>
+    <ObjectUnit Id="317459793" Position="73.5,19.5,0" Scale="1,1,1" UnitType="T4U2"/>
+    <ObjectUnit Id="199638105" Variation="3" Position="86.5,12.5,0" Scale="1,1,1" UnitType="Item13"/>
+    <ObjectUnit Id="351326324" Position="67.5,9.5,0" Scale="1,1,1" UnitType="T1U1"/>
+    <ObjectUnit Id="674274327" Position="67.5,19.5,0" Scale="1,1,1" UnitType="T1U2"/>
+    <ObjectUnit Id="1221654573" Position="67.5,21.5,0" Scale="1,1,1" UnitType="T1U3"/>
+    <ObjectUnit Id="775023212" Position="90.5,14.5,0" Scale="1,1,1" UnitType="Item11"/>
+    <ObjectUnit Id="1074623167" Position="67.5,13.5,0" Scale="1,1,1" UnitType="T1U7"/>
+    <ObjectUnit Id="511660447" Position="69.5,17.5,0" Scale="1,1,1" UnitType="T2U5"/>
+    <ObjectUnit Id="359100721" Position="73.5,11.5,0" Scale="1,1,1" UnitType="T4U6"/>
+    <ObjectUnit Id="1779116761" Position="79.5,17.5,0" Rotation="5.7595" Scale="1,1,1" UnitType="T6U13"/>
+    <ObjectUnit Id="2019247387" Position="69.5,21.5,0" Scale="1,1,1" UnitType="T2U3"/>
+    <ObjectUnit Id="833282987" Position="75.5,11.5,0" Scale="1,1,1" UnitType="T5U6"/>
+    <ObjectUnit Id="1124744880" Position="88.5,12.5,0" Scale="1,1,1" UnitType="Item14"/>
+    <ObjectUnit Id="739584078" Position="71.5,21.5,0" Scale="1,1,1" UnitType="T3U3"/>
+    <ObjectUnit Id="68562105" Variation="4" Position="92.5,14.5,0" Scale="1,1,1" UnitType="Item12"/>
+    <ObjectUnit Id="920842969" Position="81.5,19.5,0" Scale="1,1,1" UnitType="T6U5"/>
+    <ObjectUnit Id="1300786715" Position="86.5,18.5,0" Scale="1,1,1" UnitType="Item1"/>
+    <ObjectUnit Id="1932053000" Position="81.5,21.5,0" Scale="1,1,1" UnitType="T6U7"/>
+    <ObjectUnit Id="1495679343" Position="90.5,16.5,0" Scale="1,1,1" UnitType="Item7"/>
+    <ObjectUnit Id="1738587623" Position="69.5,11.5,0" Scale="1,1,1" UnitType="T2U6"/>
+    <ObjectUnit Id="1257480953" Position="77.5,17.5,0" Scale="1,1,1" UnitType="T6U15"/>
+    <ObjectUnit Id="90227825" Variation="1" Position="88.5,18.5,0" Scale="1,1,1" UnitType="Item2"/>
+    <ObjectUnit Id="1323207030" Position="120.8806,70.7587,0" Rotation="1.779" Scale="1,1,1" Name="Test Unit" UnitType="Raynor01" Player="13">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="1094604302" Position="79.5,9.5,0" Scale="1,1,1" UnitType="T6U1"/>
+    <ObjectUnit Id="2136101095" Position="67.5,15.5,0" Scale="1,1,1" UnitType="T1U4"/>
+    <ObjectUnit Id="1624090303" Position="75.5,9.5,0" Scale="1,1,1" UnitType="T5U1"/>
+    <ObjectUnit Id="1603256426" Position="221.3886,16.4265,0" Rotation="0.8962" Scale="1,1,1" UnitType="ShapeBanana" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="1375811133" Variation="3" Position="92.5,16.5,0" Scale="1,1,1" UnitType="Item8"/>
+    <ObjectUnit Id="823747440" Position="69.5,15.5,0" Scale="1,1,1" UnitType="T2U4"/>
+    <ObjectUnit Id="1328986610" Position="81.5,17.5,0" Scale="1,1,1" UnitType="T6U14"/>
+    <ObjectUnit Id="126490091" Position="75.5,17.5,0" Scale="1,1,1" UnitType="T5U5"/>
+    <ObjectUnit Id="1117029223" Variation="5" Position="86.5,16.5,0" Scale="1,1,1" UnitType="Item5"/>
+    <ObjectUnit Id="1033081085" Position="79.5,11.5,0" Scale="1,1,1" UnitType="T6U16"/>
+    <ObjectUnit Id="2145541671" Position="86.5,10.5,0" Scale="1,1,1" UnitType="Item17"/>
+    <ObjectUnit Id="1872404202" Position="69.5,19.5,0" Scale="1,1,1" UnitType="T2U2"/>
+    <ObjectUnit Id="1673367708" Position="71.5,15.5,0" Scale="1,1,1" UnitType="T3U4"/>
+    <ObjectUnit Id="400712052" Position="67.5,17.5,0" Scale="1,1,1" UnitType="T1U5"/>
+    <ObjectUnit Id="934780819" Variation="3" Position="92.5,12.5,0" Scale="1,1,1" UnitType="Item16"/>
+    <ObjectUnit Id="693623654" Variation="3" Position="90.5,12.5,0" Scale="1,1,1" UnitType="Item15"/>
+    <ObjectUnit Id="1551777253" Position="77.5,21.5,0" Scale="1,1,1" UnitType="T6U9"/>
+    <ObjectUnit Id="160463209" Position="81.5,15.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="T6U11"/>
+    <ObjectUnit Id="1475870224" Position="81.5,9.5,0" Scale="1,1,1" UnitType="T6U2"/>
+    <ObjectUnit Id="721250598" Position="73.5,15.5,0" Scale="1,1,1" UnitType="T4U4"/>
+    <ObjectUnit Id="709322596" Position="77.5,11.5,0" Scale="1,1,1" UnitType="T6U17"/>
+    <ObjectUnit Id="880278026" Position="75.5,21.5,0" Scale="1,1,1" UnitType="T5U3"/>
+    <ObjectUnit Id="339465968" Position="77.5,15.5,0" Scale="1,1,1" UnitType="T6U10"/>
+    <ObjectUnit Id="769530738" Position="69.5,9.5,0" Scale="1,1,1" UnitType="T2U1"/>
+</PlacedObjects>

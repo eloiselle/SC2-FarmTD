@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="AcidSaliva">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="5"/>
+        <Period value="0.9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSpines">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="5"/>
+        <Period value="0.68"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Adept">
+        <Range value="9"/>
+        <Period value="0.9"/>
+        <AttackType value="Spell"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ArchAngelCoopGun">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="1.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AscendantWeapon">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AutoTurret">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BacklashRockets">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingNeedleClawsStetmann">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.7456"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingStrikeStetmann">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6.5"/>
+        <Period value="1.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="C10CanisterRifle">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <Range value="9"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="C10CanisterRifleMengsk">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Claws">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ColossusTaldarimChargedBeam">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="2"/>
+        <DamagePoint value="0.167"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CrucioShockCannon">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.2"/>
+        <MinimumRange value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DarkArchonChampionWeapon">
+        <Range value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DarkArchonChampionWeaponFunctionalHoldPos">
+        <Options index="Hidden" value="0"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.2"/>
+        <DisplayAttackCount value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DarkTemplarChampionWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6.5"/>
+        <Period value="1.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DarkTemplarTaldarim">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="0.7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Dragoon">
+        <Range value="7"/>
+        <Arc value="360"/>
+        <Period value="1.6"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DuskWingBanshee">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GaryStetmannGun">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <Period value="2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GoliathG">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GuassRifle">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <Range value="6"/>
+        <Period value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HHLaserBattery">
+        <Options index="Disabled" value="0"/>
+        <Options index="Hidden" value="0"/>
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <Range value="7"/>
+        <Arc value="360"/>
+        <ArcSlop value="360"/>
+        <Period value="2.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HighTemplarWeapon">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.4"/>
+        <!--Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/-->
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HotSRaptorClaws">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6.5"/>
+        <Arc value="360"/>
+        <Period value="0.7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HunterKiller">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <Range value="12"/>
+        <Period value="1.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HydraliskNeedleSpinesStetmann">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <Period value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KaiserBlades">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="1.8"/>
+        <DamagePoint value="0.167"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KerriganInfestBroodling">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="0.9"/>
+        <Effect value="Karakmultishot"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LongboltMissile">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MutatorTurkeyPeck">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleClaws">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.2"/>
+        <Effect value="sheepmultishot"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleSpines">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <Range value="6"/>
+        <Period value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NovaWeaponImprovedCanisterRifle">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <Range value="8"/>
+        <Period value="1.4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Odin">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="8"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0.167"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseDisruptors">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <Range value="6"/>
+        <Period value="1.4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PrimalBaseWeapon">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PrimalZergling">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="1.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsiBlades">
+        <DisplayAttackCount value="0"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3.5"/>
+        <Period value="0.8"/>
+        <Effect value="PsiBladesBurst"/>
+        <PreEffectBehavior Behavior="" Count="0" Duration="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsionicShockwave">
+        <Range value="5"/>
+        <Period value="0.6"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PunisherGrenadesMengsk">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.6"/>
+        <Range value="7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RavagerStetmannPlasmaDischarge">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <Period value="1.67"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RazorTalons">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <DisplayAttackCount value="0"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SOAMothershipv4Weapon">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <Range value="8"/>
+        <Period value="1.7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ScantipedeParasiticSmall">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <Range value="7"/>
+        <Period value="1.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spines">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1"/>
+        <Effect value="Lavacrabmultishot"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SupplicantWeapon">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="10"/>
+        <Period value="1.35"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Swarmling">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="5.5"/>
+        <Period value="1.3"/>
+        <Effect value="Lyotemultishot"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TrooperMengsk">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel3.dds"/>
+        <Range value="6"/>
+        <Period value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TrooperMengsk2">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel0.dds"/>
+        <DisplayEffect value="TrooperMengskDamage2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Period value="0.8608"/>
+        <DamagePoint value="0.05"/>
+        <Backswing value="0.75"/>
+        <Effect value="TrooperMengskDamage2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TychusCoopChaingun">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel2.dds"/>
+        <Range value="7.2"/>
+        <Period value="0.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="UltraliskKaiserBladesStetmann">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6.5"/>
+        <Period value="1.1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VoidSeeker">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel0.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.8"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="YetiMommaClaws">
+        <Icon value="Assets\Textures\btn-upgrade-dehaka-missileattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="0.7"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZagaraVoidCoopRanged">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <Range value="7"/>
+        <Period value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZeratulDisruptionBeam">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-melleeweapon.dds"/>
+        <Period value="0.4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZerglingClawsStetmann">
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level1.dds"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="5.5"/>
+        <Period value="1.2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZerglingClawsStetmann2">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-stetmann-mechameleeattacks-level0.dds"/>
+        <DisplayEffect value="ZerglingClawsDamageStetmann2"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.1"/>
+        <Period value="0.696"/>
+        <Backswing value="0"/>
+        <Effect value="ZerglingClawsDamageStetmann2"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ZerglingMengskClaws">
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level2.dds"/>
+        <TargetFilters value="Ground,Visible,Summoned;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.4"/>
+    </CWeaponLegacy>
+</Catalog>

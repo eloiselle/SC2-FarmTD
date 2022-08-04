@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Attributes>
+    <DefaultVariants Value="0"/>
+    <Variant>
+        <Id Value="1"/>
+        <CategoryId Value="4"/>
+        <ModeId Value="1"/>
+        <ModeName Value="Variant001/ModeName"/>
+        <ModeDesc Value="Variant001/ModeDesc"/>
+        <MaxTeamSize Value="12"/>
+        <AttributeHidden Namespace="999" Id="3006"/>
+        <Attribute Namespace="999" Id="1001">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="7955827"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="2001">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="4605505"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="3006">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="55"/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="2006">
+            <Default>
+                <Slot Id="0"/>
+                <Value Id="21553"/>
+            </Default>
+        </Attribute>
+    </Variant>
+</Attributes>

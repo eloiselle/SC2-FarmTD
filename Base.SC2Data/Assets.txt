@@ -1,0 +1,8 @@
+// This makes all the tooltips use the blue bnet look, regardless of race.
+// Obviously, here we are overriding asset-references defined in the sc2 core.
+// Search for these keys ("UI/StandardGameTooltip") in the sc2 game data
+// vscode window (c-s-F) to find out where they are used and defined.
+UI/StandardGameTooltip=Assets\Textures\ui_battlenet_tooltip_outline.dds
+UI/StandardGameTooltip_Prot=Assets\Textures\ui_battlenet_tooltip_outline.dds
+UI/StandardGameTooltip_Terr=Assets\Textures\ui_battlenet_tooltip_outline.dds
+UI/StandardGameTooltip_Zerg=Assets\Textures\ui_battlenet_tooltip_outline.dds

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CItem id="Item1">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item1"/>
+    </CItem>
+    <CItem id="Item11">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item11"/>
+    </CItem>
+    <CItem id="Item12">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item12"/>
+    </CItem>
+    <CItem id="Item13">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item13"/>
+    </CItem>
+    <CItem id="Item14">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item14"/>
+    </CItem>
+    <CItem id="Item15">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item15"/>
+    </CItem>
+    <CItem id="Item16">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item16"/>
+    </CItem>
+    <CItem id="Item17">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item17"/>
+    </CItem>
+    <CItem id="Item2">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item2"/>
+    </CItem>
+    <CItem id="Item4">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item4"/>
+    </CItem>
+    <CItem id="Item3">
+        <Class value="UnknownItemClass"/>
+        <CarryBehaviorArray value="item3"/>
+        <Flags index="DropOnDeath" value="1"/>
+    </CItem>
+    <CItem id="Item5">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item5"/>
+    </CItem>
+    <CItem id="Item6">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item6"/>
+    </CItem>
+    <CItem id="Item7">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item7"/>
+    </CItem>
+    <CItem id="Item8">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item8"/>
+    </CItem>
+    <CItem id="Item9">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item9"/>
+    </CItem>
+    <CItem id="Item10">
+        <Class value="UnknownItemClass"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <CarryBehaviorArray value="item10"/>
+    </CItem>
+</Catalog>
