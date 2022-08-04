@@ -5,5 +5,4 @@ This project was partially updated according to the best practices described her
 
 
 ## How do I open this project?
-- You have to put the contents of this repo into a folder called "Farm_TD.SC2Map". (The name doesn't matter, but the ".SC2Map" does)
-- You can now open the folder as a project inside the SC2 Editor.
+- You can simply open the folder called "FarmTD.SC2Map" as a project inside the SC2 Editor.
