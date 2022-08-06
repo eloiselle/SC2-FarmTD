@@ -56,6 +56,7 @@ string[81] gv_strWaveIcon;
 string[27] gv_strMissionDescription;
 unitgroup[13] gv_unitgroupCreeps;
 unitgroup[13] gv_unitgroupSentCreeps;
+unitgroup[13] gv_unitgroupSCV;
 int[13][2] gv_intPlantMastery;
 int[13][2] gv_intRespawnHPStored;
 text[9] gv_txtDifficultyDescription;
@@ -103,6 +104,9 @@ void InitGlobals () {
     }
     for (init_i = 0; init_i <= 12; init_i += 1) {
         gv_unitgroupSentCreeps[init_i] = UnitGroupEmpty();
+    }
+    for (init_i = 0; init_i <= 12; init_i += 1) {
+        gv_unitgroupSCV[init_i] = UnitGroupEmpty();
     }
     gv_dlgDiscord = c_invalidDialogId;
     gv_dlgitmDiscordButton = c_invalidDialogControlId;
@@ -163,6 +167,10 @@ trigger gt_onBuild;
 trigger gt_onGasBossReady;
 trigger gt_onGasBossSent;
 trigger gt_onMissionCompleted;
+trigger gt_fasterSpeed;
+trigger gt_slowerSpeed;
+trigger gt_giveMoney;
+trigger gt_setWave;
 trigger gt_Buttons;
 trigger gt_Discordbutton;
 trigger gt_ItemAuras;
@@ -378,6 +386,7 @@ bool gt_onGameStart_Func (bool testConds, bool runActions) {
         if ((PlayerStatus(auto67585FF6_var) == c_playerStatusActive)) {
             UnitCreate(1, "SCV", 0, auto67585FF6_var, PointFromName(("Start Location " + IntToString(auto67585FF6_var))), 270.0);
             UnitControlGroupAddUnit(auto67585FF6_var, 1, UnitLastCreated());
+            UnitGroupAdd(gv_unitgroupSCV[auto67585FF6_var], UnitLastCreated());
             gv_builder[auto67585FF6_var] = UnitLastCreated();
             UnitCreate(1, "CommandCenter", c_unitCreateIgnorePlacement, auto67585FF6_var, PointFromName(("CC" + IntToString(auto67585FF6_var))), 270.0);
             UnitControlGroupAddUnit(auto67585FF6_var, 2, UnitLastCreated());
@@ -2672,6 +2681,146 @@ void gt_onMissionCompleted_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: fasterSpeed
+//--------------------------------------------------------------------------------------------------
+bool gt_fasterSpeed_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    int auto0EF5E7DD_val;
+
+    // Conditions
+    if (testConds) {
+        if (!((GameIsOnline() == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto0EF5E7DD_val = GameGetSpeedValue();
+    if (auto0EF5E7DD_val == c_gameSpeedFaster) {
+        GameSetSpeedValue(c_gameSpeedFast);
+    }
+    else if (auto0EF5E7DD_val == c_gameSpeedNormal) {
+        GameSetSpeedValue(c_gameSpeedFaster);
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_fasterSpeed_Init () {
+    gt_fasterSpeed = TriggerCreate("gt_fasterSpeed_Func");
+    TriggerAddEventChatMessage(gt_fasterSpeed, c_playerAny, "-faster", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: slowerSpeed
+//--------------------------------------------------------------------------------------------------
+bool gt_slowerSpeed_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    int auto9B3EACA4_val;
+
+    // Conditions
+    if (testConds) {
+        if (!((GameIsOnline() == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto9B3EACA4_val = GameGetSpeedValue();
+    if (auto9B3EACA4_val == c_gameSpeedFast) {
+        GameSetSpeedValue(c_gameSpeedFaster);
+    }
+    else if (auto9B3EACA4_val == c_gameSpeedFaster) {
+        GameSetSpeedValue(c_gameSpeedNormal);
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_slowerSpeed_Init () {
+    gt_slowerSpeed = TriggerCreate("gt_slowerSpeed_Func");
+    TriggerAddEventChatMessage(gt_slowerSpeed, c_playerAny, "-slower", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: giveMoney
+//--------------------------------------------------------------------------------------------------
+bool gt_giveMoney_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_desiredAmount;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Conditions
+    if (testConds) {
+        if (!((GameIsOnline() == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_desiredAmount = StringToInt(StringWord(EventChatMessage(false), 2));
+    libCOMI_gf_GivePlayerResources(UnitGetPosition(UnitGroupUnit(gv_unitgroupSCV[EventPlayer()], 1)), libCOMI_ge_CacheResourceType_Mineral, lv_desiredAmount, null, null, EventPlayer());
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_giveMoney_Init () {
+    gt_giveMoney = TriggerCreate("gt_giveMoney_Func");
+    TriggerAddEventChatMessage(gt_giveMoney, c_playerAny, "-minerals", false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: setWave
+//--------------------------------------------------------------------------------------------------
+bool gt_setWave_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_desiredAmount;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Conditions
+    if (testConds) {
+        if (!((GameIsOnline() == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_desiredAmount = StringToInt(StringWord(EventChatMessage(false), 2));
+    gv_intWave = lv_desiredAmount;
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_setWave_Init () {
+    gt_setWave = TriggerCreate("gt_setWave_Func");
+    TriggerAddEventChatMessage(gt_setWave, c_playerAny, "-wave", false);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Buttons
 //--------------------------------------------------------------------------------------------------
 bool gt_Buttons_Func (bool testConds, bool runActions) {
@@ -4751,6 +4900,10 @@ void InitTriggers () {
     gt_onGasBossReady_Init();
     gt_onGasBossSent_Init();
     gt_onMissionCompleted_Init();
+    gt_fasterSpeed_Init();
+    gt_slowerSpeed_Init();
+    gt_giveMoney_Init();
+    gt_setWave_Init();
     gt_Buttons_Init();
     gt_Discordbutton_Init();
     gt_ItemAuras_Init();
