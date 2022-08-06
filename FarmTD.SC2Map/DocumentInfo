@@ -13,4 +13,15 @@
         <Value>file:Mods\starcoop/commanders/arcturusmengsk.sc2mod</Value>
         <Value>bnet:Co-op Mission/0.0/999,file:Mods/StarCoop/StarCoop.SC2Mod</Value>
     </Dependencies>
+    <PatchNote>
+        <Version>
+            <Value>0.20</Value>
+        </Version>
+        <Date>
+            <Value>8/3/2022</Value>
+        </Date>
+        <Notes>
+            <Value>1,2,3,4</Value>
+        </Notes>
+    </PatchNote>
 </DocInfo>
