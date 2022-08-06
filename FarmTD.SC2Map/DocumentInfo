@@ -16,12 +16,15 @@
     <PatchNote>
         <Version>
             <Value>0.20</Value>
+            <Value>0.21</Value>
         </Version>
         <Date>
             <Value>8/3/2022</Value>
+            <Value>8/6/2022</Value>
         </Date>
         <Notes>
             <Value>1,2,3,4</Value>
+            <Value>5,6</Value>
         </Notes>
     </PatchNote>
 </DocInfo>
