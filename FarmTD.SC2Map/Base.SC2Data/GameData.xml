@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Includes>
+    <!--
+        ! IMPORTANT NOTE !
+        You can _NOT_ modify this file while your project
+        is open in sc2edit.
+        Even if the Data editor is closed.
+
+        The reason this is important to note and remember, is that
+        the same is not true for scripts or layouts.
+        They can be modified, added, removed, etc, however you please
+        while the editor is running.
+
+        You need to:
+        1. Close your project in sc2edit
+        2. Open this file and change it
+        3. Make the necessary changes to the files in GameData/
+        4. If you add new files, you need to add the standard
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+</Catalog>
+        (and remember to save as UTF8 with LF line endings.)
+        5. Make sure you save everything, and that all filenames match
+        6. Close this file and then reopen your project in sc2edit
+    -->
+	<!--
+    <Catalog path="GameData/Auras.xml"/>
+    <Catalog path="GameData/Heroes/H-Tychus.xml"/>
+    <Catalog path="GameData/Heroes/H-Alarak.xml"/>
+    <Catalog path="GameData/Heroes/H-Nova.xml"/>
+    <Catalog path="GameData/Talents/T-Tychus.xml"/>
+    <Catalog path="GameData/Zerg/Z-Monster.xml"/>
+    <Catalog path="GameData/Specialists/S-Raynor.xml"/>
+    <Catalog path="GameData/GameMode/G-MyFunGame.xml"/>
+    <Catalog path="GameData/Evil/E-Nemesis.xml"/>
+	-->
+</Includes>

@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Desc>
+    <!-- 
+        The important thing to note in this file is the ordering
+        of concepts. The loading screen can be put anywhere, it will
+        not be loaded by the in-game UI.
+        But Constants need to be defined first, then Templates, then
+        your overrides of the default UI, and finally your custom frames.
 
+        "Need" is a strong word, but best practices.
+        Obviously things can be spread out among as many files as you want.
+    -->
+    <Include path="UI/Layout/Constants.SC2Layout"/>
+    <Include path="UI/Layout/Templates.SC2Layout"/>
+
+    <Include path="UI/Layout/LoadingScreen.SC2Layout" requiredtoload="IS_EDITOR"/>
+
+    <Include path="UI/Layout/Overrides.SC2Layout"/>
+    <!-- <Include path="UI/Layout/Foo.SC2Layout"/> -->
+    <!-- <Include path="UI/Layout/Bar.SC2Layout"/> -->
 </Desc>

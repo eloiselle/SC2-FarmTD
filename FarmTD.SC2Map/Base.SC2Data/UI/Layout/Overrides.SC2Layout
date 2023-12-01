@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="GameUI" name="GameUI" file="GameUI">
+        <ConsoleWorldBottomOffset val="0"/>
+        <SuppressEnemyConnectionEvents val="true" />
+        <DeactivateChatBarOnClick val="true" />
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/FullscreenUpperContainer" file="GameUI">
+        <!--
+            This holds the "game is paused" message, for example.
+            We always want it to render above everything else.
+        -->
+        <Frame type="SystemAlertPanel" name="SystemAlertPanel">
+            <RenderPriority val="#RenderPriorityAbsolute"/>
+        </Frame>
+
+        <!-- Move, resize, and restyle the chat display slightly -->
+        <Frame type="GameMessageDisplay" name="ChatDisplay">
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="-400"/>
+            <Width val="840"/>
+            <Height val="400"/>
+            <Style val="MyTooltipInfo"/>
+            <HideClippedMessages val="true"/>
+        </Frame>
+
+        <!-- Hide these displays, our map never uses them anyway -->
+        <Frame type="GameMessageDisplay" name="WarningDisplay">
+            <Visible val="False"/>
+        </Frame>
+        <Frame type="GameMessageDisplay" name="ObjectiveDisplay">
+            <Visible val="False"/>
+        </Frame>
+        <Frame type="GameMessageDisplay" name="DirectiveDisplay">
+            <Visible val="False"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="Frame" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
+        <!-- Re-anchor the TriggerWindowPanel to fill the entire screen -->
+        <Frame type="TriggerWindowPanel" name="TriggerWindowPanel">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        </Frame>
+    </Frame>
+
+    <Frame type="ConsolePanel" name="GameUI/UIContainer/ConsolePanel" file="GameUI">
+        <!--
+            Stop the console panel from catching mouse clicks
+        -->
+        <AcceptsMouse val="False"/>
+    </Frame>
+</Desc>

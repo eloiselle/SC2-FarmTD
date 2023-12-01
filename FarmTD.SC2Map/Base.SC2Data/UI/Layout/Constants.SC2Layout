@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Constant name="PopupButtonSize" val="64"/>
+    <Constant name="ButtonGap" val="1"/>
+
+    <!--
+        Add constants for different UI layers we define here
+        So that it's easier for us to determine what should be on top of what
+    -->
+    <Constant name="RenderPriorityAbsolute" val="1000"/>
+    <Constant name="RenderPriority1" val="900"/>
+    <Constant name="RenderPriority2" val="800"/>
+    <!-- Standard render priority for the SC2 interface is 512 -->
+
+    <!--
+        https://coolors.co/app
+    -->
+    <Constant name="ColorHealth" val="00d85a"/>
+    <Constant name="ColorShield" val="008bf8"/>
+    <Constant name="ColorEnergy" val="d525b1"/>
+    <Constant name="ColorBuff" val="fb8b24"/>
+    <Constant name="ColorProgress" val="f5b700"/>
+    <Constant name="ColorXp" val="7f675b"/>
+    <Constant name="ColorDuration" val="9a8c98"/>
+</Desc>

@@ -833,7 +833,7 @@ Param/Value/8B261B11= XP<c></s>
 Param/Value/8BD77E13=Wave Cleared...next wave starts in 10 sec<n/><n/><c val="DF07F8">Todays Market:</c>
 Param/Value/8BE7CBB3= <c val="80FF00">Pears</c> for 
 Param/Value/8BEEF111= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
-Param/Value/8C1A706D=<s val="BattleChatAchievement 2">Plant Mastery 
+Param/Value/8C1A706D=<s val="BattleChatAchievement">Plant Mastery 
 Param/Value/8CA3A057=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/8D720B61=<IMG path="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/8E258058= XP<c></s>
