@@ -30,15 +30,17 @@ const int ge_LevelingStatsDefinition_ExtraTowerRange = 8;
 const int ge_LevelingStatsDefinition_ExtraTowerDamage = 9;
 const int ge_LevelingStatsDefinition_ExtraCreepItemDropChance = 10;
 const int ge_LevelingStatsDefinition_ExtraAbilityDamage = 11;
-const int ge_LevelingStatsDefinition_ExtraInitialCropSellingValue = 12;
+const int ge_LevelingStatsDefinition_ExtraCropSellingValue = 12;
 
 //--------------------------------------------------------------------------------------------------
 // Constants
 //--------------------------------------------------------------------------------------------------
-const int gv_realStartingMinerals = 1300;
-const int gv_realStartingGas = 200;
-const int gv_realStartingLives = 20;
-const int gv_realStartingPriceBonus = 0;
+const int gv_baseStartingMinerals = 1300;
+const int gv_baseStartingGas = 200;
+const int gv_baseStartingLives = 20;
+const int gv_baseStartingPriceBonus = 0;
+const int gv_maxNumberOfPlayers = 12;
+const int gv_globalIncrement = 1;
 
 //--------------------------------------------------------------------------------------------------
 // Global Variables
@@ -250,8 +252,8 @@ bool gt_onGameStart_Func (bool testConds, bool runActions) {
     const int autoADE54A41_ai = 1;
     const int autoA84CE853_ae = 12;
     const int autoA84CE853_ai = 1;
-    playergroup auto67585FF6_g;
-    int auto67585FF6_var;
+    playergroup allPlayers_g;
+    int selectedPlayer;
     const int autoB87EF737_ae = 12;
     const int autoB87EF737_ai = 1;
     playergroup auto7CCA036A_g;
@@ -394,70 +396,78 @@ bool gt_onGameStart_Func (bool testConds, bool runActions) {
     gv_intDifficultyPercent[7] = 200;
     gv_intDifficultyPercent[8] = 200;
 
-    auto67585FF6_g = PlayerGroupAll();
-    auto67585FF6_var = -1;
+    allPlayers_g = PlayerGroupAll();
+    selectedPlayer = -1;
     while (true) {
-        auto67585FF6_var = PlayerGroupNextPlayer(auto67585FF6_g, auto67585FF6_var);
-        if (auto67585FF6_var < 0) { break; }
-        if ((PlayerStatus(auto67585FF6_var) == c_playerStatusActive)) {
-            UnitCreate(1, "SCV", 0, auto67585FF6_var, PointFromName(("Start Location " + IntToString(auto67585FF6_var))), 270.0);
-            UnitControlGroupAddUnit(auto67585FF6_var, 1, UnitLastCreated());
-            UnitGroupAdd(gv_unitgroupSCV[auto67585FF6_var], UnitLastCreated());
-            gv_builder[auto67585FF6_var] = UnitLastCreated();
-            UnitCreate(1, "CommandCenter", c_unitCreateIgnorePlacement, auto67585FF6_var, PointFromName(("CC" + IntToString(auto67585FF6_var))), 270.0);
-            UnitControlGroupAddUnit(auto67585FF6_var, 2, UnitLastCreated());
-            UnitBehaviorAdd(gv_builder[auto67585FF6_var], "PlantmasteryN", gv_builder[auto67585FF6_var], 15);
-            gv_intMaxCropPrices[auto67585FF6_var] += FixedToInt(gv_realLevelingStats[auto67585FF6_var][12]);
-            UnitSetPropertyFixed(gv_builder[auto67585FF6_var], c_unitPropXP, gv_realEXP[auto67585FF6_var]);
+        selectedPlayer = PlayerGroupNextPlayer(allPlayers_g, selectedPlayer);
+        if (selectedPlayer < 0) { break; }
+        if ((PlayerStatus(selectedPlayer) == c_playerStatusActive)) {
+
+            gv_intPlayersOnline += 1;
+
+            // Create SCV
+            UnitCreate(1, "SCV", 0, selectedPlayer, PointFromName(("Start Location " + IntToString(selectedPlayer))), 270.0);
+            gv_builder[selectedPlayer] = UnitLastCreated();
+            UnitControlGroupAddUnit(selectedPlayer, 1, UnitLastCreated());
+            UnitGroupAdd(gv_unitgroupSCV[selectedPlayer], UnitLastCreated());
+            UnitBehaviorAdd(gv_builder[selectedPlayer], "PlantmasteryN", gv_builder[selectedPlayer], 15);
+            UnitSetPropertyFixed(gv_builder[selectedPlayer], c_unitPropXP, gv_realEXP[selectedPlayer]);
+
+            // Create Command Center
+            UnitCreate(1, "CommandCenter", c_unitCreateIgnorePlacement, selectedPlayer, PointFromName(("CC" + IntToString(selectedPlayer))), 270.0);
+            UnitControlGroupAddUnit(selectedPlayer, 2, UnitLastCreated());
+
+            // Set every other players as enemies
             lv_playerIndex = 1;
             for ( ; ( (autoB87EF737_ai >= 0 && lv_playerIndex <= autoB87EF737_ae) || (autoB87EF737_ai < 0 && lv_playerIndex >= autoB87EF737_ae) ) ; lv_playerIndex += autoB87EF737_ai ) {
-                libNtve_gf_SetAlliance(auto67585FF6_var, lv_playerIndex, libNtve_ge_AllianceSetting_Enemy);
+                libNtve_gf_SetAlliance(selectedPlayer, lv_playerIndex, libNtve_ge_AllianceSetting_Enemy);
             }
-            gv_intPlantMastery[auto67585FF6_var][1] = 15;
-            CameraPan(auto67585FF6_var, PointFromName(("Start Location " + IntToString(auto67585FF6_var))), 0.0, -1, 10.0, false);
-            gv_intPlayersOnline += 1;
-            PlayerModifyPropertyInt(auto67585FF6_var, c_playerPropMinerals, c_playerPropOperAdd, (gv_realStartingMinerals + FixedToInt(gv_realLevelingStats[auto67585FF6_var][1])));
-            PlayerModifyPropertyInt(auto67585FF6_var, c_playerPropVespene, c_playerPropOperAdd, (gv_realStartingGas + FixedToInt(gv_realLevelingStats[auto67585FF6_var][3])));
-            gv_intLives[auto67585FF6_var] += FixedToInt(gv_realLevelingStats[auto67585FF6_var][4]);
-            DialogCreate(600, 600, c_anchorCenter, 0, 0, true);
-            gv_dlgDifficultySelection[auto67585FF6_var] = DialogLastCreated();
-            DialogSetVisible(DialogLastCreated(), PlayerGroupSingle(auto67585FF6_var), true);
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 200, StringExternal("Param/Value/44CF0F9D"), StringExternal("Param/Value/6828347D"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][1] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 150, StringExternal("Param/Value/04065B0B"), StringExternal("Param/Value/E12ABA33"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][2] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 100, StringExternal("Param/Value/398454AE"), StringExternal("Param/Value/0692720E"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][3] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 50, StringExternal("Param/Value/C326D81D"), StringExternal("Param/Value/627AD9CA"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][4] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 0, StringExternal("Param/Value/91BF4352"), StringExternal("Param/Value/AF92EE72"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][5] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, -50, StringExternal("Param/Value/071F363E"), StringExternal("Param/Value/E204963C"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][6] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, -100, StringExternal("Param/Value/1A3956A9"), StringExternal("Param/Value/C2EBB34A"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][7] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, -150, StringExternal("Param/Value/D6944200"), StringExternal("Param/Value/921F0BCF"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][8] = DialogControlLastCreated();
-            DialogSetTitle(gv_dlgDifficultySelection[auto67585FF6_var], StringExternal("Param/Value/37995C1D"));
-            DialogCreate(600, 400, c_anchorCenter, 0, 0, true);
-            gv_dlgRewardSelection[auto67585FF6_var] = DialogLastCreated();
-            DialogSetVisible(DialogLastCreated(), PlayerGroupSingle(auto67585FF6_var), false);
-            libNtve_gf_CreateDialogItemButton(gv_dlgRewardSelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, -100, StringExternal("Param/Value/8F0EF7ED"), StringExternal("Param/Value/B0270A66"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][12] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgRewardSelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 0, StringExternal("Param/Value/9CA897BE"), StringExternal("Param/Value/ED236640"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][11] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(gv_dlgRewardSelection[auto67585FF6_var], 450, 50, c_anchorCenter, 0, 100, StringExternal("Param/Value/24FCEE8E"), StringExternal("Param/Value/293BE70D"), "");
-            gv_dlgitmPlayerButtons[auto67585FF6_var][0][10] = DialogControlLastCreated();
-            DialogSetTitle(gv_dlgRewardSelection[auto67585FF6_var], StringExternal("Param/Value/CAF514BB"));
+            
+            // Set player values
+            CameraPan(selectedPlayer, PointFromName(("Start Location " + IntToString(selectedPlayer))), 0.0, -1, 10.0, false);
+            gv_intPlantMastery[selectedPlayer][1] = 15;
+            PlayerModifyPropertyInt(selectedPlayer, c_playerPropMinerals, c_playerPropOperAdd, (gv_baseStartingMinerals + FixedToInt(gv_realLevelingStats[selectedPlayer][ge_LevelingStatsDefinition_ExtraStartingMinerals])));
+            PlayerModifyPropertyInt(selectedPlayer, c_playerPropVespene, c_playerPropOperAdd, (gv_baseStartingGas + FixedToInt(gv_realLevelingStats[selectedPlayer][ge_LevelingStatsDefinition_ExtraStartingGas])));
+            gv_intLives[selectedPlayer] += (gv_baseStartingLives + FixedToInt(gv_realLevelingStats[selectedPlayer][ge_LevelingStatsDefinition_ExtraStartingLives]));
+            gv_intMaxCropPrices[selectedPlayer] += (gv_baseStartingPriceBonus + FixedToInt(gv_realLevelingStats[selectedPlayer][ge_LevelingStatsDefinition_ExtraCropSellingValue]));
+            
+
+            // Dialog Difficulty Selection
+            //----------------------------
+            gv_dlgDifficultySelection[selectedPlayer] = DialogCreate(600, 600, c_anchorCenter, 0, 0, true);
+            DialogSetVisible(gv_dlgDifficultySelection[selectedPlayer], PlayerGroupSingle(selectedPlayer), true);
+            DialogSetTitle(gv_dlgDifficultySelection[selectedPlayer], StringExternal("Param/Value/37995C1D"));
+            
+            gv_dlgitmPlayerButtons[selectedPlayer][0][1] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 200, StringExternal("Param/Value/44CF0F9D"), StringExternal("Param/Value/6828347D"), "");
+            gv_dlgitmPlayerButtons[selectedPlayer][0][2] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 150, StringExternal("Param/Value/04065B0B"), StringExternal("Param/Value/E12ABA33"), "");;
+            gv_dlgitmPlayerButtons[selectedPlayer][0][3] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 100, StringExternal("Param/Value/398454AE"), StringExternal("Param/Value/0692720E"), "");;
+            gv_dlgitmPlayerButtons[selectedPlayer][0][4] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 50, StringExternal("Param/Value/C326D81D"), StringExternal("Param/Value/627AD9CA"), "");;
+            gv_dlgitmPlayerButtons[selectedPlayer][0][5] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 0, StringExternal("Param/Value/91BF4352"), StringExternal("Param/Value/AF92EE72"), "");;
+            gv_dlgitmPlayerButtons[selectedPlayer][0][6] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, -50, StringExternal("Param/Value/071F363E"), StringExternal("Param/Value/E204963C"), "");;
+            gv_dlgitmPlayerButtons[selectedPlayer][0][7] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, -100, StringExternal("Param/Value/1A3956A9"), StringExternal("Param/Value/C2EBB34A"), "");;
+            gv_dlgitmPlayerButtons[selectedPlayer][0][8] = libNtve_gf_CreateDialogItemButton(gv_dlgDifficultySelection[selectedPlayer], 450, 50, c_anchorCenter, 0, -150, StringExternal("Param/Value/D6944200"), StringExternal("Param/Value/921F0BCF"), "");;
+            
+
+            // Dialog Reward Selection
+            //----------------------------
+            gv_dlgRewardSelection[selectedPlayer] = DialogCreate(600, 400, c_anchorCenter, 0, 0, true);
+            DialogSetVisible(gv_dlgRewardSelection[selectedPlayer], PlayerGroupSingle(selectedPlayer), false);
+            DialogSetTitle(gv_dlgRewardSelection[selectedPlayer], StringExternal("Param/Value/CAF514BB"));
+
+            gv_dlgitmPlayerButtons[selectedPlayer][0][10] = libNtve_gf_CreateDialogItemButton(gv_dlgRewardSelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 100, StringExternal("Param/Value/24FCEE8E"), StringExternal("Param/Value/293BE70D"), "");
+            gv_dlgitmPlayerButtons[selectedPlayer][0][11] = libNtve_gf_CreateDialogItemButton(gv_dlgRewardSelection[selectedPlayer], 450, 50, c_anchorCenter, 0, 0, StringExternal("Param/Value/9CA897BE"), StringExternal("Param/Value/ED236640"), "");
+            gv_dlgitmPlayerButtons[selectedPlayer][0][12] = libNtve_gf_CreateDialogItemButton(gv_dlgRewardSelection[selectedPlayer], 450, 50, c_anchorCenter, 0, -100, StringExternal("Param/Value/8F0EF7ED"), StringExternal("Param/Value/B0270A66"), "");
+            
+
+            // Dialog Sell Buttons
+            //----------------------------
             DialogCreate(780, 710, c_anchorBottomRight, 0, -238, true);
             DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
             DialogSetImageVisible(DialogLastCreated(), false);
-            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 240, 50, c_anchorTopLeft, 330, 0, StringExternal("Param/Value/A71E5361"), StringExternal("Param/Value/0804608A"), "");
-            gv_dlgitmSellButtons[1] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 240, 50, c_anchorTopLeft, 330, 50, StringExternal("Param/Value/2D79B3C2"), StringExternal("Param/Value/656A4D5C"), "");
-            gv_dlgitmSellButtons[2] = DialogControlLastCreated();
-            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 240, 50, c_anchorTopLeft, 330, 105, StringExternal("Param/Value/76B6E8B5"), StringExternal("Param/Value/00A0F7BF"), "");
-            gv_dlgitmSellButtons[3] = DialogControlLastCreated();
+            
+            gv_dlgitmSellButtons[1] = libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 240, 50, c_anchorTopLeft, 330, 0, StringExternal("Param/Value/A71E5361"), StringExternal("Param/Value/0804608A"), "");
+            gv_dlgitmSellButtons[2] = libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 240, 50, c_anchorTopLeft, 330, 50, StringExternal("Param/Value/2D79B3C2"), StringExternal("Param/Value/656A4D5C"), "");
+            gv_dlgitmSellButtons[3] = libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 240, 50, c_anchorTopLeft, 330, 105, StringExternal("Param/Value/76B6E8B5"), StringExternal("Param/Value/00A0F7BF"), "");
         }
 
     }
@@ -591,10 +601,10 @@ bool gt_onPlayerLeave_Func (bool testConds, bool runActions) {
     TriggerExecute(gt_updateLeaderboards, true, false);
     BankLoad("Starcraft2TimwsFarmTD", EventPlayer());
     BankValueSetFromFixed(BankLastCreated(), "Player", "XP", gv_realEXPBackup[EventPlayer()]);
-    BankValueSetFromFixed(BankLastCreated(), "Player", "minz", gv_realLevelingStats[EventPlayer()][1]);
-    BankValueSetFromFixed(BankLastCreated(), "Player", "gas", gv_realLevelingStats[EventPlayer()][3]);
-    BankValueSetFromFixed(BankLastCreated(), "Player", "pricestart", gv_realLevelingStats[EventPlayer()][12]);
-    BankValueSetFromFixed(BankLastCreated(), "Player", "life", gv_realLevelingStats[EventPlayer()][4]);
+    BankValueSetFromFixed(BankLastCreated(), "Player", "minz", gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals]);
+    BankValueSetFromFixed(BankLastCreated(), "Player", "gas", gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingGas]);
+    BankValueSetFromFixed(BankLastCreated(), "Player", "pricestart", gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraCropSellingValue]);
+    BankValueSetFromFixed(BankLastCreated(), "Player", "life", gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingLives]);
     BankOptionSet(BankLastCreated(), c_bankOptionSignature, true);
     BankSave(BankLastCreated());
     return true;
@@ -629,17 +639,17 @@ bool gt_onStartupBankInit_Func (bool testConds, bool runActions) {
         BankLoad("Starcraft2TimwsFarmTD", lv_playerIndex);
         if ((BankVerify(BankLastCreated()) == true)) {
             gv_realEXP[lv_playerIndex] = BankValueGetAsFixed(BankLastCreated(), "Player", "XP");
-            gv_realLevelingStats[lv_playerIndex][1] = BankValueGetAsFixed(BankLastCreated(), "Player", "minz");
-            gv_realLevelingStats[lv_playerIndex][3] = BankValueGetAsFixed(BankLastCreated(), "Player", "gas");
-            gv_realLevelingStats[lv_playerIndex][12] = BankValueGetAsFixed(BankLastCreated(), "Player", "pricestart");
-            gv_realLevelingStats[lv_playerIndex][4] = BankValueGetAsFixed(BankLastCreated(), "Player", "life");
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingMinerals] = BankValueGetAsFixed(BankLastCreated(), "Player", "minz");
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingGas] = BankValueGetAsFixed(BankLastCreated(), "Player", "gas");
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraCropSellingValue] = BankValueGetAsFixed(BankLastCreated(), "Player", "pricestart");
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingLives] = BankValueGetAsFixed(BankLastCreated(), "Player", "life");
         }
         else {
             gv_realEXP[lv_playerIndex] = 0.0;
-            gv_realLevelingStats[lv_playerIndex][1] = 0.0;
-            gv_realLevelingStats[lv_playerIndex][3] = 0.0;
-            gv_realLevelingStats[lv_playerIndex][12] = 0.0;
-            gv_realLevelingStats[lv_playerIndex][4] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingGas] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraCropSellingValue] = 0.0;
+            gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingLives] = 0.0;
         }
     }
     return true;
@@ -663,6 +673,11 @@ void gt_onLevelUp_Init () {
     gt_onLevelUp = TriggerCreate("gt_onLevelUp_Func");
 }
 
+void replaceBehavior(unit inUnit, string inOldBehavior, string inNewBehavior){
+    UnitBehaviorRemove(inUnit, inOldBehavior, 1);
+    UnitBehaviorAdd(inUnit, inNewBehavior, inUnit, 1); 
+}
+
 //--------------------------------------------------------------------------------------------------
 // Trigger: onPlayerLevelUp
 //--------------------------------------------------------------------------------------------------
@@ -675,251 +690,42 @@ bool gt_onPlayerLevelUp_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    if ((unitLevel >= 0) && (unitLevel < 5)) {
-        UnitBehaviorAdd(EventUnit(), "lvl0", EventUnit(), 1);
-    }
+    if ((unitLevel >= 0) && (unitLevel < 5)) { UnitBehaviorAdd(EventUnit(), "lvl0", EventUnit(), 1); }
+    else if ((unitLevel >= 5) && (unitLevel < 10)) { replaceBehavior(EventUnit(),"lvl0", "lvl5"); }
+    else if ((unitLevel >= 10) && (unitLevel < 15)) { replaceBehavior(EventUnit(),"lvl5", "lvl10"); }
+    else if ((unitLevel >= 15) && (unitLevel < 20)) { replaceBehavior(EventUnit(),"lvl10", "lvl15"); }
+    else if ((unitLevel >= 20) && (unitLevel < 25)) { replaceBehavior(EventUnit(),"lvl15", "lvl20"); }
+    else if ((unitLevel >= 25) && (unitLevel < 30)) { replaceBehavior(EventUnit(),"lvl20", "lvl25"); }
+    else if ((unitLevel >= 30) && (unitLevel < 35)) { replaceBehavior(EventUnit(),"lvl25", "lvl30"); }
+    else if ((unitLevel >= 35) && (unitLevel < 40)) { replaceBehavior(EventUnit(),"lvl30", "lvl35"); }
+    else if ((unitLevel >= 40) && (unitLevel < 45)) { replaceBehavior(EventUnit(),"lvl35", "lvl40"); }
+    else if ((unitLevel >= 45) && (unitLevel < 50)) { replaceBehavior(EventUnit(),"lvl40", "lvl45"); }
+    else if ((unitLevel >= 50) && (unitLevel < 55)) { replaceBehavior(EventUnit(),"lvl45", "lvl50"); }
+    else if ((unitLevel >= 55) && (unitLevel < 60)) { replaceBehavior(EventUnit(),"lvl50", "lvl55"); }
+    else if ((unitLevel >= 60) && (unitLevel < 65)) { replaceBehavior(EventUnit(),"lvl55", "lvl60"); }
+    else if ((unitLevel >= 65) && (unitLevel < 70)) { replaceBehavior(EventUnit(),"lvl60", "lvl65"); }
+    else if ((unitLevel >= 70) && (unitLevel < 75)) { replaceBehavior(EventUnit(),"lvl65", "lvl70"); }
+    else if ((unitLevel >= 75) && (unitLevel < 80)) { replaceBehavior(EventUnit(),"lvl70", "lvl75"); }
+    else if ((unitLevel >= 80) && (unitLevel < 85)) { replaceBehavior(EventUnit(),"lvl75", "lvl80"); }
+    else if ((unitLevel >= 85) && (unitLevel < 90)) { replaceBehavior(EventUnit(),"lvl80", "lvl85"); }
+    else if ((unitLevel >= 90) && (unitLevel < 95)) { replaceBehavior(EventUnit(),"lvl85", "lvl90"); }
+    else if ((unitLevel >= 95) && (unitLevel < 100)) { replaceBehavior(EventUnit(),"lvl90", "lvl95"); }
+    else if ((unitLevel >= 95)) { replaceBehavior(EventUnit(),"lvl95", "lvl100"); }
 
-    if ((unitLevel >= 5) && (unitLevel < 10)) {
-        UnitBehaviorAdd(EventUnit(), "lvl5", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl0", 1);
-    }
-
-    if ((unitLevel >= 10) && (unitLevel < 15)) {
-        UnitBehaviorAdd(EventUnit(), "lvl10", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl5", 1);
-    }
-
-    if ((unitLevel >= 10) && (unitLevel < 15)) {
-    }
-
-    if ((unitLevel >= 15) && (unitLevel < 20)) {
-        UnitBehaviorAdd(EventUnit(), "lvl15", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl10", 1);
-    }
-
-    if ((unitLevel >= 20) && (unitLevel < 25)) {
-        UnitBehaviorAdd(EventUnit(), "lvl20", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl15", 1);
-    }
-
-    if ((unitLevel >= 25) && (unitLevel < 30)) {
-        UnitBehaviorAdd(EventUnit(), "lvl25", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl20", 1);
-    }
-
-    if ((unitLevel >= 30) && (unitLevel < 35)) {
-        UnitBehaviorAdd(EventUnit(), "lvl30", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl25", 1);
-    }
-
-    if ((unitLevel >= 35) && (unitLevel < 40)) {
-        UnitBehaviorAdd(EventUnit(), "lvl35", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl30", 1);
-    }
-
-    if ((unitLevel >= 40) && (unitLevel < 45)) {
-        UnitBehaviorAdd(EventUnit(), "lvl40", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl35", 1);
-    }
-
-    if ((unitLevel >= 45) && (unitLevel < 50)) {
-        UnitBehaviorAdd(EventUnit(), "lvl45", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl40", 1);
-    }
-
-    if ((unitLevel >= 50) && (unitLevel < 55)) {
-        UnitBehaviorAdd(EventUnit(), "lvl50", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl45", 1);
-    }
-
-    if ((unitLevel >= 55) && (unitLevel < 60)) {
-        UnitBehaviorAdd(EventUnit(), "lvl55", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl50", 1);
-    }
-
-    if ((unitLevel >= 60) && (unitLevel < 65)) {
-        UnitBehaviorAdd(EventUnit(), "lvl60", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl55", 1);
-    }
-
-    if ((unitLevel >= 65) && (unitLevel < 70)) {
-        UnitBehaviorAdd(EventUnit(), "lvl65", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl60", 1);
-    }
-
-    if ((unitLevel >= 70) && (unitLevel < 75)) {
-        UnitBehaviorAdd(EventUnit(), "lvl70", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl65", 1);
-    }
-
-    if ((unitLevel >= 75) && (unitLevel < 80)) {
-        UnitBehaviorAdd(EventUnit(), "lvl75", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl70", 1);
-    }
-
-    if ((unitLevel >= 80) && (unitLevel < 85)) {
-        UnitBehaviorAdd(EventUnit(), "lvl80", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl75", 1);
-    }
-
-    if ((unitLevel >= 85) && (unitLevel < 90)) {
-        UnitBehaviorAdd(EventUnit(), "lvl85", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl80", 1);
-    }
-
-    if ((unitLevel >= 90) && (unitLevel < 95)) {
-        UnitBehaviorAdd(EventUnit(), "lvl90", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl85", 1);
-    }
-
-    if ((unitLevel >= 95) && (unitLevel < 100)) {
-        UnitBehaviorAdd(EventUnit(), "lvl95", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl90", 1);
-    }
-
-    if ((unitLevel >= 95) && (unitLevel >= 100)) {
-        UnitBehaviorAdd(EventUnit(), "lvl100", EventUnit(), 1);
-        UnitBehaviorRemove(EventUnit(), "lvl95", 1);
-    }
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = unitLevel * 10 + 200;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_HigherTowerTierChance] = unitLevel * .15;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingGas] = unitLevel * 7;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingLives] = unitLevel * .10;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_CreepMoveSpeedDecrease] = unitLevel * .22;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_CreepArmorDecrease] = unitLevel * .25;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraMineralsPerKill] = unitLevel * .15;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraTowerRange] = unitLevel * .15;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraTowerDamage] = unitLevel * .25;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraCreepItemDropChance] = unitLevel * .008;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraAbilityDamage] = unitLevel * .16;
+    gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraCropSellingValue] = unitLevel * .50;
 
     BoardItemSetText(gv_ldbLeaderboards[0], 2, EventPlayer(), TextWithColor(IntToText(unitLevel), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(EventPlayer(), false))));
-
-    if ((unitLevel >= 5)) { 
-        gv_realLevelingStats[EventPlayer()][12] = 5.0; 
-    }
-    if ((unitLevel >= 10)) { 
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 150.0; 
-    }
-    if ((unitLevel >= 15)) { 
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 175.0; 
-        gv_realLevelingStats[EventPlayer()][2] = 2.0; 
-    }
-    if ((unitLevel >= 15)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 225.0;
-        gv_realLevelingStats[EventPlayer()][2] = 3.0;
-        gv_realLevelingStats[EventPlayer()][12] = 10.0;
-    }
-    if ((unitLevel >= 20)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 275.0;
-        gv_realLevelingStats[EventPlayer()][2] = 4.0;
-    }
-    if ((unitLevel >= 25)) { gv_realLevelingStats[EventPlayer()][4] = 5.0; }
-    if ((unitLevel >= 30)) {
-        gv_realLevelingStats[EventPlayer()][5] = 4.0;
-        gv_realLevelingStats[EventPlayer()][12] = 15.0;
-    }
-    if ((unitLevel >= 35)) {
-        gv_realLevelingStats[EventPlayer()][2] = 5.0;
-        gv_realLevelingStats[EventPlayer()][4] = 7.0;
-        gv_realLevelingStats[EventPlayer()][5] = 6.0;
-    }
-    if ((unitLevel >= 40)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 350.0;
-        gv_realLevelingStats[EventPlayer()][3] = 200.0;
-        gv_realLevelingStats[EventPlayer()][4] = 10.0;
-    }
-    if ((unitLevel >= 45)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 400.0;
-        gv_realLevelingStats[EventPlayer()][6] = 2.0;
-        gv_realLevelingStats[EventPlayer()][12] = 20.0;
-    }
-    if ((unitLevel >= 50)) {
-        gv_realLevelingStats[EventPlayer()][6] = 3.0;
-        gv_realLevelingStats[EventPlayer()][7] = 1.0;
-    }
-    if ((unitLevel >= 55)) {
-        gv_realLevelingStats[EventPlayer()][2] = 6.0;
-        gv_realLevelingStats[EventPlayer()][3] = 300.0;
-        gv_realLevelingStats[EventPlayer()][4] = 12.0;
-        gv_realLevelingStats[EventPlayer()][5] = 9.0;
-        gv_realLevelingStats[EventPlayer()][7] = 2.0;
-        gv_realLevelingStats[EventPlayer()][8] = 3.0;
-        gv_realLevelingStats[EventPlayer()][12] = 25.0;
-    }
-    if ((unitLevel >= 60)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 470.0;
-        gv_realLevelingStats[EventPlayer()][4] = 13.0;
-        gv_realLevelingStats[EventPlayer()][5] = 10.0;
-    }
-    if ((unitLevel >= 65)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 500.0;
-        gv_realLevelingStats[EventPlayer()][4] = 15.0;
-        gv_realLevelingStats[EventPlayer()][6] = 5.0;
-        gv_realLevelingStats[EventPlayer()][8] = 4.0;
-        gv_realLevelingStats[EventPlayer()][9] = 2.0;
-        gv_realLevelingStats[EventPlayer()][12] = 30.0;
-    }
-    if ((unitLevel >= 70)) {
-        gv_realLevelingStats[EventPlayer()][2] = 7.0;
-        gv_realLevelingStats[EventPlayer()][3] = 400.0;
-        gv_realLevelingStats[EventPlayer()][7] = 3.0;
-        gv_realLevelingStats[EventPlayer()][9] = 4.0;
-    }
-    if ((unitLevel >= 75)) {
-        gv_realLevelingStats[EventPlayer()][2] = 8.0;
-        gv_realLevelingStats[EventPlayer()][4] = 17.0;
-        gv_realLevelingStats[EventPlayer()][6] = 6.0;
-        gv_realLevelingStats[EventPlayer()][7] = 5.0;
-        gv_realLevelingStats[EventPlayer()][8] = 5.0;
-        gv_realLevelingStats[EventPlayer()][9] = 6.0;
-        gv_realLevelingStats[EventPlayer()][10] = 0.1;
-    }
-    if ((unitLevel >= 80)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 650.0;
-        gv_realLevelingStats[EventPlayer()][4] = 18.0;
-        gv_realLevelingStats[EventPlayer()][5] = 11.0;
-        gv_realLevelingStats[EventPlayer()][7] = 6.0;
-        gv_realLevelingStats[EventPlayer()][8] = 6.0;
-        gv_realLevelingStats[EventPlayer()][9] = 9.0;
-        gv_realLevelingStats[EventPlayer()][10] = 0.2;
-        gv_realLevelingStats[EventPlayer()][12] = 35.0;
-    }
-    if ((unitLevel >= 85)) {
-        gv_realLevelingStats[EventPlayer()][3] = 500.0;
-        gv_realLevelingStats[EventPlayer()][4] = 20.0;
-        gv_realLevelingStats[EventPlayer()][5] = 12.0;
-        gv_realLevelingStats[EventPlayer()][6] = 8.0;
-        gv_realLevelingStats[EventPlayer()][7] = 7.0;
-        gv_realLevelingStats[EventPlayer()][8] = 7.0;
-        gv_realLevelingStats[EventPlayer()][9] = 11.0;
-        gv_realLevelingStats[EventPlayer()][10] = 0.3;
-    }
-    if ((unitLevel >= 90)) {
-        gv_realLevelingStats[EventPlayer()][5] = 14.0;
-        gv_realLevelingStats[EventPlayer()][6] = 10.0;
-        gv_realLevelingStats[EventPlayer()][7] = 8.0;
-        gv_realLevelingStats[EventPlayer()][8] = 9.0;
-        gv_realLevelingStats[EventPlayer()][9] = 13.0;
-        gv_realLevelingStats[EventPlayer()][11] = 5.0;
-    }
-    if ((unitLevel >= 95)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 950.0;
-        gv_realLevelingStats[EventPlayer()][2] = 10.0;
-        gv_realLevelingStats[EventPlayer()][3] = 600.0;
-        gv_realLevelingStats[EventPlayer()][4] = 25.0;
-        gv_realLevelingStats[EventPlayer()][5] = 16.0;
-        gv_realLevelingStats[EventPlayer()][6] = 15.0;
-        gv_realLevelingStats[EventPlayer()][7] = 11.0;
-        gv_realLevelingStats[EventPlayer()][8] = 11.0;
-        gv_realLevelingStats[EventPlayer()][9] = 20.0;
-        gv_realLevelingStats[EventPlayer()][10] = 0.5;
-        gv_realLevelingStats[EventPlayer()][11] = 10.0;
-        gv_realLevelingStats[EventPlayer()][12] = 40.0;
-    }
-    if ((unitLevel >= 100)) {
-        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 1000.0;
-        gv_realLevelingStats[EventPlayer()][2] = 15.0;
-        gv_realLevelingStats[EventPlayer()][3] = 700.0;
-        gv_realLevelingStats[EventPlayer()][4] = 30.0;
-        gv_realLevelingStats[EventPlayer()][5] = 22.0;
-        gv_realLevelingStats[EventPlayer()][6] = 25.0;
-        gv_realLevelingStats[EventPlayer()][7] = 15.0;
-        gv_realLevelingStats[EventPlayer()][8] = 15.0;
-        gv_realLevelingStats[EventPlayer()][9] = 25.0;
-        gv_realLevelingStats[EventPlayer()][10] = 0.8;
-        gv_realLevelingStats[EventPlayer()][11] = 16.0;
-        gv_realLevelingStats[EventPlayer()][12] = 50.0;
-    }
 
     return true;
 }
@@ -1018,19 +824,11 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
     int lv_plapper;
     int lv_test;
     int lv_bothi;
-    int lv_untitledVariable001;
+    int lv_selectedPlayer;
 
     // Automatic Variable Declarations
-    const int autoA8F723D2_ae = 12;
-    const int autoA8F723D2_ai = 1;
-    const int auto8AA3098C_ae = 12;
-    const int auto8AA3098C_ai = 1;
     const int auto8574D47A_ae = 8;
-    const int auto8574D47A_ai = 1;
-    const int auto2D626352_ae = 12;
-    const int auto2D626352_ai = 1;
     const int autoB24CD316_ae = 2;
-    const int autoB24CD316_ai = 1;
 
     // Variable Initialization
     lv_sent = 15;
@@ -1047,21 +845,22 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
         lv_sent = 1;
     }
 
+    // GameOver
     if ((gv_intWave == 71)) {
-        lv_untitledVariable001 = 1;
-        for ( ; ( (autoA8F723D2_ai >= 0 && lv_untitledVariable001 <= autoA8F723D2_ae) || (autoA8F723D2_ai < 0 && lv_untitledVariable001 >= autoA8F723D2_ae) ) ; lv_untitledVariable001 += autoA8F723D2_ai ) {
-            if ((PlayerStatus(lv_untitledVariable001) == c_playerStatusActive) && (gv_intLives[lv_untitledVariable001] > 0)) {
-                GameOver(lv_untitledVariable001, c_gameOverVictory, true, true);
+        lv_selectedPlayer = 1;
+        for ( ; ( (gv_globalIncrement >= 0 && lv_selectedPlayer <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_selectedPlayer >= gv_maxNumberOfPlayers) ) ; lv_selectedPlayer += gv_globalIncrement ) {
+            if ((PlayerStatus(lv_selectedPlayer) == c_playerStatusActive) && (gv_intLives[lv_selectedPlayer] > 0)) {
+                GameOver(lv_selectedPlayer, c_gameOverVictory, true, true);
             }
             else {
-                GameOver(lv_untitledVariable001, c_gameOverDefeat, true, true);
+                GameOver(lv_selectedPlayer, c_gameOverDefeat, true, true);
             }
         }
     }
 
     while ((lv_sent != 0)) {
         lv_player = 1;
-        for ( ; ( (auto8AA3098C_ai >= 0 && lv_player <= auto8AA3098C_ae) || (auto8AA3098C_ai < 0 && lv_player >= auto8AA3098C_ae) ) ; lv_player += auto8AA3098C_ai ) {
+        for ( ; ( (gv_globalIncrement >= 0 && lv_player <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_player >= gv_maxNumberOfPlayers) ) ; lv_player += gv_globalIncrement ) {
             gv_intPlantsSoldToday[lv_player] = 0;
             if ((gv_intLives[lv_player] > 0) && (PlayerStatus(lv_player) == c_playerStatusActive)) {
                 if ((gv_intWave == 70)) {
@@ -1072,7 +871,7 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
                 }
                 if ((lv_once == false)) {
                     lv_differ = 2;
-                    for ( ; ( (auto8574D47A_ai >= 0 && lv_differ <= auto8574D47A_ae) || (auto8574D47A_ai < 0 && lv_differ >= auto8574D47A_ae) ) ; lv_differ += auto8574D47A_ai ) {
+                    for ( ; ( (gv_globalIncrement >= 0 && lv_differ <= auto8574D47A_ae) || (gv_globalIncrement < 0 && lv_differ >= auto8574D47A_ae) ) ; lv_differ += gv_globalIncrement ) {
                         if (true) {
                             lv_int2 = (UnitGetPropertyInt(UnitLastCreated(), c_unitPropLife, c_unitPropCurrent) + UnitGetPropertyInt(UnitLastCreated(), c_unitPropShields, c_unitPropCurrent) + UnitGetPropertyInt(UnitLastCreated(), c_unitPropEnergy, c_unitPropCurrent));
                             lv_int2 /= 100;
@@ -1090,7 +889,7 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
                                         lv_int2 -= 500000;
                                         if ((lv_int2 >= 500000)) {
                                             lv_plapper = 1;
-                                            for ( ; ( (auto2D626352_ai >= 0 && lv_plapper <= auto2D626352_ae) || (auto2D626352_ai < 0 && lv_plapper >= auto2D626352_ae) ) ; lv_plapper += auto2D626352_ai ) {
+                                            for ( ; ( (gv_globalIncrement >= 0 && lv_plapper <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_plapper >= gv_maxNumberOfPlayers) ) ; lv_plapper += gv_globalIncrement ) {
                                                 if ((gv_intDifficulty[lv_plapper] == lv_differ)) {
                                                     if ((gv_intWave == 60)) {
                                                         gv_intRespawnHPStored[lv_plapper][0] = lv_int2;
@@ -1143,19 +942,15 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
                 }
 
                 lv_hp = 0;
-                for ( ; ( (autoB24CD316_ai >= 0 && lv_hp <= autoB24CD316_ae) || (autoB24CD316_ai < 0 && lv_hp >= autoB24CD316_ae) ) ; lv_hp += autoB24CD316_ai ) {
-                    if ((gv_difficultylife[gv_intDifficulty[lv_player]][gv_intWave][lv_hp] == 0.0)) {
-                    }
-                    else {
+                for ( ; ( (gv_globalIncrement >= 0 && lv_hp <= autoB24CD316_ae) || (gv_globalIncrement < 0 && lv_hp >= autoB24CD316_ae) ) ; lv_hp += gv_globalIncrement ) {
+                    if (!(gv_difficultylife[gv_intDifficulty[lv_player]][gv_intWave][lv_hp] == 0.0)) {
                         UnitBehaviorAdd(UnitLastCreated(), (("xel" + IntToString(gv_intDifficulty[lv_player]))), UnitLastCreated(), 1);
                         UnitSetPropertyFixed(UnitLastCreated(), c_unitPropLifeMax, gv_difficultylife[gv_intDifficulty[lv_player]][gv_intWave][0]);
                         UnitSetPropertyFixed(UnitLastCreated(), c_unitPropShieldsMax, gv_difficultylife[gv_intDifficulty[lv_player]][gv_intWave][1]);
                         UnitSetPropertyFixed(UnitLastCreated(), c_unitPropEnergyMax, gv_difficultylife[gv_intDifficulty[lv_player]][gv_intWave][2]);
                     }
                 }
-                if ((UnitHasBehavior2(UnitLastCreated(), (("xel" + IntToString(gv_intDifficulty[lv_player])))) == true)) {
-                }
-                else {
+                if (!(UnitHasBehavior2(UnitLastCreated(), (("xel" + IntToString(gv_intDifficulty[lv_player])))) == true)) {
                     UnitBehaviorAdd(UnitLastCreated(), (IntToString(gv_intDifficulty[lv_player])), UnitLastCreated(), 1);
                 }
                 libNtve_gf_ShowHideUnit(UnitLastCreated(), false);
@@ -1199,16 +994,8 @@ bool gt_onSendWave_Func (bool testConds, bool runActions) {
     unit lv_dAUNIT;
 
     // Automatic Variable Declarations
-    const int auto5807B2AE_ae = 12;
-    const int auto5807B2AE_ai = 1;
-    const int autoC1386514_ae = 12;
-    const int autoC1386514_ai = 1;
-    const int autoF0BBC503_n = 15;
-    int autoF0BBC503_i;
-    const int auto5859B10F_ae = 12;
-    const int auto5859B10F_ai = 1;
-    const int auto3C556187_ae = 12;
-    const int auto3C556187_ai = 1;
+    const int lv_waveSize = 15;
+    int lv_currentCreepInWave;
 
     // Variable Initialization
 
@@ -1220,7 +1007,7 @@ bool gt_onSendWave_Func (bool testConds, bool runActions) {
     gv_boolWaveSpawning = true;
     if (((gv_intWave == 10) || (gv_intWave == 20) || (gv_intWave == 30) || (gv_intWave == 40))) {
         lv_untitledVariable002 = 1;
-        for ( ; ( (auto5807B2AE_ai >= 0 && lv_untitledVariable002 <= auto5807B2AE_ae) || (auto5807B2AE_ai < 0 && lv_untitledVariable002 >= auto5807B2AE_ae) ) ; lv_untitledVariable002 += auto5807B2AE_ai ) {
+        for ( ; ( (gv_globalIncrement >= 0 && lv_untitledVariable002 <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_untitledVariable002 >= gv_maxNumberOfPlayers) ) ; lv_untitledVariable002 += gv_globalIncrement ) {
             if ((PlayerStatus(lv_untitledVariable002) == c_playerStatusActive) && (gv_intLives[lv_untitledVariable002] > 0)) {
                 lv_dAUNIT = UnitGroupRandomUnit(gv_unitgroupCreeps[lv_untitledVariable002], c_unitCountAlive);
                 UnitGroupAdd(gv_unitgroupSentCreeps[lv_untitledVariable002], lv_dAUNIT);
@@ -1229,7 +1016,7 @@ bool gt_onSendWave_Func (bool testConds, bool runActions) {
                 libNtve_gf_MakeUnitInvulnerable(lv_dAUNIT, false);
                 UnitSetPosition(lv_dAUNIT, PointFromName(("Player " + IntToString(lv_untitledVariable002) + " Point 1")), false);
                 lv_untitledVariable001 = 1;
-                for ( ; ( (autoC1386514_ai >= 0 && lv_untitledVariable001 <= autoC1386514_ae) || (autoC1386514_ai < 0 && lv_untitledVariable001 >= autoC1386514_ae) ) ; lv_untitledVariable001 += autoC1386514_ai ) {
+                for ( ; ( (gv_globalIncrement >= 0 && lv_untitledVariable001 <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_untitledVariable001 >= gv_maxNumberOfPlayers) ) ; lv_untitledVariable001 += gv_globalIncrement ) {
                     UnitIssueOrder(lv_dAUNIT, OrderTargetingPoint(AbilityCommand("move", 0), PointFromName(("Player " + IntToString(lv_untitledVariable002) + " Point " + IntToString(lv_untitledVariable001)))), c_orderQueueAddToEnd);
                 }
             }
@@ -1237,9 +1024,9 @@ bool gt_onSendWave_Func (bool testConds, bool runActions) {
         }
     }
     else {
-        for (autoF0BBC503_i = 1; autoF0BBC503_i <= autoF0BBC503_n; autoF0BBC503_i += 1) {
+        for (lv_currentCreepInWave = 1; lv_currentCreepInWave <= lv_waveSize; lv_currentCreepInWave += 1) {
             lv_untitledVariable002 = 1;
-            for ( ; ( (auto5859B10F_ai >= 0 && lv_untitledVariable002 <= auto5859B10F_ae) || (auto5859B10F_ai < 0 && lv_untitledVariable002 >= auto5859B10F_ae) ) ; lv_untitledVariable002 += auto5859B10F_ai ) {
+            for ( ; ( (gv_globalIncrement >= 0 && lv_untitledVariable002 <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_untitledVariable002 >= gv_maxNumberOfPlayers) ) ; lv_untitledVariable002 += gv_globalIncrement ) {
                 if ((PlayerStatus(lv_untitledVariable002) == c_playerStatusActive) && (gv_intLives[lv_untitledVariable002] > 0)) {
                     lv_dAUNIT = UnitGroupRandomUnit(gv_unitgroupCreeps[lv_untitledVariable002], c_unitCountAlive);
                     UnitGroupAdd(gv_unitgroupSentCreeps[lv_untitledVariable002], lv_dAUNIT);
@@ -1250,7 +1037,7 @@ bool gt_onSendWave_Func (bool testConds, bool runActions) {
                     UnitBehaviorAdd(lv_dAUNIT, "DistractingPropaganda32", lv_dAUNIT, FixedToInt(gv_realLevelingStats[lv_untitledVariable002][6]));
                     UnitBehaviorAdd(lv_dAUNIT, "DistractingPropaganda322", lv_dAUNIT, FixedToInt(gv_realLevelingStats[lv_untitledVariable002][7]));
                     lv_untitledVariable001 = 1;
-                    for ( ; ( (auto3C556187_ai >= 0 && lv_untitledVariable001 <= auto3C556187_ae) || (auto3C556187_ai < 0 && lv_untitledVariable001 >= auto3C556187_ae) ) ; lv_untitledVariable001 += auto3C556187_ai ) {
+                    for ( ; ( (gv_globalIncrement >= 0 && lv_untitledVariable001 <= gv_maxNumberOfPlayers) || (gv_globalIncrement < 0 && lv_untitledVariable001 >= gv_maxNumberOfPlayers) ) ; lv_untitledVariable001 += gv_globalIncrement ) {
                         UnitIssueOrder(lv_dAUNIT, OrderTargetingPoint(AbilityCommand("move", 0), PointFromName(("Player " + IntToString(lv_untitledVariable002) + " Point " + IntToString(lv_untitledVariable001)))), c_orderQueueAddToEnd);
                     }
                 }
@@ -1277,7 +1064,6 @@ bool gt_onCreepReachesEnd_Func (bool testConds, bool runActions) {
     int lv_untitledVariable002;
 
     // Automatic Variable Declarations
-    const int auto7B8F7FDC_ae = 12;
     const int auto7B8F7FDC_ai = 1;
     unitgroup autoB196335E_g;
     int autoB196335E_u;
@@ -1310,7 +1096,7 @@ bool gt_onCreepReachesEnd_Func (bool testConds, bool runActions) {
 
     UnitSetOwner(EventUnit(), 14, false);
     lv_untitledVariable002 = 1;
-    for ( ; ( (auto7B8F7FDC_ai >= 0 && lv_untitledVariable002 <= auto7B8F7FDC_ae) || (auto7B8F7FDC_ai < 0 && lv_untitledVariable002 >= auto7B8F7FDC_ae) ) ; lv_untitledVariable002 += auto7B8F7FDC_ai ) {
+    for ( ; ( (auto7B8F7FDC_ai >= 0 && lv_untitledVariable002 <= gv_maxNumberOfPlayers) || (auto7B8F7FDC_ai < 0 && lv_untitledVariable002 >= gv_maxNumberOfPlayers) ) ; lv_untitledVariable002 += auto7B8F7FDC_ai ) {
         if ((UnitGroupHasUnit(gv_unitgroupSentCreeps[lv_untitledVariable002], EventUnit()) == true)) {
             lv_tHEPLAYER = lv_untitledVariable002;
         }
@@ -2361,8 +2147,8 @@ bool gt_onMissionCompleted_Func (bool testConds, bool runActions) {
     }
 
     libNtve_gf_SetBehaviorCount(EventUnit(), "MoraleBooster2", EventUnit(), gv_damageincrease[EventPlayer()]);
-    libNtve_gf_SetBehaviorCount(EventUnit(), "MoraleBooster22", EventUnit(), FixedToInt(gv_realLevelingStats[EventPlayer()][9]));
-    libNtve_gf_SetBehaviorCount(EventUnit(), "DistractingPropaganda3222", EventUnit(), FixedToInt(gv_realLevelingStats[EventPlayer()][8]));
+    libNtve_gf_SetBehaviorCount(EventUnit(), "MoraleBooster22", EventUnit(), FixedToInt(gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraTowerDamage]));
+    libNtve_gf_SetBehaviorCount(EventUnit(), "DistractingPropaganda3222", EventUnit(), FixedToInt(gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraTowerRange]));
     if ((TechTreeUnitCount(EventPlayer(), "T1U3", c_techCountCompleteOnly) >= 1) && (TechTreeUnitCount(EventPlayer(), "T1U2", c_techCountCompleteOnly) >= 1) && (TechTreeUnitCount(EventPlayer(), "T1U5", c_techCountCompleteOnly) >= 1) && (TechTreeUnitCount(EventPlayer(), "T1U4", c_techCountCompleteOnly) >= 1) && (TechTreeUnitCount(EventPlayer(), "T1U7", c_techCountCompleteOnly) >= 1) && (TechTreeUnitCount(EventPlayer(), "T1U6", c_techCountCompleteOnly) >= 1) && (TechTreeUnitCount(EventPlayer(), "T1U1", c_techCountCompleteOnly) >= 1) && (gv_boolMissionsCompleted[EventPlayer()][5] == false)) {
         SoundPlayForPlayer(SoundLink("UI_BNet_Achievement", -1), c_maxPlayers, PlayerGroupAll(), 200.0, 0.0);
         TechTreeUpgradeAddLevel(EventPlayer(), "Mission05", 1);
