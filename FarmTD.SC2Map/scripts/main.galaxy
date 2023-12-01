@@ -17,6 +17,22 @@ void InitLibs () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Global Preset Declarations
+//--------------------------------------------------------------------------------------------------
+const int ge_LevelingStatsDefinition_ExtraStartingMinerals = 1;
+const int ge_LevelingStatsDefinition_HigherTowerTierChance = 2;
+const int ge_LevelingStatsDefinition_ExtraStartingGas = 3;
+const int ge_LevelingStatsDefinition_ExtraStartingLives = 4;
+const int ge_LevelingStatsDefinition_CreepMoveSpeedDecrease = 5;
+const int ge_LevelingStatsDefinition_CreepArmorDecrease = 6;
+const int ge_LevelingStatsDefinition_ExtraMineralsPerKill = 7;
+const int ge_LevelingStatsDefinition_ExtraTowerRange = 8;
+const int ge_LevelingStatsDefinition_ExtraTowerDamage = 9;
+const int ge_LevelingStatsDefinition_ExtraCreepItemDropChance = 10;
+const int ge_LevelingStatsDefinition_ExtraAbilityDamage = 11;
+const int ge_LevelingStatsDefinition_ExtraInitialCropSellingValue = 12;
+
+//--------------------------------------------------------------------------------------------------
 // Constants
 //--------------------------------------------------------------------------------------------------
 const int gv_realStartingMinerals = 1300;
@@ -29,19 +45,6 @@ const int gv_realStartingPriceBonus = 0;
 //--------------------------------------------------------------------------------------------------
 fixed[14] gv_realEXPIncrease;
 fixed[13][13] gv_realLevelingStats;
-    // gv_realLevelingStats array definition:
-    // #1 :  Extra starting minerals
-    // #2 :  Higher tower tier chance
-    // #3 :  Extra starting gas
-    // #4 :  Extra starting lives
-    // #5 :  Creep movement speed decrease (stack)
-    // #6 :  Creep armor decrease (stack)
-    // #7 :  Extra mineral per kill
-    // #8 :  Extra tower range
-    // #9 :  Extra tower damage
-    // #10 : Creep item drop chance
-    // #11 : Extra ability damage
-    // #12 : Extra starting value for crops
 fixed[13] gv_realEXP;
 fixed[13] gv_realEXPBackup;
 int[9] gv_intDifficultyPercent;
@@ -785,19 +788,19 @@ bool gt_onPlayerLevelUp_Func (bool testConds, bool runActions) {
         gv_realLevelingStats[EventPlayer()][12] = 5.0; 
     }
     if ((unitLevel >= 10)) { 
-        gv_realLevelingStats[EventPlayer()][1] = 150.0; 
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 150.0; 
     }
     if ((unitLevel >= 15)) { 
-        gv_realLevelingStats[EventPlayer()][1] = 175.0; 
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 175.0; 
         gv_realLevelingStats[EventPlayer()][2] = 2.0; 
     }
     if ((unitLevel >= 15)) {
-        gv_realLevelingStats[EventPlayer()][1] = 225.0;
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 225.0;
         gv_realLevelingStats[EventPlayer()][2] = 3.0;
         gv_realLevelingStats[EventPlayer()][12] = 10.0;
     }
     if ((unitLevel >= 20)) {
-        gv_realLevelingStats[EventPlayer()][1] = 275.0;
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 275.0;
         gv_realLevelingStats[EventPlayer()][2] = 4.0;
     }
     if ((unitLevel >= 25)) { gv_realLevelingStats[EventPlayer()][4] = 5.0; }
@@ -806,17 +809,17 @@ bool gt_onPlayerLevelUp_Func (bool testConds, bool runActions) {
         gv_realLevelingStats[EventPlayer()][12] = 15.0;
     }
     if ((unitLevel >= 35)) {
-        gv_realLevelingStats[EventPlayer()][4] = 7.0;
         gv_realLevelingStats[EventPlayer()][2] = 5.0;
+        gv_realLevelingStats[EventPlayer()][4] = 7.0;
         gv_realLevelingStats[EventPlayer()][5] = 6.0;
     }
     if ((unitLevel >= 40)) {
-        gv_realLevelingStats[EventPlayer()][1] = 350.0;
-        gv_realLevelingStats[EventPlayer()][4] = 10.0;
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 350.0;
         gv_realLevelingStats[EventPlayer()][3] = 200.0;
+        gv_realLevelingStats[EventPlayer()][4] = 10.0;
     }
     if ((unitLevel >= 45)) {
-        gv_realLevelingStats[EventPlayer()][1] = 400.0;
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 400.0;
         gv_realLevelingStats[EventPlayer()][6] = 2.0;
         gv_realLevelingStats[EventPlayer()][12] = 20.0;
     }
@@ -825,94 +828,94 @@ bool gt_onPlayerLevelUp_Func (bool testConds, bool runActions) {
         gv_realLevelingStats[EventPlayer()][7] = 1.0;
     }
     if ((unitLevel >= 55)) {
-        gv_realLevelingStats[EventPlayer()][4] = 12.0;
         gv_realLevelingStats[EventPlayer()][2] = 6.0;
         gv_realLevelingStats[EventPlayer()][3] = 300.0;
+        gv_realLevelingStats[EventPlayer()][4] = 12.0;
         gv_realLevelingStats[EventPlayer()][5] = 9.0;
         gv_realLevelingStats[EventPlayer()][7] = 2.0;
         gv_realLevelingStats[EventPlayer()][8] = 3.0;
         gv_realLevelingStats[EventPlayer()][12] = 25.0;
     }
     if ((unitLevel >= 60)) {
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 470.0;
         gv_realLevelingStats[EventPlayer()][4] = 13.0;
-        gv_realLevelingStats[EventPlayer()][1] = 470.0;
         gv_realLevelingStats[EventPlayer()][5] = 10.0;
     }
     if ((unitLevel >= 65)) {
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 500.0;
         gv_realLevelingStats[EventPlayer()][4] = 15.0;
-        gv_realLevelingStats[EventPlayer()][1] = 500.0;
         gv_realLevelingStats[EventPlayer()][6] = 5.0;
         gv_realLevelingStats[EventPlayer()][8] = 4.0;
         gv_realLevelingStats[EventPlayer()][9] = 2.0;
         gv_realLevelingStats[EventPlayer()][12] = 30.0;
     }
     if ((unitLevel >= 70)) {
-        gv_realLevelingStats[EventPlayer()][3] = 400.0;
         gv_realLevelingStats[EventPlayer()][2] = 7.0;
+        gv_realLevelingStats[EventPlayer()][3] = 400.0;
         gv_realLevelingStats[EventPlayer()][7] = 3.0;
         gv_realLevelingStats[EventPlayer()][9] = 4.0;
     }
     if ((unitLevel >= 75)) {
-        gv_realLevelingStats[EventPlayer()][4] = 17.0;
         gv_realLevelingStats[EventPlayer()][2] = 8.0;
+        gv_realLevelingStats[EventPlayer()][4] = 17.0;
         gv_realLevelingStats[EventPlayer()][6] = 6.0;
-        gv_realLevelingStats[EventPlayer()][8] = 5.0;
         gv_realLevelingStats[EventPlayer()][7] = 5.0;
+        gv_realLevelingStats[EventPlayer()][8] = 5.0;
         gv_realLevelingStats[EventPlayer()][9] = 6.0;
         gv_realLevelingStats[EventPlayer()][10] = 0.1;
     }
     if ((unitLevel >= 80)) {
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 650.0;
         gv_realLevelingStats[EventPlayer()][4] = 18.0;
-        gv_realLevelingStats[EventPlayer()][8] = 6.0;
-        gv_realLevelingStats[EventPlayer()][1] = 650.0;
         gv_realLevelingStats[EventPlayer()][5] = 11.0;
         gv_realLevelingStats[EventPlayer()][7] = 6.0;
+        gv_realLevelingStats[EventPlayer()][8] = 6.0;
         gv_realLevelingStats[EventPlayer()][9] = 9.0;
         gv_realLevelingStats[EventPlayer()][10] = 0.2;
         gv_realLevelingStats[EventPlayer()][12] = 35.0;
     }
     if ((unitLevel >= 85)) {
+        gv_realLevelingStats[EventPlayer()][3] = 500.0;
         gv_realLevelingStats[EventPlayer()][4] = 20.0;
         gv_realLevelingStats[EventPlayer()][5] = 12.0;
-        gv_realLevelingStats[EventPlayer()][8] = 7.0;
-        gv_realLevelingStats[EventPlayer()][3] = 500.0;
         gv_realLevelingStats[EventPlayer()][6] = 8.0;
         gv_realLevelingStats[EventPlayer()][7] = 7.0;
+        gv_realLevelingStats[EventPlayer()][8] = 7.0;
         gv_realLevelingStats[EventPlayer()][9] = 11.0;
         gv_realLevelingStats[EventPlayer()][10] = 0.3;
     }
     if ((unitLevel >= 90)) {
         gv_realLevelingStats[EventPlayer()][5] = 14.0;
         gv_realLevelingStats[EventPlayer()][6] = 10.0;
-        gv_realLevelingStats[EventPlayer()][8] = 9.0;
         gv_realLevelingStats[EventPlayer()][7] = 8.0;
+        gv_realLevelingStats[EventPlayer()][8] = 9.0;
         gv_realLevelingStats[EventPlayer()][9] = 13.0;
         gv_realLevelingStats[EventPlayer()][11] = 5.0;
     }
     if ((unitLevel >= 95)) {
-        gv_realLevelingStats[EventPlayer()][4] = 25.0;
-        gv_realLevelingStats[EventPlayer()][8] = 11.0;
-        gv_realLevelingStats[EventPlayer()][1] = 950.0;
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 950.0;
         gv_realLevelingStats[EventPlayer()][2] = 10.0;
-        gv_realLevelingStats[EventPlayer()][5] = 16.0;
-        gv_realLevelingStats[EventPlayer()][9] = 20.0;
         gv_realLevelingStats[EventPlayer()][3] = 600.0;
+        gv_realLevelingStats[EventPlayer()][4] = 25.0;
+        gv_realLevelingStats[EventPlayer()][5] = 16.0;
         gv_realLevelingStats[EventPlayer()][6] = 15.0;
         gv_realLevelingStats[EventPlayer()][7] = 11.0;
+        gv_realLevelingStats[EventPlayer()][8] = 11.0;
+        gv_realLevelingStats[EventPlayer()][9] = 20.0;
         gv_realLevelingStats[EventPlayer()][10] = 0.5;
         gv_realLevelingStats[EventPlayer()][11] = 10.0;
         gv_realLevelingStats[EventPlayer()][12] = 40.0;
     }
     if ((unitLevel >= 100)) {
+        gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals] = 1000.0;
+        gv_realLevelingStats[EventPlayer()][2] = 15.0;
+        gv_realLevelingStats[EventPlayer()][3] = 700.0;
         gv_realLevelingStats[EventPlayer()][4] = 30.0;
+        gv_realLevelingStats[EventPlayer()][5] = 22.0;
+        gv_realLevelingStats[EventPlayer()][6] = 25.0;
+        gv_realLevelingStats[EventPlayer()][7] = 15.0;
         gv_realLevelingStats[EventPlayer()][8] = 15.0;
         gv_realLevelingStats[EventPlayer()][9] = 25.0;
-        gv_realLevelingStats[EventPlayer()][2] = 15.0;
-        gv_realLevelingStats[EventPlayer()][1] = 1000.0;
-        gv_realLevelingStats[EventPlayer()][5] = 22.0;
-        gv_realLevelingStats[EventPlayer()][3] = 700.0;
-        gv_realLevelingStats[EventPlayer()][7] = 15.0;
-        gv_realLevelingStats[EventPlayer()][6] = 25.0;
         gv_realLevelingStats[EventPlayer()][10] = 0.8;
         gv_realLevelingStats[EventPlayer()][11] = 16.0;
         gv_realLevelingStats[EventPlayer()][12] = 50.0;

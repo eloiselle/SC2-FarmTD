@@ -11,6 +11,7 @@ Category/Name/BD1078F3=Variables
 Category/Name/DDD4E2F6=Mecha Swarm
 Category/Name/F417639F=Critter
 Category/Name/F4F241FD=Tal'darim
+CustomScript/Name/84381FA3=main
 FunctionDef/Name/D055CF15=TriggerAddEventUnitRangePoint
 ParamDef/Name/576B7E69=trigger
 ParamDef/Name/74DFC98C=real
