@@ -41,6 +41,7 @@ const int gv_baseStartingLives = 20;
 const int gv_baseStartingPriceBonus = 0;
 const int gv_maxNumberOfPlayers = 12;
 const int gv_globalIncrement = 1;
+const string gv_bankName = "Starcraft2TimwsFarmTD_Test";
 
 //--------------------------------------------------------------------------------------------------
 // Global Variables
@@ -599,7 +600,7 @@ bool gt_onPlayerLeave_Func (bool testConds, bool runActions) {
         UnitKill(autoD0E492FC_var);
     }
     TriggerExecute(gt_updateLeaderboards, true, false);
-    BankLoad("Starcraft2TimwsFarmTD", EventPlayer());
+    BankLoad(gv_bankName, EventPlayer());
     BankValueSetFromFixed(BankLastCreated(), "Player", "XP", gv_realEXPBackup[EventPlayer()]);
     BankValueSetFromFixed(BankLastCreated(), "Player", "minz", gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingMinerals]);
     BankValueSetFromFixed(BankLastCreated(), "Player", "gas", gv_realLevelingStats[EventPlayer()][ge_LevelingStatsDefinition_ExtraStartingGas]);
@@ -636,7 +637,7 @@ bool gt_onStartupBankInit_Func (bool testConds, bool runActions) {
 
     lv_playerIndex = 1;
     for ( ; ( (auto387372CD_ai >= 0 && lv_playerIndex <= auto387372CD_ae) || (auto387372CD_ai < 0 && lv_playerIndex >= auto387372CD_ae) ) ; lv_playerIndex += auto387372CD_ai ) {
-        BankLoad("Starcraft2TimwsFarmTD", lv_playerIndex);
+        BankLoad(gv_bankName, lv_playerIndex);
         if ((BankVerify(BankLastCreated()) == true)) {
             gv_realEXP[lv_playerIndex] = BankValueGetAsFixed(BankLastCreated(), "Player", "XP");
             gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingMinerals] = BankValueGetAsFixed(BankLastCreated(), "Player", "minz");
@@ -2447,7 +2448,9 @@ void gt_onMissionCompleted_Init () {
 //--------------------------------------------------------------------------------------------------
 bool gt_fasterSpeed_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
-    int auto0EF5E7DD_val;
+    int currentGameSpeed;
+    int newGameSpeed;
+    string chatResult = "Game speed is already maxed.";;
 
     // Conditions
     if (testConds) {
@@ -2461,15 +2464,15 @@ bool gt_fasterSpeed_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    auto0EF5E7DD_val = GameGetSpeedValue();
-    if (auto0EF5E7DD_val == c_gameSpeedFaster) {
-        GameSetSpeedValue(c_gameSpeedFast);
+    currentGameSpeed = GameGetSpeedValue();
+    newGameSpeed = (currentGameSpeed + 1);
+
+    if(currentGameSpeed < 4) { 
+        GameSetSpeedValue(newGameSpeed); 
+        chatResult = "New game speed is " + IntToString(newGameSpeed);
     }
-    else if (auto0EF5E7DD_val == c_gameSpeedNormal) {
-        GameSetSpeedValue(c_gameSpeedFaster);
-    }
-    else {
-    }
+    
+    UIDisplayMessage(PlayerGroupSingle(1), c_messageAreaSubtitle, StringToText(chatResult));
     return true;
 }
 
@@ -2484,7 +2487,9 @@ void gt_fasterSpeed_Init () {
 //--------------------------------------------------------------------------------------------------
 bool gt_slowerSpeed_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
-    int auto9B3EACA4_val;
+    int currentGameSpeed;
+    int newGameSpeed;
+    string chatResult = "Game speed is already at minimum.";
 
     // Conditions
     if (testConds) {
@@ -2498,15 +2503,15 @@ bool gt_slowerSpeed_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    auto9B3EACA4_val = GameGetSpeedValue();
-    if (auto9B3EACA4_val == c_gameSpeedFast) {
-        GameSetSpeedValue(c_gameSpeedFaster);
+    currentGameSpeed = GameGetSpeedValue();
+    newGameSpeed = (currentGameSpeed - 1);
+
+    if(currentGameSpeed > 1) { 
+        GameSetSpeedValue(newGameSpeed); 
+        chatResult = "New game speed is " + IntToString(newGameSpeed);
     }
-    else if (auto9B3EACA4_val == c_gameSpeedFaster) {
-        GameSetSpeedValue(c_gameSpeedNormal);
-    }
-    else {
-    }
+
+    UIDisplayMessage(PlayerGroupSingle(1), c_messageAreaSubtitle, StringToText(chatResult));
     return true;
 }
 
@@ -2532,13 +2537,13 @@ bool gt_giveMoney_Func (bool testConds, bool runActions) {
             return false;
         }
     }
-
     // Actions
     if (!runActions) {
         return true;
     }
 
     lv_desiredAmount = StringToInt(StringWord(EventChatMessage(false), 2));
+    if(lv_desiredAmount == 0){ lv_desiredAmount = 10000; }
     libCOMI_gf_GivePlayerResources(UnitGetPosition(UnitGroupUnit(gv_unitgroupSCV[EventPlayer()], 1)), libCOMI_ge_CacheResourceType_Mineral, lv_desiredAmount, null, null, EventPlayer());
     return true;
 }
