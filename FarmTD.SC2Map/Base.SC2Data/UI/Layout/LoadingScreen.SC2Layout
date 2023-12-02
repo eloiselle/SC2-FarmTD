@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <!--
+        Loading screen XML can not reference assets from your map.
+        This includes textures/images, sounds, game strings (text),
+        UI XML outside this file (templates/constants/whatever), or
+        essentially anything else. Font Styles neither.
+
+        There are exceptions to this, but they are few and weird.
+        The most notable exception is that - for some unknown reason -
+        you can actually reference JPEG image files. Not PNG, not DDS,
+        not anything else - just JPEG.
+
+        The only text you can reference, is the text you can set up
+        in the Map Options - Loading Screen in the editor, which
+        you can grab and manipulate in any way you want.
+
+        Therefore, it is recommended to use Constants like below to
+        store any other text strings you use later in the loading screen.
+        This makes it easier in the long run.
+    -->
+    <Constant name="MyTextOne" val="Lorem ipsum doret sit amet or something like that."/>
+    <Constant name="FooText" val="Bar Bbq Xerox"/>
+    <Constant name="AwesomeHeaderText" val="MY MAP ROCKS SOCKS"/>
+
+    <Frame type="Frame" name="MyMapLoadingScreen">
+        <Anchor relative="$parent"/>
+        <!--
+            Debug block box; uncomment the following editbox, enable "Wait for key"
+            in the Map Options in sc2edit, and then you can use the UI inspector or whatever
+            you want at your leisure. Just click the editbox to focus during loading and hit
+            the keybinding for the UI inspector.
+        -->
+        <!--Frame type="EditBox" name="Block" template="StandardBattlenetTemplates/BattlenetEditBoxTemplate">
+            <Anchor side="Top" relative="$parent/Header" pos="Max" offset="10"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+            <Width val="450"/>
+            <Height val="68"/>
+            <Insets top="20" left="25" bottom="15" right="20"/>
+            <BlocksShortcuts val="true"/>
+        </Frame-->
+
+        <Frame type="Label" name="Header">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="30"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+            <Style val="@Coop_CommanderLevel_Max"/>
+            <Text val="#AwesomeHeaderText"/>
+        </Frame>
+
+        <Frame type="Frame" name="Container">
+            <Anchor side="Top" relative="$parent/Header" pos="Max" offset="4"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="12"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="-12"/>
+            <Anchor side="Bottom" relative="$parent/$parent/$parent/LoadingBar" pos="Min" offset="10"/>
+            <!-- TODO: Add more junk here -->
+        </Frame>
+    </Frame>
+</Desc>

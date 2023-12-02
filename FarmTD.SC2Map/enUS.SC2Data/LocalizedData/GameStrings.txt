@@ -632,14 +632,14 @@ Param/Value/08A09777= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures
 Param/Value/09B9139B= <c val="FF8000">Pumpkins</c> for 
 Param/Value/0A8F193D=Player
 Param/Value/0C497204=<IMG path="Assets\Textures\btn-ability-terran-stimpack-color.dds" height="49" width="49" alignment="absolutemiddle"/>
-Param/Value/0CA34780=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/0CA34780=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/0DF01477=Crops
 Param/Value/0DF431A7= (
 Param/Value/0E2255E9= <c val="80FF00">+200</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/0E60C826= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/0E6379E1=<IMG path="Assets\Textures\btn-upgrade-karax-turretattackspeed.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/0EAAEAF3=Todays Market [
-Param/Value/0F3D6326=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/0F3D6326=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/10D28C79= Has Completed Mission: <c val="FF8000">Big Stonks</c>
 Param/Value/112598F3=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/12475282= Difficulty
@@ -657,7 +657,7 @@ Param/Value/16373DB3=Selected Towers do not match
 Param/Value/17A6205C= Has Completed Mission: <c val="FF8000">Mergefest</c>
 Param/Value/17BB266B=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
 Param/Value/18EABE9A=)
-Param/Value/19C7279E=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/19C7279E=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/1A3956A9=Enemies have 200% Extra Health
 Param/Value/1B5BD85D= <IMG path="
 Param/Value/1C8A85EF= XP<c></s>
@@ -668,15 +668,15 @@ Param/Value/1D26374F=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/1DA0C15D=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/1DAAF6D7=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/1DD16259=<n/><c val="80FF80">Pears: </c>
-Param/Value/1E2B05ED=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/1E2B05ED=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/1FAD2F6D=<c val="631603">Death</c>
 Param/Value/24FCEE8E=All your towers deal 10% more damage
 Param/Value/256E4F97=Creeps Alive: 
 Param/Value/26121008=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
-Param/Value/26381D49=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/26381D49=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/26DB6537=Profit
 Param/Value/27089CA5=2 Mutations
-Param/Value/274D4AD0=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/274D4AD0=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/281F36C8= XP<c></s>
 Param/Value/28B9FA03= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/28D07EB8=Not Picked
@@ -692,7 +692,7 @@ Param/Value/2BAA7194=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height
 Param/Value/2C99FD84= XP<c></s>
 Param/Value/2CD9D853=Difficulty
 Param/Value/2D79B3C2=Sell All your Pears for the Current Price of the day
-Param/Value/2E0A50E7=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/2E0A50E7=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/2FE80A73=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
 Param/Value/3012002A= <IMG path="
 Param/Value/3022A528=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
@@ -736,7 +736,7 @@ Param/Value/4756ED9A= Has Completed Mission: <c val="FF8000">Large Farm</c>
 Param/Value/47640595= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/47F3F8E1= Has Completed Mission: <c val="FF8000">Annual Animal meeting</c>
 Param/Value/48879ACB=Level
-Param/Value/48883965=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/48883965=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/48BFD545=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/49022C85=<IMG path="Assets\Textures\btn-ability-zerg-dehaka-mutalisk-shiftingcarapace.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/4A436952= XP<c></s>
@@ -766,15 +766,15 @@ Param/Value/5EE8AF05=<IMG path="Assets\Textures\icon-mineral-nobg.dds" height="2
 Param/Value/5F07258C= Has Completed Mission: <c val="FF8000">Your powered up, get in there</c>
 Param/Value/5F2F98F7=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/5F3DAC0D= Minerals 
-Param/Value/5FB05BF7=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/5FB05BF7=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/60C821FE=7 Mutations
 Param/Value/6196CAFA= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/61F3E340= got a 
 Param/Value/627AD9CA=<c val="F5920A">Hell</c>
 Param/Value/62CC6E16= Has Completed Mission: <c val="FF8000">Terran up the Night</c>
-Param/Value/63FCED86=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/63FCED86=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/64D50BFA=<n/><c val="FF8040">Pumpkins: </c>
-Param/Value/64F97B31=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/64F97B31=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/656A4D5C=<IMG path="pear.tga" height="32" width="32" alignment="absolutemiddle"/> Sell Pears
 Param/Value/65F324B6=<c val="F5920A">Brutal+2</c>
 Param/Value/66717DD7= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
@@ -790,15 +790,15 @@ Param/Value/69E0AD27= has chosen
 Param/Value/6B226D4F= Has Completed Mission: <c val="FF8000">Not a Picky Farmer</c>
 Param/Value/6B6DAFF5=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/6BEB7A76=Welcome to Farm TD Single Player version<n/>There is also a Team version I recommend checking out of you like the game :D
-Param/Value/6CF06286=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/6CF06286=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/6E51291F= Has Completed Mission: <c val="FF8000">Rareity collector</c>
 Param/Value/6E630EAF=<IMG path="Assets\Textures\btn-progression-hornerhan-14-nukefortelefrag.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/6E69CEE0=<IMG path="Assets\Textures\btn-ability-spearofadun-warpharmonization.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/6E7E1372= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/6E9D967D= Sold Their 
 Param/Value/6F750BD1=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
-Param/Value/71BBE491=<s val="InfoPaneHeroInfo_Alliance 2 2">
-Param/Value/7471D34E=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/71BBE491=<s val="InfoPaneHeroInfo_Alliance">
+Param/Value/7471D34E=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/76B6E8B5=Sell All your Pears for the Current Price of the day
 Param/Value/77A2ACDA= XP<c></s>
 Param/Value/77B5FE44=<IMG path="Assets\Textures\btn-upgrade-terran-nova-combatmastery.dds" height="49" width="49" alignment="absolutemiddle"/>
@@ -833,7 +833,7 @@ Param/Value/8B261B11= XP<c></s>
 Param/Value/8BD77E13=Wave Cleared...next wave starts in 10 sec<n/><n/><c val="DF07F8">Todays Market:</c>
 Param/Value/8BE7CBB3= <c val="80FF00">Pears</c> for 
 Param/Value/8BEEF111= <c val="80FF00">+300</c></c></s><IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
-Param/Value/8C1A706D=<s val="BattleChatAchievement 2">Plant Mastery 
+Param/Value/8C1A706D=<s val="BattleChatAchievement">Plant Mastery 
 Param/Value/8CA3A057=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/8D720B61=<IMG path="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/8E258058= XP<c></s>
@@ -853,7 +853,7 @@ Param/Value/92858788=<c val="FF0000">-5 Life</c>
 Param/Value/945E3813=<IMG path="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/951C85CA= XP<c></s>
 Param/Value/9591D960=<IMG path="Assets\Textures\btn-ability-terran-ignorearmor.dds" height="49" width="49" alignment="absolutemiddle"/>
-Param/Value/973F7381=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/973F7381=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/97F992C8=<IMG path="Assets\Textures\btn-ability-zeratul-immortal-enternitybarrier.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/98814AEB=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/98CB12BC= has chosen 
@@ -893,7 +893,7 @@ Param/Value/AD7EF517= XP<c></s>
 Param/Value/AE40FE69=<IMG path="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/AF82CBEC=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/AF92EE72=<c val="F83707">Brutal</c>
-Param/Value/B00F23C9=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/B00F23C9=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/B0270A66=Increase Crop Prices
 Param/Value/B0D42FCD= Has been Defeated!
 Param/Value/B0F41E05=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
@@ -904,7 +904,7 @@ Param/Value/B4D5D3B9=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/B5AD2EC0=<c val="160501">Brutal+6</c>
 Param/Value/B5F25083=Wave Cleared...next wave starts in 10 sec<n/><n/>Carrots: 
 Param/Value/B62586F8=</c>
-Param/Value/B668CEEB=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/B668CEEB=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/B77580E4=Creeps Alive: 0
 Param/Value/B7949EB6= Has Completed Mission: <c val="FF8000">This is amazing..but I like this</c>
 Param/Value/B7A013C1= (
@@ -934,18 +934,18 @@ Param/Value/C86BAF20=First Boss can now be sent
 Param/Value/C88D5CE3=<IMG path="Assets\Textures\btn-upgrade-terran-jumpjets.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/C9096F2F=<IMG path="Assets\Textures\btn-progression-zerg-dehaka-15-genemutation.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/C90C5A16=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
-Param/Value/CA3874BA=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/CA3874BA=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/CAF514BB=<s val="ChatBar">Choose Reward</s>
 Param/Value/CD0D01EB=<c val="80FF00">Plant Mastery Rank 1</c>
 Param/Value/CD2F24FF=1 Mutation
 Param/Value/CE27D4B9=</c>
 Param/Value/D01D78A0=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/D091810D=/15
-Param/Value/D0EBA550=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/D0EBA550=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/D16CA238=<c val="80FF00">Plant Mastery Rank 1</c>
 Param/Value/D3EC7BD0= has chosen 
 Param/Value/D5CE1E25=4 Mutations
-Param/Value/D5EEE3C3=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/D5EEE3C3=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/D6765D7F=No Mutations
 Param/Value/D6944200=Enemies have 200% Extra Health and +0.7 movement speed
 Param/Value/D6AB32D7=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
@@ -957,8 +957,8 @@ Param/Value/DDE6BB5A=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/DE2BF164=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
 Param/Value/DF12D7EF=Plant Mastery 
 Param/Value/E025370E=20
-Param/Value/E03CDDCE=<IMG path="disblub.png" height="32" width="32" alignment="absolutemiddle"/> Discord
-Param/Value/E05905F4=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/E03CDDCE=<IMG path="disblub.png" height="32" width="32" alignment="absolutemiddle"/>
+Param/Value/E05905F4=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/E0D8319F= XP<c></s>
 Param/Value/E0EB5FE7=Like the map? Join our Discord to share your experience with others, eventually submit bugs, and suggest changes to make the map even better!
 Param/Value/E12ABA33=<c val="A5FA05">Normal</c>
@@ -967,7 +967,7 @@ Param/Value/E276F2E9=<c val="631603">Brutal+5</c>
 Param/Value/E3500D69= XP<c></s>
 Param/Value/E420D50E= XP<c></s>
 Param/Value/E464F056=You don't have any pumpkins to sell
-Param/Value/E4D0833D=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/E4D0833D=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/E547A322=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/E5AA29F1=<c val="FFFF00">Active Wave
 Param/Value/E5DE490E=~
@@ -977,7 +977,7 @@ Param/Value/E6300012= Has Completed Mission: <c val="FF8000">The Swarm</c>
 Param/Value/E6B36C2B=Creeps Alive: 0
 Param/Value/E6B7DE0C=<n/><c val="FF8040">Carrots: </c>
 Param/Value/E710A6CF=<c val="FFFF00">Incoming in: 
-Param/Value/E7226A94=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/E7226A94=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/E738B089=<c val="00FF40">Easy</c>
 Param/Value/E9892AA9=Todays Market
 Param/Value/E9AD3988=<c val="F5920A">Brutal+2</c>
@@ -992,7 +992,7 @@ Param/Value/EFC5AD91= <c val="80FF00">+400</c></c></s><IMG path="Assets\Textures
 Param/Value/F0B41F48=<s val="AchievementFanfareDesc_Prot"><c val="FF00FF">
 Param/Value/F0B7848B=% chance 
 Param/Value/F10E72A3=<IMG path="Assets\Textures\btn-upgrade-protoss-alarak-ascendant'spsiorbtravelsfurther.dds" height="49" width="49" alignment="absolutemiddle"/>
-Param/Value/F12E8F91=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/F12E8F91=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/F169E807=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
 Param/Value/F2195F0A=<s val="Coop_Subtitle"><c val="FF8040">Mission Completed</c></s><n/>
 Param/Value/F258DC7E=<IMG path="Assets\Textures\icon-gas-terran-nobg.dds" height="28" width="28" alignment="absolutemiddle"/>
@@ -1002,7 +1002,7 @@ Param/Value/F343A1F6= XP<c></s>
 Param/Value/F3D28A4F= Has Completed Mission: <c val="FF8000">I will turn this Map into a radiated ruin if I have to ANOTHER NUKE SILO</c>
 Param/Value/F43A18C6=<c val="00FF40">No Mutations</c>
 Param/Value/F4C36D12= XP<c></s>
-Param/Value/F5CEB089=<s val="InfoPaneHeroInfo_Alliance 2 2">
+Param/Value/F5CEB089=<s val="InfoPaneHeroInfo_Alliance">
 Param/Value/F5EF1F20=<c val="FFFF00">Next wave in: 
 Param/Value/F70B43C2=<IMG path="Assets\Textures\btn-upgrade-zerg-hydriaticacid.dds" height="49" width="49" alignment="absolutemiddle"/>
 Param/Value/F8C0B81F=<IMG path="Assets\Textures\btn-ability-protoss-thermallance.dds" height="49" width="49" alignment="absolutemiddle"/>
