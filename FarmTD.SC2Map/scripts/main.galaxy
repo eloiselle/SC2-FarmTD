@@ -1060,7 +1060,7 @@ bool gt_onCreepReachesEnd_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (UnitGetOwner(EventUnit()) != 13 || UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeSummoned) != true || UnitGetType(EventUnit()) != "Raynor01") {
+        if (UnitGetOwner(EventUnit()) != 13 || UnitTypeTestAttribute(UnitGetType(EventUnit()), c_unitAttributeSummoned) != true || UnitGetType(EventUnit()) == "Raynor01") {
                 return false;
         }
     }
@@ -1092,9 +1092,9 @@ bool gt_onCreepReachesEnd_Func (bool testConds, bool runActions) {
         (gv_intWave == 50) || 
         (gv_intWave == 60) || 
         (gv_intWave == 70) || 
-        (UnitGetType(EventUnit()) != "lCreep41") || 
-        (UnitGetType(EventUnit()) != "Clreep42") || 
-        (UnitGetType(EventUnit()) != "pCreep43")) {
+        (UnitGetType(EventUnit()) == "lCreep41") || 
+        (UnitGetType(EventUnit()) == "Clreep42") || 
+        (UnitGetType(EventUnit()) == "pCreep43")) {
             gv_intLives[lv_thePlayer] -= 5;
             UIDisplayMessage(PlayerGroupSingle(lv_thePlayer), c_messageAreaSubtitle, StringExternal("Param/Value/92858788"));
         }
@@ -1185,14 +1185,14 @@ bool gt_onUnitBecomesIdle_Func (bool testConds, bool runActions) {
     }
 
     lv_tempt = 1;
-    for ( ; ( (c_globalIncrement >= 0 && lv_tempt <= c_maxNumberOfPlayers) || (c_globalIncrement < 0 && lv_tempt >= c_maxNumberOfPlayers) ) ; lv_tempt += c_globalIncrement ) {
+    for ( ; ( lv_tempt <= c_maxNumberOfPlayers ) ; lv_tempt += 1 ) {
         if ((libNtve_gf_UnitInRegion(EventUnit(), RegionFromName(("Player Region " + IntToString(lv_tempt)))) == true)) {
             lv_player = lv_tempt;
         }
 
     }
     lv_pointlypoint = 1;
-    for ( ; ( (c_globalIncrement >= 0 && lv_pointlypoint <= c_maxNumberOfPlayers) || (c_globalIncrement < 0 && lv_pointlypoint >= c_maxNumberOfPlayers) ) ; lv_pointlypoint += c_globalIncrement ) {
+    for ( ; ( lv_pointlypoint <= c_maxNumberOfPlayers ) ; lv_pointlypoint += 1 ) {
         UnitIssueOrder(EventUnit(), OrderTargetingPoint(AbilityCommand("move", 0), PointFromName(("Player " + IntToString(lv_player) + " Point " + IntToString(lv_pointlypoint)))), c_orderQueueAddToEnd);
     }
     return true;
