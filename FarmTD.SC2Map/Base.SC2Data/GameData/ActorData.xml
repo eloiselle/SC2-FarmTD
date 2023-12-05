@@ -11,19 +11,6 @@
         <Macros value="PhysicsDeathsSwarmGround"/>
         <Macros value="PhysicsDeathsVoidGround"/>
         <EditorCategories value=""/>
-        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
-        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
-        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
-        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
-        <On Terms="UnitBirth.InfestedCivilianBurrowed" Send="Create"/>
-        <On Terms="UnitBirth.InfestedCivilianBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant,DontResetOnUnhide"/>
-        <On Terms="ActorCreation" Send="TextureSelectBySlot main {RequireAll diffuse}"/>
-        <On Terms="ActorCreation" Send="TextureSelectByMatch main.specular main"/>
-        <On Terms="ActorCreation" Send="Create InfestedCivilian_Moan"/>
-        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="Create"/>
-        <On Terms="AbilMorph.MorphToInfestedCivilian.Finish; MorphTo InfestedCivilian" Send="$Birth 0 0.000000"/>
-        <On Terms="ActorCreation" Send="Create InfestedCivilian_BirthVoxSound"/>
         <Model value="InfestedCivilian"/>
         <BuildModel value="InfestedCivilian"/>
         <DeathArray index="Normal" ModelLink="InfestedCivilianDeath" SoundLink="InfestedCivilian_Explode"/>
@@ -4381,7 +4368,6 @@
         </Wireframe>
     </CActorUnit>
     <CActorUnit id="Creep69" parent="GenericUnitBase" unitName="Creep69">
-        <EditorCategories value=""/>
         <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
         <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
         <On Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
@@ -4967,6 +4953,28 @@
             <Image value="Assets\Textures\wireframe-zerg-brutalisk.dds"/>
         </Wireframe>
         <WireframeShieldColor value="255,0,128,0"/>
+    </CActorUnit>
+    <CActorUnit id="Creep70" parent="GenericUnitStandard" unitName="Creep70">
+        <On index="64" removed="1"/>
+        <On index="65" removed="1"/>
+        <On index="66" removed="1"/>
+        <On index="67" removed="1"/>
+        <On index="68" removed="1"/>
+        <Model value="KerriganEpilogue03"/>
+        <AnimBlendTime value="0.250000"/>
+        <BuildModel value="KerriganEpilogue03"/>
+        <PlacementModel value="KerriganGhost"/>
+        <PortraitModel value="KerriganEpilogue03Portrait"/>
+        <BarWidth value="160"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-KerriganAscended.dds"/>
+        </GroupIcon>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-kerriganinfested.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-KerriganAscended.dds"/>
+        </Wireframe>
     </CActorUnit>
     <CActorUnit id="Pear" parent="GenericUnitBase" unitName="Pear">
         <EditorCategories value=""/>

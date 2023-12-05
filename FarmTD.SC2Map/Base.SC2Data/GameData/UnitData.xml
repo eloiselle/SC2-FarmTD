@@ -928,13 +928,8 @@
         </ReviveInfoBase>
     </CUnit>
     <CUnit id="Creep60">
-        <DeathRevealRadius value="3"/>
-        <ReviveType value="Creep1"/>
         <Race value="Terr"/>
         <Mob value="Multiplayer"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="ArmySelect" value="1"/>
         <PlaneArray index="Ground" value="1"/>
         <Collide index="ForceField" value="1"/>
         <Collide index="Locust" value="1"/>
@@ -951,16 +946,10 @@
         <LateralAcceleration value="46.0625"/>
         <StationaryTurningRate value="999.8437"/>
         <TurningRate value="999.8437"/>
-        <Sight value="9"/>
-        <CostCategory value="Army"/>
-        <CostResource index="Minerals" value="50"/>
-        <RepairTime value="20"/>
-        <AttackTargetPriority value="20"/>
         <KillResource index="Minerals" value="50"/>
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
-        <BehaviorArray Link="AllUnitBehaviorController"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
@@ -969,37 +958,10 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
         </CardLayouts>
         <Radius value="0"/>
-        <SeparationRadius value="0"/>
         <InnerRadius value="0.375"/>
         <CargoSize value="1"/>
-        <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="115"/>
-        <MinimapRadius value="0.375"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
-        <TacticalAI value="Marine"/>
-        <LeaderAlias value="Creep1"/>
-        <HotkeyAlias value="Creep1"/>
-        <SelectAlias value="Creep1"/>
-        <SubgroupAlias value="Creep1"/>
-        <GlossaryCategory value="Unit/Category/TerranUnits"/>
-        <GlossaryPriority value="21"/>
-        <GlossaryStrongArray value="Marauder"/>
-        <GlossaryStrongArray value="Mutalisk"/>
-        <GlossaryStrongArray value="Immortal"/>
-        <GlossaryWeakArray value="SiegeTank"/>
-        <GlossaryWeakArray value="Baneling"/>
-        <GlossaryWeakArray value="Colossus"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <KillDisplay value="Never"/>
-        <RankDisplay value="Never"/>
-        <AIEvaluateAlias value="Creep1"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="33"/>
-            <ChanceArray index="Idle" value="33"/>
-            <ChanceArray index="Turn" value="33"/>
-        </Fidget>
-        <TauntDuration index="Cheer" value="5"/>
-        <TauntDuration index="Dance" value="5"/>
         <ReviveInfoBase>
             <Charge Link="Creep1/Revive"/>
             <Cooldown Link="Creep1/Revive"/>
@@ -3651,34 +3613,40 @@
             <Cooldown Link="Creep1/Revive"/>
         </ReviveInfoBase>
     </CUnit>
-    <CUnit id="KerriganEpilogue03">
+    <CUnit id="Creep70">
         <Race value="Terr"/>
-        <PlaneArray index="Air" value="0"/>
-        <Collide index="Ground" value="0"/>
-        <Collide index="Colossus" value="0"/>
-        <Collide index="Structure" value="0"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <PushPriority value="20"/>
         <Collide index="ForceField" value="1"/>
         <Collide index="Locust" value="1"/>
-        <Collide index="Small" value="0"/>
         <Attributes index="Armored" value="1"/>
-        <Attributes index="Biological" value="0"/>
-        <Attributes index="Psionic" value="0"/>
+        <Attributes index="Heroic" value="1"/>
         <Attributes index="Summoned" value="1"/>
         <LifeStart value="500000"/>
         <LifeMax value="500000"/>
-        <LifeArmor value="0"/>
-        <LifeRegenRate value="0"/>
-        <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmord"/>
-        <EnergyStart value="0"/>
-        <EnergyMax value="0"/>
-        <EnergyRegenRate value="0"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmor"/>
         <EnergyDamageRatio value="1"/>
         <ShieldsStart value="500000"/>
         <ShieldsMax value="500000"/>
-        <Mover value="Ground"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ZergWildMutation"/>
         <Speed value="1.8007"/>
-        <SpeedMultiplierCreep value="1"/>
-        <KillResource index="Minerals" value="50"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="13"/>
+        <CostCategory value="Army"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
         <Radius value="0"/>
         <SeparationRadius value="0"/>
         <InnerRadius value="0.3125"/>
