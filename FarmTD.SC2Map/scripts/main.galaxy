@@ -41,7 +41,7 @@ const int c_baseStartingLives = 20;
 const int c_baseStartingPriceBonus = 0;
 const int c_maxNumberOfPlayers = 12;
 const int c_globalIncrement = 1;
-const string c_bankName = "Starcraft2TimwsFarmTD_Test";
+const string c_bankName = "Starcraft2TimwsFarmTD";
 
 //--------------------------------------------------------------------------------------------------
 // Global Variables
@@ -590,7 +590,6 @@ bool gt_onPlayerLeave_Func (bool testConds, bool runActions) {
 
     if ((UnitIsAlive(gv_builder[EventPlayer()]) == true)) {
         gv_realEXPBackup[EventPlayer()] = UnitGetPropertyFixed(gv_builder[EventPlayer()], c_unitPropXP, c_unitPropCurrent);
-        HelperSaveData(EventPlayer());
     }
 
     gv_intLives[EventPlayer()] = 0;
@@ -611,6 +610,7 @@ bool gt_onPlayerLeave_Func (bool testConds, bool runActions) {
         UnitKill(autoD0E492FC_var);
     }
     TriggerExecute(gt_updateLeaderboards, true, false);
+    HelperSaveData(EventPlayer());
     return true;
 }
 
