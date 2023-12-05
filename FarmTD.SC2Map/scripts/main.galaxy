@@ -848,7 +848,7 @@ bool gt_onSendBossWave_Func (bool testConds, bool runActions) {
             gv_intPlantsSoldToday[lv_player] = 0;
             if ((gv_intLives[lv_player] > 0) && (PlayerStatus(lv_player) == c_playerStatusActive)) {
                 if ((gv_intWave == 70)) {
-                    UnitCreate(1, "KerriganEpilogue03", c_unitCreateIgnorePlacement, 13, PointFromId(950714846), 270.0);
+                    UnitCreate(1, "Creep70", c_unitCreateIgnorePlacement, 13, PointFromId(950714846), 270.0);
                 }
                 else {
                     UnitCreate(1, UnitTypeFromString(("Creep" + IntToString(gv_intWave))), c_unitCreateIgnorePlacement, 13, PointFromId(950714846), 270.0);
@@ -1251,7 +1251,7 @@ bool gt_onSpecialBossSent_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "KerriganEpilogue03") || (UnitGetType(EventUnit()) == "Creep60")))) {
+        if (!(((UnitGetType(EventUnit()) == "Creep70") || (UnitGetType(EventUnit()) == "Creep60")))) {
             return false;
         }
     }
@@ -1341,7 +1341,7 @@ bool gt_onWaveEnds_Func (bool testConds, bool runActions) {
                     UnitCreate(1, UnitTypeFromString(("Item" + IntToString(lv_randomitem))), 0, lv_KillingPlayer, UnitGetPosition(EventUnit()), 270.0);
                 }
 
-                if (((UnitGetType(EventUnit()) == "KerriganEpilogue03") || (UnitGetType(EventUnit()) == "Creep60"))) {
+                if (((UnitGetType(EventUnit()) == "Creep70") || (UnitGetType(EventUnit()) == "Creep60"))) {
                     if ((gv_boolRespawns[lv_KillingPlayer] == true) && (UnitGetType(EventUnit()) == "Creep60")) {
                         libNtve_gf_UnitCreateFacingPoint(1, "Creep60", c_unitCreateIgnorePlacement, 13, UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
                         if ((gv_intDifficulty[lv_KillingPlayer] == 6)) {
@@ -1363,7 +1363,7 @@ bool gt_onWaveEnds_Func (bool testConds, bool runActions) {
                         }
                     }
 
-                    if ((gv_boolRespawns[lv_KillingPlayer] == true) && (UnitGetType(EventUnit()) == "KerriganEpilogue03")) {
+                    if ((gv_boolRespawns[lv_KillingPlayer] == true) && (UnitGetType(EventUnit()) == "Creep70")) {
                         libNtve_gf_UnitCreateFacingPoint(1, "Creep60", c_unitCreateIgnorePlacement, 13, UnitGetPosition(EventUnit()), UnitGetPosition(EventUnit()));
                         if (((gv_intDifficulty[lv_KillingPlayer] == 5))) {
                             UnitSetPropertyFixed(UnitLastCreated(), c_unitPropLifeMax, 500000.0);
@@ -3425,7 +3425,7 @@ bool gt_EvoChamber_Func (bool testConds, bool runActions) {
             (UnitGetType(EventUnit()) != "pCreep43") ||
             (UnitGetType(EventUnit()) != "Creep50") || 
             (UnitGetType(EventUnit()) != "Creep60") || 
-            (UnitGetType(EventUnit()) != "KerriganEpilogue03")) {
+            (UnitGetType(EventUnit()) != "Creep70")) {
                 return false;
         }
     }
@@ -3618,7 +3618,7 @@ bool gt_Warpgate_Func (bool testConds, bool runActions) {
             (UnitGetType(EventUnit()) != "pCreep43") ||
             (UnitGetType(EventUnit()) != "Creep50") || 
             (UnitGetType(EventUnit()) != "Creep60") || 
-            (UnitGetType(EventUnit()) != "KerriganEpilogue03")) {
+            (UnitGetType(EventUnit()) != "Creep70")) {
                 return false;
         }
     }
@@ -3687,7 +3687,7 @@ bool gt_VoidSeeker_Func (bool testConds, bool runActions) {
             (UnitGetType(EventUnit()) != "pCreep43") ||
             (UnitGetType(EventUnit()) != "Creep50") || 
             (UnitGetType(EventUnit()) != "Creep60") || 
-            (UnitGetType(EventUnit()) != "KerriganEpilogue03")) {
+            (UnitGetType(EventUnit()) != "Creep70")) {
                 UnitBehaviorAdd(EventUnit(), "VoidEnsnare2", EventUnitDamageSourceUnit(), 1);
         }
     else {
@@ -4338,7 +4338,7 @@ bool gt_Alarak_Func (bool testConds, bool runActions) {
             (UnitGetType(EventUnit()) != "pCreep43") ||
             (UnitGetType(EventUnit()) != "Creep50") || 
             (UnitGetType(EventUnit()) != "Creep60") || 
-            (UnitGetType(EventUnit()) != "KerriganEpilogue03")) {
+            (UnitGetType(EventUnit()) != "Creep70")) {
                 return false;
         }
 

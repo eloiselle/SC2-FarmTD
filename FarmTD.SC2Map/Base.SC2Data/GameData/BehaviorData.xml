@@ -853,6 +853,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="6000"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="VikingMengskCheatDeath">
+        <Requirements value="HaveBioMechanicalTransfusionPassive"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="lvl15">
         <InfoIcon value="Assets\Textures\btn-progression-zeratul-03-passagewayenhancementcache1.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
