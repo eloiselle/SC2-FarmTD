@@ -41,7 +41,6 @@ const int c_baseStartingLives = 20;
 const int c_baseStartingPriceBonus = 0;
 const int c_maxNumberOfPlayers = 12;
 const int c_globalIncrement = 1;
-const string c_bankName = "Starcraft2TimwsFarmTD";
 
 //--------------------------------------------------------------------------------------------------
 // Global Variables
@@ -245,7 +244,7 @@ void HelperDisplayFadingMessage(string messageDisplayed, point position) {
 // Helper Function: Save stats to bank
 //--------------------------------------------------------------------------------------------------
 void HelperSaveData(int playerId) {
-    BankLoad(c_bankName, playerId);
+    BankLoad("Starcraft2TimwsFarmTD", playerId);
     BankValueSetFromFixed(BankLastCreated(), "Player", "XP", gv_realEXPBackup[playerId]);
     BankValueSetFromFixed(BankLastCreated(), "Player", "minz", gv_realLevelingStats[playerId][ge_LevelingStatsDefinition_ExtraStartingMinerals]);
     BankValueSetFromFixed(BankLastCreated(), "Player", "gas", gv_realLevelingStats[playerId][ge_LevelingStatsDefinition_ExtraStartingGas]);
@@ -637,7 +636,7 @@ bool gt_onStartupBankInit_Func (bool testConds, bool runActions) {
 
     lv_playerIndex = 1;
     for ( ; ( (c_globalIncrement >= 0 && lv_playerIndex <= c_maxNumberOfPlayers) || (c_globalIncrement < 0 && lv_playerIndex >= c_maxNumberOfPlayers) ) ; lv_playerIndex += c_globalIncrement ) {
-        BankLoad(c_bankName, lv_playerIndex);
+        BankLoad("Starcraft2TimwsFarmTD", lv_playerIndex);
         if ((BankVerify(BankLastCreated()) == true)) {
             gv_realEXP[lv_playerIndex] = BankValueGetAsFixed(BankLastCreated(), "Player", "XP");
             gv_realLevelingStats[lv_playerIndex][ge_LevelingStatsDefinition_ExtraStartingMinerals] = BankValueGetAsFixed(BankLastCreated(), "Player", "minz");

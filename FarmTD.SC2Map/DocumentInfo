@@ -27,4 +27,7 @@
             <Value>5,6</Value>
         </Notes>
     </PatchNote>
+    <Preload>
+        <Value>Bank;Starcraft2TimwsFarmTD</Value>
+    </Preload>
 </DocInfo>
